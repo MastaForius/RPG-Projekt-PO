@@ -1,8 +1,0 @@
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\bin\Debug\Project PO - RPG.exe.config
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\bin\Debug\Project PO - RPG.exe
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\bin\Debug\Project PO - RPG.pdb
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\obj\Debug\Project_PO___RPG.Menu.resources
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\obj\Debug\Project_PO___RPG.Properties.Resources.resources
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\obj\Debug\Project PO - RPG.csproj.GenerateResource.Cache
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\obj\Debug\Project PO - RPG.exe
-c:\users\admin\documents\visual studio 2015\Projects\Project PO - RPG\Project PO - RPG\obj\Debug\Project PO - RPG.pdb

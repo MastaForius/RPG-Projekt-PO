@@ -1,0 +1,15 @@
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\RPG - Projekt programowanie obiektowe.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\RPG - Projekt programowanie obiektowe.exe
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\RPG - Projekt programowanie obiektowe.pdb
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.exe
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.pdb
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.RPGApp_Okno.resources
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.CreditsInfo.resources
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\CircularProgressBar.dll
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\WinFormAnimation.dll
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\CircularProgressBar.xml
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\WinFormAnimation.xml
+c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.WelcomeScreen.resources
