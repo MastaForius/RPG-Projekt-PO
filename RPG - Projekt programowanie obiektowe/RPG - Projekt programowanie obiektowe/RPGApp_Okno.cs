@@ -170,8 +170,6 @@ namespace RPG___Projekt_programowanie_obiektowe
                 // Schowanie reszty jeśli widoczna
             }
         }
-        // Sprawdzanie nazwy
-
         // Zmiana plci
         int ktoryMaleAvatar = 0;
         int ktoryFemaleAvatar = 0;
@@ -266,7 +264,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         }
         #endregion
 
-        #region Stworz
+            #region Stworz
         // Sprawdzanie poprawnosci pol creatora postaci
         private void TBox_NazwaPostaci_Leave(object sender, EventArgs e)
         {
