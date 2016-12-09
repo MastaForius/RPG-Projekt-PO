@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RPGApp_Okno));
             this.Pnl_TopPanel = new System.Windows.Forms.Panel();
             this.Btn_Minimize = new System.Windows.Forms.Button();
@@ -66,14 +67,20 @@
             this.Pic_Avatar = new System.Windows.Forms.PictureBox();
             this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
             this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Pnl_LeftGame = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
+            this.Pnl_WelcomeScreen = new System.Windows.Forms.Panel();
+            this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
+            this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
             this.Pnl_TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
             this.Pnl_NowaGra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.Pnl_LeftGame.SuspendLayout();
+            this.Pnl_WelcomeScreen.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pnl_TopPanel
@@ -179,6 +186,7 @@
             this.Btn_LeftMenuOn.Size = new System.Drawing.Size(100, 40);
             this.Btn_LeftMenuOn.TabIndex = 20;
             this.Btn_LeftMenuOn.UseVisualStyleBackColor = false;
+            this.Btn_LeftMenuOn.Visible = false;
             this.Btn_LeftMenuOn.Click += new System.EventHandler(this.Btn_LeftMenuOn_Click);
             // 
             // Btn_Wyjscie
@@ -545,11 +553,13 @@
             // 
             // Pic_Avatar
             // 
-            this.Pic_Avatar.BackColor = System.Drawing.Color.Teal;
-            this.Pic_Avatar.Image = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Avatar_Unkown1;
-            this.Pic_Avatar.Location = new System.Drawing.Point(146, 10);
+            this.Pic_Avatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pic_Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pic_Avatar.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Male2;
+            this.Pic_Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_Avatar.Location = new System.Drawing.Point(155, 10);
             this.Pic_Avatar.Name = "Pic_Avatar";
-            this.Pic_Avatar.Size = new System.Drawing.Size(110, 110);
+            this.Pic_Avatar.Size = new System.Drawing.Size(100, 100);
             this.Pic_Avatar.TabIndex = 26;
             this.Pic_Avatar.TabStop = false;
             this.Pic_Avatar.Visible = false;
@@ -567,7 +577,7 @@
             this.Cpb_Exp.InnerColor = System.Drawing.Color.Teal;
             this.Cpb_Exp.InnerMargin = 1;
             this.Cpb_Exp.InnerWidth = -1;
-            this.Cpb_Exp.Location = new System.Drawing.Point(51, 10);
+            this.Cpb_Exp.Location = new System.Drawing.Point(55, 10);
             this.Cpb_Exp.Margin = new System.Windows.Forms.Padding(0);
             this.Cpb_Exp.MarqueeAnimationSpeed = 2000;
             this.Cpb_Exp.Maximum = 720;
@@ -578,7 +588,7 @@
             this.Cpb_Exp.ProgressColor = System.Drawing.Color.Lime;
             this.Cpb_Exp.ProgressWidth = 5;
             this.Cpb_Exp.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.Cpb_Exp.Size = new System.Drawing.Size(86, 86);
+            this.Cpb_Exp.Size = new System.Drawing.Size(100, 100);
             this.Cpb_Exp.StartAngle = 270;
             this.Cpb_Exp.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.Cpb_Exp.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -598,7 +608,7 @@
             this.Btn_LeftMenuOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_LeftMenuOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_LeftMenuOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(7, 15);
+            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(10, 10);
             this.Btn_LeftMenuOff.Name = "Btn_LeftMenuOff";
             this.Btn_LeftMenuOff.Size = new System.Drawing.Size(40, 40);
             this.Btn_LeftMenuOff.TabIndex = 21;
@@ -606,15 +616,70 @@
             this.Btn_LeftMenuOff.Visible = false;
             this.Btn_LeftMenuOff.Click += new System.EventHandler(this.Btn_LeftMenuOff_Click);
             // 
-            // panel1
+            // Pnl_LeftGame
             // 
-            this.panel1.Controls.Add(this.Btn_LeftMenuOff);
-            this.panel1.Controls.Add(this.Cpb_Exp);
-            this.panel1.Controls.Add(this.Pic_Avatar);
-            this.panel1.Location = new System.Drawing.Point(5, 55);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(265, 621);
-            this.panel1.TabIndex = 29;
+            this.Pnl_LeftGame.Controls.Add(this.Btn_LeftMenuOff);
+            this.Pnl_LeftGame.Controls.Add(this.Cpb_Exp);
+            this.Pnl_LeftGame.Controls.Add(this.Pic_Avatar);
+            this.Pnl_LeftGame.Location = new System.Drawing.Point(5, 55);
+            this.Pnl_LeftGame.Name = "Pnl_LeftGame";
+            this.Pnl_LeftGame.Size = new System.Drawing.Size(265, 621);
+            this.Pnl_LeftGame.TabIndex = 29;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Btn_WelcomeScreen
+            // 
+            this.Btn_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Btn_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_WelcomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_WelcomeScreen.Location = new System.Drawing.Point(0, 0);
+            this.Btn_WelcomeScreen.Name = "Btn_WelcomeScreen";
+            this.Btn_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
+            this.Btn_WelcomeScreen.TabIndex = 3;
+            this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
+            this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
+            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
+            // 
+            // Pnl_WelcomeScreen
+            // 
+            this.Pnl_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Pnl_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_PressAnyKeyToContinue);
+            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_TyulWelcomeScreen);
+            this.Pnl_WelcomeScreen.Controls.Add(this.Btn_WelcomeScreen);
+            this.Pnl_WelcomeScreen.Location = new System.Drawing.Point(5, 55);
+            this.Pnl_WelcomeScreen.Name = "Pnl_WelcomeScreen";
+            this.Pnl_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
+            this.Pnl_WelcomeScreen.TabIndex = 30;
+            // 
+            // Lbl_PressAnyKeyToContinue
+            // 
+            this.Lbl_PressAnyKeyToContinue.AutoSize = true;
+            this.Lbl_PressAnyKeyToContinue.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_PressAnyKeyToContinue.Font = new System.Drawing.Font("Segoe Print", 20F, System.Drawing.FontStyle.Bold);
+            this.Lbl_PressAnyKeyToContinue.ForeColor = System.Drawing.Color.Red;
+            this.Lbl_PressAnyKeyToContinue.Location = new System.Drawing.Point(160, 287);
+            this.Lbl_PressAnyKeyToContinue.Name = "Lbl_PressAnyKeyToContinue";
+            this.Lbl_PressAnyKeyToContinue.Size = new System.Drawing.Size(679, 47);
+            this.Lbl_PressAnyKeyToContinue.TabIndex = 2;
+            this.Lbl_PressAnyKeyToContinue.Text = "- Naciśnij dowolny przycisk aby kontynuować -";
+            this.Lbl_PressAnyKeyToContinue.Click += new System.EventHandler(this.Lbl_PressAnyKeyToContinue_Click);
+            // 
+            // Lbl_TyulWelcomeScreen
+            // 
+            this.Lbl_TyulWelcomeScreen.AutoSize = true;
+            this.Lbl_TyulWelcomeScreen.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_TyulWelcomeScreen.Font = new System.Drawing.Font("Segoe Print", 28F, System.Drawing.FontStyle.Bold);
+            this.Lbl_TyulWelcomeScreen.ForeColor = System.Drawing.Color.Red;
+            this.Lbl_TyulWelcomeScreen.Location = new System.Drawing.Point(85, 46);
+            this.Lbl_TyulWelcomeScreen.Name = "Lbl_TyulWelcomeScreen";
+            this.Lbl_TyulWelcomeScreen.Size = new System.Drawing.Size(820, 68);
+            this.Lbl_TyulWelcomeScreen.TabIndex = 1;
+            this.Lbl_TyulWelcomeScreen.Text = "RPG - projekt programowanie obiektowe";
+            this.Lbl_TyulWelcomeScreen.Click += new System.EventHandler(this.Lbl_TyulWelcomeScreen_Click);
             // 
             // RPGApp_Okno
             // 
@@ -624,6 +689,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
+            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_LeftPanelMenu);
             this.Controls.Add(this.Pnl_NowaGra);
             this.Controls.Add(this.Pnl_Odstep6);
@@ -634,11 +700,12 @@
             this.Controls.Add(this.Pnl_Odstep2);
             this.Controls.Add(this.Pnl_Odstep1);
             this.Controls.Add(this.Pnl_TopPanel);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Pnl_LeftGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RPGApp_Okno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.WelcomeScreen_Load);
             this.Pnl_TopPanel.ResumeLayout(false);
             this.Pnl_TopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
@@ -647,7 +714,9 @@
             this.Pnl_NowaGra.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.Pnl_LeftGame.ResumeLayout(false);
+            this.Pnl_WelcomeScreen.ResumeLayout(false);
+            this.Pnl_WelcomeScreen.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -688,8 +757,13 @@
         private System.Windows.Forms.Panel Pnl_OdstepNowaGra;
         private System.Windows.Forms.PictureBox Pic_ChooseAvatar;
         private System.Windows.Forms.Button Btn_Minimize;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Pnl_LeftGame;
         private System.Windows.Forms.Label Lbl_CheckNazwaPostaci;
         private System.Windows.Forms.Label Lbl_CheckPlec;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button Btn_WelcomeScreen;
+        private System.Windows.Forms.Panel Pnl_WelcomeScreen;
+        private System.Windows.Forms.Label Lbl_PressAnyKeyToContinue;
+        private System.Windows.Forms.Label Lbl_TyulWelcomeScreen;
     }
 }

@@ -37,7 +37,9 @@
             this.Pnl_OdstepCreditsRight = new System.Windows.Forms.Panel();
             this.Pnl_OdstepCreditsLeft = new System.Windows.Forms.Panel();
             this.Pnl_OdstepCreditsBottom = new System.Windows.Forms.Panel();
+            this.Pic_LogoCredits = new System.Windows.Forms.PictureBox();
             this.Pnl_TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_LogoCredits)).BeginInit();
             this.SuspendLayout();
             // 
             // TBox_Credits
@@ -80,6 +82,7 @@
             // Pnl_TopPanel
             // 
             this.Pnl_TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(80)))));
+            this.Pnl_TopPanel.Controls.Add(this.Pic_LogoCredits);
             this.Pnl_TopPanel.Controls.Add(this.Lbl_Credits);
             this.Pnl_TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_TopPanel.Location = new System.Drawing.Point(0, 0);
@@ -96,7 +99,7 @@
             this.Lbl_Credits.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Credits.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
             this.Lbl_Credits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.Lbl_Credits.Location = new System.Drawing.Point(3, 0);
+            this.Lbl_Credits.Location = new System.Drawing.Point(78, 0);
             this.Lbl_Credits.Name = "Lbl_Credits";
             this.Lbl_Credits.Size = new System.Drawing.Size(117, 47);
             this.Lbl_Credits.TabIndex = 0;
@@ -139,6 +142,16 @@
             this.Pnl_OdstepCreditsBottom.Size = new System.Drawing.Size(1014, 5);
             this.Pnl_OdstepCreditsBottom.TabIndex = 14;
             // 
+            // Pic_LogoCredits
+            // 
+            this.Pic_LogoCredits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.Pic_LogoCredits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_LogoCredits.Location = new System.Drawing.Point(0, 0);
+            this.Pic_LogoCredits.Name = "Pic_LogoCredits";
+            this.Pic_LogoCredits.Size = new System.Drawing.Size(75, 50);
+            this.Pic_LogoCredits.TabIndex = 2;
+            this.Pic_LogoCredits.TabStop = false;
+            // 
             // CreditsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,6 +173,7 @@
             this.Text = "CreditsInfo";
             this.Pnl_TopPanel.ResumeLayout(false);
             this.Pnl_TopPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_LogoCredits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +188,6 @@
         private System.Windows.Forms.Panel Pnl_OdstepCreditsLeft;
         private System.Windows.Forms.Panel Pnl_OdstepCreditsBottom;
         private System.Windows.Forms.TextBox TBox_Credits;
+        private System.Windows.Forms.PictureBox Pic_LogoCredits;
     }
 }

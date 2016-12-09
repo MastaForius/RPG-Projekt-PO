@@ -17,16 +17,6 @@ namespace RPG___Projekt_programowanie_obiektowe
             InitializeComponent();
 
         }
-
-        private void Lbl_Tytul_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_PressAnyToContinue_Click(object sender, EventArgs e)
-        {
-
-        }
         //
         // Funkcja odpowiadajaca za miganie tekstu
         // 
@@ -53,11 +43,11 @@ namespace RPG___Projekt_programowanie_obiektowe
             else
                 timer.Tick -= timer1_Tick;
 
-           
             this.KeyPreview = false;
             this.KeyPress += new KeyPressEventHandler(PressAnyKeyToContinue);
             this.MouseClick += new MouseEventHandler(PressAnyKeyToContinue2);
         }
+
         private void PressAnyKeyToContinue(object sender, KeyPressEventArgs e)
         {
             this.Close();           
@@ -65,6 +55,11 @@ namespace RPG___Projekt_programowanie_obiektowe
         private void PressAnyKeyToContinue2(object sender, MouseEventArgs e)
         {
             this.Close();
+        }
+
+        private void WelcomeScreen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }

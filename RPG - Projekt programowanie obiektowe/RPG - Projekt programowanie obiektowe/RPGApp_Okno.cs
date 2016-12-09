@@ -18,6 +18,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         public RPGApp_Okno()
         {
             InitializeComponent();
+            this.ActiveControl = Btn_WelcomeScreen;
         }
 
         #region Funkcja wysuwania menu/ paneli
@@ -54,6 +55,69 @@ namespace RPG___Projekt_programowanie_obiektowe
 
             [DllImport("user32.dll")]
             private static extern bool AnimateWindow(IntPtr handle, int msec, int flags);
+        }
+        #endregion
+
+        #region Welcome Screen
+        //
+        // Funkcja odpowiadajaca za miganie tekstu
+        // 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Lbl_PressAnyKeyToContinue.ForeColor == Color.Red)
+                Lbl_PressAnyKeyToContinue.ForeColor = Color.Maroon;
+            else
+                Lbl_PressAnyKeyToContinue.ForeColor = Color.Red;
+        }
+        private void WelcomeScreen_Load(object sender, EventArgs e)
+        {
+            //
+            // Start licznika migania tekstu przy otwarciu okna
+            //
+            Btn_WelcomeScreen.Focus();
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.Enabled = true;
+
+            timer.Start();
+            if (Lbl_PressAnyKeyToContinue.ForeColor == Color.Red)
+                timer.Tick += new EventHandler(timer1_Tick);
+            else
+                timer.Tick -= timer1_Tick;
+
+            KeyPreview = false;
+            KeyPress += new KeyPressEventHandler(PressAnyKeyToContinue);
+            MouseClick += new MouseEventHandler(PressAnyKeyToContinue2);
+        }
+        private void Btn_WelcomeScreen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
+        }
+        private void Btn_WelcomeScreen_MouseClick(object sender, MouseEventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
+        }
+        private void Lbl_TyulWelcomeScreen_Click(object sender, EventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
+        }
+        private void Lbl_PressAnyKeyToContinue_Click(object sender, EventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
+        }
+        private void PressAnyKeyToContinue(object sender, KeyPressEventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
+        }
+        private void PressAnyKeyToContinue2(object sender, MouseEventArgs e)
+        {
+            Pnl_WelcomeScreen.Visible = false;
+            timer1.Stop();
         }
         #endregion
 
@@ -303,7 +367,7 @@ namespace RPG___Projekt_programowanie_obiektowe
 
 
 
-                // Schowanie zawartosci panelu
+                // Schowanie zawartosci panelu tworzenia postaci
                 Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
                 Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
                 Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
@@ -317,6 +381,18 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
                 // Schowanie panelu tworzenia postaci
                 Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+                // Schowanie Menu gry
+                Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
+                Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
+                Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
+                Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
+                Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
+                Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 250, 0);
+                // Wysunięcie Panelu
+                Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
+                Util.Animate(Cpb_Exp, Util.Effect.Slide, 125, 0);
+                Util.Animate(Pic_Avatar, Util.Effect.Slide, 125, 0);
+
             }
         }
         #endregion
@@ -345,6 +421,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             
             this.Close();
         }
+
         #endregion
     }
 }
