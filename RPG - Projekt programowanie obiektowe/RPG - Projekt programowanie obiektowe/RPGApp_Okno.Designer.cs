@@ -33,16 +33,9 @@
             this.Pnl_TopPanel = new System.Windows.Forms.Panel();
             this.Btn_Minimize = new System.Windows.Forms.Button();
             this.Lbl_Tytul = new System.Windows.Forms.Label();
-            this.Pic_Logo = new System.Windows.Forms.PictureBox();
             this.Btn_Exit = new System.Windows.Forms.Button();
             this.Pnl_Odstep1 = new System.Windows.Forms.Panel();
             this.Pnl_LeftPanelMenu = new System.Windows.Forms.Panel();
-            this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
-            this.Btn_Wyjscie = new System.Windows.Forms.Button();
-            this.Btn_Credits = new System.Windows.Forms.Button();
-            this.Btn_WczytajGre = new System.Windows.Forms.Button();
-            this.Btn_ZapiszGre = new System.Windows.Forms.Button();
-            this.Btn_NowaGra = new System.Windows.Forms.Button();
             this.Pnl_Odstep2 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep3 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep4 = new System.Windows.Forms.Panel();
@@ -52,11 +45,8 @@
             this.Pnl_NowaGra = new System.Windows.Forms.Panel();
             this.Lbl_CheckPlec = new System.Windows.Forms.Label();
             this.Lbl_CheckNazwaPostaci = new System.Windows.Forms.Label();
-            this.Pic_ChooseAvatar = new System.Windows.Forms.PictureBox();
             this.Pnl_OdstepNowaGra = new System.Windows.Forms.Panel();
             this.Lbl_WygladPostaci = new System.Windows.Forms.Label();
-            this.Btn_StworzPostac = new System.Windows.Forms.Button();
-            this.Btn_CofnijCreatorPostaci = new System.Windows.Forms.Button();
             this.Btn_NextAvatarView = new System.Windows.Forms.Button();
             this.Btn_PrevAvatarView = new System.Windows.Forms.Button();
             this.TBox_NazwaPostaci = new System.Windows.Forms.TextBox();
@@ -64,22 +54,32 @@
             this.Lbl_NazwaPostaci = new System.Windows.Forms.Label();
             this.Rdo_Female = new System.Windows.Forms.RadioButton();
             this.Rdo_Male = new System.Windows.Forms.RadioButton();
-            this.Pic_Avatar = new System.Windows.Forms.PictureBox();
-            this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
-            this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
             this.Pnl_LeftGame = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
+            this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
+            this.Btn_Wyjscie = new System.Windows.Forms.Button();
+            this.Btn_Credits = new System.Windows.Forms.Button();
+            this.Btn_WczytajGre = new System.Windows.Forms.Button();
+            this.Btn_ZapiszGre = new System.Windows.Forms.Button();
+            this.Btn_NowaGra = new System.Windows.Forms.Button();
+            this.Pic_ChooseAvatar = new System.Windows.Forms.PictureBox();
+            this.Btn_StworzPostac = new System.Windows.Forms.Button();
+            this.Btn_CofnijCreatorPostaci = new System.Windows.Forms.Button();
+            this.Pic_Logo = new System.Windows.Forms.PictureBox();
+            this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
+            this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
+            this.Pic_Avatar = new System.Windows.Forms.PictureBox();
             this.Pnl_WelcomeScreen = new System.Windows.Forms.Panel();
             this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
             this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
+            this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
             this.Pnl_TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
             this.Pnl_NowaGra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
             this.Pnl_LeftGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
             this.Pnl_WelcomeScreen.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,16 +126,6 @@
             this.Lbl_Tytul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Lbl_Tytul.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lbl_Tytul_MouseDown);
             // 
-            // Pic_Logo
-            // 
-            this.Pic_Logo.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
-            this.Pic_Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_Logo.Location = new System.Drawing.Point(0, 0);
-            this.Pic_Logo.Name = "Pic_Logo";
-            this.Pic_Logo.Size = new System.Drawing.Size(75, 50);
-            this.Pic_Logo.TabIndex = 1;
-            this.Pic_Logo.TabStop = false;
-            // 
             // Btn_Exit
             // 
             this.Btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
@@ -173,105 +163,6 @@
             this.Pnl_LeftPanelMenu.Name = "Pnl_LeftPanelMenu";
             this.Pnl_LeftPanelMenu.Size = new System.Drawing.Size(265, 621);
             this.Pnl_LeftPanelMenu.TabIndex = 14;
-            // 
-            // Btn_LeftMenuOn
-            // 
-            this.Btn_LeftMenuOn.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_LeftMenuOn.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button1;
-            this.Btn_LeftMenuOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_LeftMenuOn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_LeftMenuOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LeftMenuOn.Location = new System.Drawing.Point(16, 10);
-            this.Btn_LeftMenuOn.Name = "Btn_LeftMenuOn";
-            this.Btn_LeftMenuOn.Size = new System.Drawing.Size(100, 40);
-            this.Btn_LeftMenuOn.TabIndex = 20;
-            this.Btn_LeftMenuOn.UseVisualStyleBackColor = false;
-            this.Btn_LeftMenuOn.Visible = false;
-            this.Btn_LeftMenuOn.Click += new System.EventHandler(this.Btn_LeftMenuOn_Click);
-            // 
-            // Btn_Wyjscie
-            // 
-            this.Btn_Wyjscie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Wyjscie.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_Wyjscie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Wyjscie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Wyjscie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Wyjscie.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Wyjscie.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Wyjscie.Location = new System.Drawing.Point(16, 520);
-            this.Btn_Wyjscie.Name = "Btn_Wyjscie";
-            this.Btn_Wyjscie.Size = new System.Drawing.Size(234, 70);
-            this.Btn_Wyjscie.TabIndex = 19;
-            this.Btn_Wyjscie.Text = "Wyjście";
-            this.Btn_Wyjscie.UseVisualStyleBackColor = true;
-            this.Btn_Wyjscie.Click += new System.EventHandler(this.Btn_Wyjscie_Click);
-            // 
-            // Btn_Credits
-            // 
-            this.Btn_Credits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Credits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Credits.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Credits.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Credits.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Credits.Location = new System.Drawing.Point(16, 420);
-            this.Btn_Credits.Name = "Btn_Credits";
-            this.Btn_Credits.Size = new System.Drawing.Size(234, 70);
-            this.Btn_Credits.TabIndex = 18;
-            this.Btn_Credits.Text = "Credits";
-            this.Btn_Credits.UseVisualStyleBackColor = true;
-            this.Btn_Credits.Click += new System.EventHandler(this.Btn_Credits_Click);
-            // 
-            // Btn_WczytajGre
-            // 
-            this.Btn_WczytajGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_WczytajGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_WczytajGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_WczytajGre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_WczytajGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_WczytajGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_WczytajGre.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_WczytajGre.Location = new System.Drawing.Point(16, 320);
-            this.Btn_WczytajGre.Name = "Btn_WczytajGre";
-            this.Btn_WczytajGre.Size = new System.Drawing.Size(234, 70);
-            this.Btn_WczytajGre.TabIndex = 17;
-            this.Btn_WczytajGre.Text = "Wczytaj grę";
-            this.Btn_WczytajGre.UseVisualStyleBackColor = true;
-            // 
-            // Btn_ZapiszGre
-            // 
-            this.Btn_ZapiszGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_ZapiszGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_ZapiszGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_ZapiszGre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_ZapiszGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_ZapiszGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_ZapiszGre.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_ZapiszGre.Location = new System.Drawing.Point(15, 220);
-            this.Btn_ZapiszGre.Name = "Btn_ZapiszGre";
-            this.Btn_ZapiszGre.Size = new System.Drawing.Size(235, 70);
-            this.Btn_ZapiszGre.TabIndex = 16;
-            this.Btn_ZapiszGre.Text = "Zapisz grę";
-            this.Btn_ZapiszGre.UseVisualStyleBackColor = true;
-            // 
-            // Btn_NowaGra
-            // 
-            this.Btn_NowaGra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_NowaGra.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_NowaGra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_NowaGra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_NowaGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_NowaGra.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_NowaGra.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_NowaGra.Location = new System.Drawing.Point(15, 120);
-            this.Btn_NowaGra.Name = "Btn_NowaGra";
-            this.Btn_NowaGra.Size = new System.Drawing.Size(235, 70);
-            this.Btn_NowaGra.TabIndex = 15;
-            this.Btn_NowaGra.Text = "Nowa gra";
-            this.Btn_NowaGra.UseVisualStyleBackColor = true;
-            this.Btn_NowaGra.Click += new System.EventHandler(this.Btn_NowaGra_Click);
             // 
             // Pnl_Odstep2
             // 
@@ -367,19 +258,6 @@
             this.Lbl_CheckNazwaPostaci.Size = new System.Drawing.Size(0, 26);
             this.Lbl_CheckNazwaPostaci.TabIndex = 13;
             // 
-            // Pic_ChooseAvatar
-            // 
-            this.Pic_ChooseAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.Pic_ChooseAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_ChooseAvatar.Image = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Avatar_Unkown1;
-            this.Pic_ChooseAvatar.Location = new System.Drawing.Point(235, 200);
-            this.Pic_ChooseAvatar.Name = "Pic_ChooseAvatar";
-            this.Pic_ChooseAvatar.Size = new System.Drawing.Size(256, 256);
-            this.Pic_ChooseAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pic_ChooseAvatar.TabIndex = 12;
-            this.Pic_ChooseAvatar.TabStop = false;
-            this.Pic_ChooseAvatar.Visible = false;
-            // 
             // Pnl_OdstepNowaGra
             // 
             this.Pnl_OdstepNowaGra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
@@ -401,42 +279,6 @@
             this.Lbl_WygladPostaci.TabIndex = 10;
             this.Lbl_WygladPostaci.Text = "Wygląd postaci";
             this.Lbl_WygladPostaci.Visible = false;
-            // 
-            // Btn_StworzPostac
-            // 
-            this.Btn_StworzPostac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_StworzPostac.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_StworzPostac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_StworzPostac.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_StworzPostac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_StworzPostac.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_StworzPostac.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_StworzPostac.Location = new System.Drawing.Point(534, 440);
-            this.Btn_StworzPostac.Name = "Btn_StworzPostac";
-            this.Btn_StworzPostac.Size = new System.Drawing.Size(192, 70);
-            this.Btn_StworzPostac.TabIndex = 9;
-            this.Btn_StworzPostac.Text = "Stwórz postac";
-            this.Btn_StworzPostac.UseVisualStyleBackColor = true;
-            this.Btn_StworzPostac.Visible = false;
-            this.Btn_StworzPostac.Click += new System.EventHandler(this.Btn_StworzPostac_Click);
-            // 
-            // Btn_CofnijCreatorPostaci
-            // 
-            this.Btn_CofnijCreatorPostaci.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_CofnijCreatorPostaci.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_CofnijCreatorPostaci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_CofnijCreatorPostaci.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CofnijCreatorPostaci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CofnijCreatorPostaci.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_CofnijCreatorPostaci.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_CofnijCreatorPostaci.Location = new System.Drawing.Point(11, 440);
-            this.Btn_CofnijCreatorPostaci.Name = "Btn_CofnijCreatorPostaci";
-            this.Btn_CofnijCreatorPostaci.Size = new System.Drawing.Size(192, 70);
-            this.Btn_CofnijCreatorPostaci.TabIndex = 8;
-            this.Btn_CofnijCreatorPostaci.Text = "Cofnij";
-            this.Btn_CofnijCreatorPostaci.UseVisualStyleBackColor = true;
-            this.Btn_CofnijCreatorPostaci.Visible = false;
-            this.Btn_CofnijCreatorPostaci.Click += new System.EventHandler(this.Btn_CofnijCreatorPostaci_Click);
             // 
             // Btn_NextAvatarView
             // 
@@ -551,18 +393,192 @@
             this.Rdo_Male.Visible = false;
             this.Rdo_Male.CheckedChanged += new System.EventHandler(this.Rdo_Male_CheckedChanged);
             // 
-            // Pic_Avatar
+            // Pnl_LeftGame
             // 
-            this.Pic_Avatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pic_Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.Pic_Avatar.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Male2;
-            this.Pic_Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_Avatar.Location = new System.Drawing.Point(155, 10);
-            this.Pic_Avatar.Name = "Pic_Avatar";
-            this.Pic_Avatar.Size = new System.Drawing.Size(100, 100);
-            this.Pic_Avatar.TabIndex = 26;
-            this.Pic_Avatar.TabStop = false;
-            this.Pic_Avatar.Visible = false;
+            this.Pnl_LeftGame.Controls.Add(this.Btn_LeftMenuOff);
+            this.Pnl_LeftGame.Controls.Add(this.Cpb_Exp);
+            this.Pnl_LeftGame.Controls.Add(this.Pic_Avatar);
+            this.Pnl_LeftGame.Location = new System.Drawing.Point(5, 55);
+            this.Pnl_LeftGame.Name = "Pnl_LeftGame";
+            this.Pnl_LeftGame.Size = new System.Drawing.Size(265, 621);
+            this.Pnl_LeftGame.TabIndex = 29;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Btn_LeftMenuOn
+            // 
+            this.Btn_LeftMenuOn.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_LeftMenuOn.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button1;
+            this.Btn_LeftMenuOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_LeftMenuOn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_LeftMenuOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LeftMenuOn.Location = new System.Drawing.Point(16, 10);
+            this.Btn_LeftMenuOn.Name = "Btn_LeftMenuOn";
+            this.Btn_LeftMenuOn.Size = new System.Drawing.Size(100, 40);
+            this.Btn_LeftMenuOn.TabIndex = 20;
+            this.Btn_LeftMenuOn.UseVisualStyleBackColor = false;
+            this.Btn_LeftMenuOn.Visible = false;
+            this.Btn_LeftMenuOn.Click += new System.EventHandler(this.Btn_LeftMenuOn_Click);
+            // 
+            // Btn_Wyjscie
+            // 
+            this.Btn_Wyjscie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Wyjscie.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_Wyjscie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Wyjscie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Wyjscie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Wyjscie.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Wyjscie.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Wyjscie.Location = new System.Drawing.Point(16, 520);
+            this.Btn_Wyjscie.Name = "Btn_Wyjscie";
+            this.Btn_Wyjscie.Size = new System.Drawing.Size(234, 70);
+            this.Btn_Wyjscie.TabIndex = 19;
+            this.Btn_Wyjscie.Text = "Wyjście";
+            this.Btn_Wyjscie.UseVisualStyleBackColor = true;
+            this.Btn_Wyjscie.Click += new System.EventHandler(this.Btn_Wyjscie_Click);
+            // 
+            // Btn_Credits
+            // 
+            this.Btn_Credits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Credits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Credits.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Credits.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Credits.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Credits.Location = new System.Drawing.Point(16, 420);
+            this.Btn_Credits.Name = "Btn_Credits";
+            this.Btn_Credits.Size = new System.Drawing.Size(234, 70);
+            this.Btn_Credits.TabIndex = 18;
+            this.Btn_Credits.Text = "Credits";
+            this.Btn_Credits.UseVisualStyleBackColor = true;
+            this.Btn_Credits.Click += new System.EventHandler(this.Btn_Credits_Click);
+            // 
+            // Btn_WczytajGre
+            // 
+            this.Btn_WczytajGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_WczytajGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_WczytajGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_WczytajGre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_WczytajGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_WczytajGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_WczytajGre.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_WczytajGre.Location = new System.Drawing.Point(16, 320);
+            this.Btn_WczytajGre.Name = "Btn_WczytajGre";
+            this.Btn_WczytajGre.Size = new System.Drawing.Size(234, 70);
+            this.Btn_WczytajGre.TabIndex = 17;
+            this.Btn_WczytajGre.Text = "Wczytaj grę";
+            this.Btn_WczytajGre.UseVisualStyleBackColor = true;
+            // 
+            // Btn_ZapiszGre
+            // 
+            this.Btn_ZapiszGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_ZapiszGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_ZapiszGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_ZapiszGre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ZapiszGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ZapiszGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_ZapiszGre.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_ZapiszGre.Location = new System.Drawing.Point(15, 220);
+            this.Btn_ZapiszGre.Name = "Btn_ZapiszGre";
+            this.Btn_ZapiszGre.Size = new System.Drawing.Size(235, 70);
+            this.Btn_ZapiszGre.TabIndex = 16;
+            this.Btn_ZapiszGre.Text = "Zapisz grę";
+            this.Btn_ZapiszGre.UseVisualStyleBackColor = true;
+            // 
+            // Btn_NowaGra
+            // 
+            this.Btn_NowaGra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_NowaGra.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_NowaGra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_NowaGra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_NowaGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_NowaGra.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_NowaGra.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_NowaGra.Location = new System.Drawing.Point(15, 120);
+            this.Btn_NowaGra.Name = "Btn_NowaGra";
+            this.Btn_NowaGra.Size = new System.Drawing.Size(235, 70);
+            this.Btn_NowaGra.TabIndex = 15;
+            this.Btn_NowaGra.Text = "Nowa gra";
+            this.Btn_NowaGra.UseVisualStyleBackColor = true;
+            this.Btn_NowaGra.Click += new System.EventHandler(this.Btn_NowaGra_Click);
+            // 
+            // Pic_ChooseAvatar
+            // 
+            this.Pic_ChooseAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pic_ChooseAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_ChooseAvatar.Image = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Avatar_Unkown1;
+            this.Pic_ChooseAvatar.Location = new System.Drawing.Point(235, 200);
+            this.Pic_ChooseAvatar.Name = "Pic_ChooseAvatar";
+            this.Pic_ChooseAvatar.Size = new System.Drawing.Size(256, 256);
+            this.Pic_ChooseAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_ChooseAvatar.TabIndex = 12;
+            this.Pic_ChooseAvatar.TabStop = false;
+            this.Pic_ChooseAvatar.Visible = false;
+            // 
+            // Btn_StworzPostac
+            // 
+            this.Btn_StworzPostac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_StworzPostac.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_StworzPostac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_StworzPostac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_StworzPostac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_StworzPostac.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_StworzPostac.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_StworzPostac.Location = new System.Drawing.Point(534, 440);
+            this.Btn_StworzPostac.Name = "Btn_StworzPostac";
+            this.Btn_StworzPostac.Size = new System.Drawing.Size(192, 70);
+            this.Btn_StworzPostac.TabIndex = 9;
+            this.Btn_StworzPostac.Text = "Stwórz postac";
+            this.Btn_StworzPostac.UseVisualStyleBackColor = true;
+            this.Btn_StworzPostac.Visible = false;
+            this.Btn_StworzPostac.Click += new System.EventHandler(this.Btn_StworzPostac_Click);
+            // 
+            // Btn_CofnijCreatorPostaci
+            // 
+            this.Btn_CofnijCreatorPostaci.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_CofnijCreatorPostaci.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_CofnijCreatorPostaci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_CofnijCreatorPostaci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CofnijCreatorPostaci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CofnijCreatorPostaci.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_CofnijCreatorPostaci.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_CofnijCreatorPostaci.Location = new System.Drawing.Point(11, 440);
+            this.Btn_CofnijCreatorPostaci.Name = "Btn_CofnijCreatorPostaci";
+            this.Btn_CofnijCreatorPostaci.Size = new System.Drawing.Size(192, 70);
+            this.Btn_CofnijCreatorPostaci.TabIndex = 8;
+            this.Btn_CofnijCreatorPostaci.Text = "Cofnij";
+            this.Btn_CofnijCreatorPostaci.UseVisualStyleBackColor = true;
+            this.Btn_CofnijCreatorPostaci.Visible = false;
+            this.Btn_CofnijCreatorPostaci.Click += new System.EventHandler(this.Btn_CofnijCreatorPostaci_Click);
+            // 
+            // Pic_Logo
+            // 
+            this.Pic_Logo.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.Pic_Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_Logo.Location = new System.Drawing.Point(0, 0);
+            this.Pic_Logo.Name = "Pic_Logo";
+            this.Pic_Logo.Size = new System.Drawing.Size(75, 50);
+            this.Pic_Logo.TabIndex = 1;
+            this.Pic_Logo.TabStop = false;
+            // 
+            // Btn_LeftMenuOff
+            // 
+            this.Btn_LeftMenuOff.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_LeftMenuOff.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button2;
+            this.Btn_LeftMenuOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_LeftMenuOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_LeftMenuOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(10, 10);
+            this.Btn_LeftMenuOff.Name = "Btn_LeftMenuOff";
+            this.Btn_LeftMenuOff.Size = new System.Drawing.Size(40, 40);
+            this.Btn_LeftMenuOff.TabIndex = 21;
+            this.Btn_LeftMenuOff.UseVisualStyleBackColor = false;
+            this.Btn_LeftMenuOff.Visible = false;
+            this.Btn_LeftMenuOff.Click += new System.EventHandler(this.Btn_LeftMenuOff_Click);
             // 
             // Cpb_Exp
             // 
@@ -601,47 +617,18 @@
             this.Cpb_Exp.Value = 180;
             this.Cpb_Exp.Visible = false;
             // 
-            // Btn_LeftMenuOff
+            // Pic_Avatar
             // 
-            this.Btn_LeftMenuOff.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_LeftMenuOff.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button2;
-            this.Btn_LeftMenuOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_LeftMenuOff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_LeftMenuOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(10, 10);
-            this.Btn_LeftMenuOff.Name = "Btn_LeftMenuOff";
-            this.Btn_LeftMenuOff.Size = new System.Drawing.Size(40, 40);
-            this.Btn_LeftMenuOff.TabIndex = 21;
-            this.Btn_LeftMenuOff.UseVisualStyleBackColor = false;
-            this.Btn_LeftMenuOff.Visible = false;
-            this.Btn_LeftMenuOff.Click += new System.EventHandler(this.Btn_LeftMenuOff_Click);
-            // 
-            // Pnl_LeftGame
-            // 
-            this.Pnl_LeftGame.Controls.Add(this.Btn_LeftMenuOff);
-            this.Pnl_LeftGame.Controls.Add(this.Cpb_Exp);
-            this.Pnl_LeftGame.Controls.Add(this.Pic_Avatar);
-            this.Pnl_LeftGame.Location = new System.Drawing.Point(5, 55);
-            this.Pnl_LeftGame.Name = "Pnl_LeftGame";
-            this.Pnl_LeftGame.Size = new System.Drawing.Size(265, 621);
-            this.Pnl_LeftGame.TabIndex = 29;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Btn_WelcomeScreen
-            // 
-            this.Btn_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
-            this.Btn_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_WelcomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_WelcomeScreen.Location = new System.Drawing.Point(0, 0);
-            this.Btn_WelcomeScreen.Name = "Btn_WelcomeScreen";
-            this.Btn_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
-            this.Btn_WelcomeScreen.TabIndex = 3;
-            this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
-            this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
-            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
+            this.Pic_Avatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pic_Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pic_Avatar.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Male2;
+            this.Pic_Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_Avatar.Location = new System.Drawing.Point(155, 10);
+            this.Pic_Avatar.Name = "Pic_Avatar";
+            this.Pic_Avatar.Size = new System.Drawing.Size(100, 100);
+            this.Pic_Avatar.TabIndex = 26;
+            this.Pic_Avatar.TabStop = false;
+            this.Pic_Avatar.Visible = false;
             // 
             // Pnl_WelcomeScreen
             // 
@@ -681,6 +668,19 @@
             this.Lbl_TyulWelcomeScreen.Text = "RPG - projekt programowanie obiektowe";
             this.Lbl_TyulWelcomeScreen.Click += new System.EventHandler(this.Lbl_TyulWelcomeScreen_Click);
             // 
+            // Btn_WelcomeScreen
+            // 
+            this.Btn_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Btn_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_WelcomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_WelcomeScreen.Location = new System.Drawing.Point(0, 0);
+            this.Btn_WelcomeScreen.Name = "Btn_WelcomeScreen";
+            this.Btn_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
+            this.Btn_WelcomeScreen.TabIndex = 3;
+            this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
+            this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
+            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
+            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -689,7 +689,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
-            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_LeftPanelMenu);
             this.Controls.Add(this.Pnl_NowaGra);
             this.Controls.Add(this.Pnl_Odstep6);
@@ -701,6 +700,7 @@
             this.Controls.Add(this.Pnl_Odstep1);
             this.Controls.Add(this.Pnl_TopPanel);
             this.Controls.Add(this.Pnl_LeftGame);
+            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RPGApp_Okno";
@@ -708,13 +708,13 @@
             this.Load += new System.EventHandler(this.WelcomeScreen_Load);
             this.Pnl_TopPanel.ResumeLayout(false);
             this.Pnl_TopPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
             this.Pnl_LeftPanelMenu.ResumeLayout(false);
             this.Pnl_NowaGra.ResumeLayout(false);
             this.Pnl_NowaGra.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
             this.Pnl_LeftGame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
             this.Pnl_WelcomeScreen.ResumeLayout(false);
             this.Pnl_WelcomeScreen.PerformLayout();
             this.ResumeLayout(false);
@@ -761,9 +761,9 @@
         private System.Windows.Forms.Label Lbl_CheckNazwaPostaci;
         private System.Windows.Forms.Label Lbl_CheckPlec;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button Btn_WelcomeScreen;
-        private System.Windows.Forms.Panel Pnl_WelcomeScreen;
-        private System.Windows.Forms.Label Lbl_PressAnyKeyToContinue;
         private System.Windows.Forms.Label Lbl_TyulWelcomeScreen;
+        private System.Windows.Forms.Label Lbl_PressAnyKeyToContinue;
+        private System.Windows.Forms.Panel Pnl_WelcomeScreen;
+        private System.Windows.Forms.Button Btn_WelcomeScreen;
     }
 }

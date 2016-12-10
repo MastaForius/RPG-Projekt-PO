@@ -12,7 +12,8 @@ c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\WinFormAnimation.dll
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\CircularProgressBar.xml
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\WinFormAnimation.xml
-c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.WelcomeScreen.resources
-c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.UserControl1.resources
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\AutoMapper.dll
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.RPG_MainWindow.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.ucMenu.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG___Projekt_programowanie_obiektowe.ucCreatorPostaci.resources

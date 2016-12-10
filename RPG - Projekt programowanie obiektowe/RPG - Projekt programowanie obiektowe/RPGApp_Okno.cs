@@ -335,7 +335,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             // Sprawdzzanie nazwy postaci
             if (String.IsNullOrEmpty(TBox_NazwaPostaci.Text) || TBox_NazwaPostaci.Text.StartsWith(" ") || TBox_NazwaPostaci.Text.EndsWith(" "))
             {
-                if (String.IsNullOrEmpty(TBox_NazwaPostaci.Text) || String.IsNullOrWhiteSpace(TBox_NazwaPostaci.Text)) ;
+                if (String.IsNullOrEmpty(TBox_NazwaPostaci.Text) || String.IsNullOrWhiteSpace(TBox_NazwaPostaci.Text))
                 Lbl_CheckNazwaPostaci.Text = "Nie podano nazwy postaci";
                 if (TBox_NazwaPostaci.Text.Contains(" "))
                 {
