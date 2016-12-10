@@ -56,6 +56,10 @@
             this.Rdo_Male = new System.Windows.Forms.RadioButton();
             this.Pnl_LeftGame = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Pnl_WelcomeScreen = new System.Windows.Forms.Panel();
+            this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
+            this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
+            this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
             this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
             this.Btn_Wyjscie = new System.Windows.Forms.Button();
             this.Btn_Credits = new System.Windows.Forms.Button();
@@ -69,18 +73,14 @@
             this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
             this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
             this.Pic_Avatar = new System.Windows.Forms.PictureBox();
-            this.Pnl_WelcomeScreen = new System.Windows.Forms.Panel();
-            this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
-            this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
-            this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
             this.Pnl_TopPanel.SuspendLayout();
             this.Pnl_LeftPanelMenu.SuspendLayout();
             this.Pnl_NowaGra.SuspendLayout();
             this.Pnl_LeftGame.SuspendLayout();
+            this.Pnl_WelcomeScreen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
-            this.Pnl_WelcomeScreen.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pnl_TopPanel
@@ -407,6 +407,57 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Pnl_WelcomeScreen
+            // 
+            this.Pnl_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Pnl_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_PressAnyKeyToContinue);
+            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_TyulWelcomeScreen);
+            this.Pnl_WelcomeScreen.Controls.Add(this.Btn_WelcomeScreen);
+            this.Pnl_WelcomeScreen.Location = new System.Drawing.Point(5, 55);
+            this.Pnl_WelcomeScreen.Name = "Pnl_WelcomeScreen";
+            this.Pnl_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
+            this.Pnl_WelcomeScreen.TabIndex = 30;
+            // 
+            // Lbl_PressAnyKeyToContinue
+            // 
+            this.Lbl_PressAnyKeyToContinue.AutoSize = true;
+            this.Lbl_PressAnyKeyToContinue.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_PressAnyKeyToContinue.Font = new System.Drawing.Font("Segoe Print", 20F, System.Drawing.FontStyle.Bold);
+            this.Lbl_PressAnyKeyToContinue.ForeColor = System.Drawing.Color.Red;
+            this.Lbl_PressAnyKeyToContinue.Location = new System.Drawing.Point(160, 287);
+            this.Lbl_PressAnyKeyToContinue.Name = "Lbl_PressAnyKeyToContinue";
+            this.Lbl_PressAnyKeyToContinue.Size = new System.Drawing.Size(679, 47);
+            this.Lbl_PressAnyKeyToContinue.TabIndex = 2;
+            this.Lbl_PressAnyKeyToContinue.Text = "- Naciśnij dowolny przycisk aby kontynuować -";
+            this.Lbl_PressAnyKeyToContinue.Click += new System.EventHandler(this.Lbl_PressAnyKeyToContinue_Click);
+            // 
+            // Lbl_TyulWelcomeScreen
+            // 
+            this.Lbl_TyulWelcomeScreen.AutoSize = true;
+            this.Lbl_TyulWelcomeScreen.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_TyulWelcomeScreen.Font = new System.Drawing.Font("Segoe Print", 28F, System.Drawing.FontStyle.Bold);
+            this.Lbl_TyulWelcomeScreen.ForeColor = System.Drawing.Color.Red;
+            this.Lbl_TyulWelcomeScreen.Location = new System.Drawing.Point(85, 46);
+            this.Lbl_TyulWelcomeScreen.Name = "Lbl_TyulWelcomeScreen";
+            this.Lbl_TyulWelcomeScreen.Size = new System.Drawing.Size(820, 68);
+            this.Lbl_TyulWelcomeScreen.TabIndex = 1;
+            this.Lbl_TyulWelcomeScreen.Text = "RPG - projekt programowanie obiektowe";
+            this.Lbl_TyulWelcomeScreen.Click += new System.EventHandler(this.Lbl_TyulWelcomeScreen_Click);
+            // 
+            // Btn_WelcomeScreen
+            // 
+            this.Btn_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Btn_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_WelcomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_WelcomeScreen.Location = new System.Drawing.Point(0, 0);
+            this.Btn_WelcomeScreen.Name = "Btn_WelcomeScreen";
+            this.Btn_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
+            this.Btn_WelcomeScreen.TabIndex = 3;
+            this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
+            this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
+            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
+            // 
             // Btn_LeftMenuOn
             // 
             this.Btn_LeftMenuOn.BackColor = System.Drawing.Color.Transparent;
@@ -630,57 +681,6 @@
             this.Pic_Avatar.TabStop = false;
             this.Pic_Avatar.Visible = false;
             // 
-            // Pnl_WelcomeScreen
-            // 
-            this.Pnl_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
-            this.Pnl_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_PressAnyKeyToContinue);
-            this.Pnl_WelcomeScreen.Controls.Add(this.Lbl_TyulWelcomeScreen);
-            this.Pnl_WelcomeScreen.Controls.Add(this.Btn_WelcomeScreen);
-            this.Pnl_WelcomeScreen.Location = new System.Drawing.Point(5, 55);
-            this.Pnl_WelcomeScreen.Name = "Pnl_WelcomeScreen";
-            this.Pnl_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
-            this.Pnl_WelcomeScreen.TabIndex = 30;
-            // 
-            // Lbl_PressAnyKeyToContinue
-            // 
-            this.Lbl_PressAnyKeyToContinue.AutoSize = true;
-            this.Lbl_PressAnyKeyToContinue.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_PressAnyKeyToContinue.Font = new System.Drawing.Font("Segoe Print", 20F, System.Drawing.FontStyle.Bold);
-            this.Lbl_PressAnyKeyToContinue.ForeColor = System.Drawing.Color.Red;
-            this.Lbl_PressAnyKeyToContinue.Location = new System.Drawing.Point(160, 287);
-            this.Lbl_PressAnyKeyToContinue.Name = "Lbl_PressAnyKeyToContinue";
-            this.Lbl_PressAnyKeyToContinue.Size = new System.Drawing.Size(679, 47);
-            this.Lbl_PressAnyKeyToContinue.TabIndex = 2;
-            this.Lbl_PressAnyKeyToContinue.Text = "- Naciśnij dowolny przycisk aby kontynuować -";
-            this.Lbl_PressAnyKeyToContinue.Click += new System.EventHandler(this.Lbl_PressAnyKeyToContinue_Click);
-            // 
-            // Lbl_TyulWelcomeScreen
-            // 
-            this.Lbl_TyulWelcomeScreen.AutoSize = true;
-            this.Lbl_TyulWelcomeScreen.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_TyulWelcomeScreen.Font = new System.Drawing.Font("Segoe Print", 28F, System.Drawing.FontStyle.Bold);
-            this.Lbl_TyulWelcomeScreen.ForeColor = System.Drawing.Color.Red;
-            this.Lbl_TyulWelcomeScreen.Location = new System.Drawing.Point(85, 46);
-            this.Lbl_TyulWelcomeScreen.Name = "Lbl_TyulWelcomeScreen";
-            this.Lbl_TyulWelcomeScreen.Size = new System.Drawing.Size(820, 68);
-            this.Lbl_TyulWelcomeScreen.TabIndex = 1;
-            this.Lbl_TyulWelcomeScreen.Text = "RPG - projekt programowanie obiektowe";
-            this.Lbl_TyulWelcomeScreen.Click += new System.EventHandler(this.Lbl_TyulWelcomeScreen_Click);
-            // 
-            // Btn_WelcomeScreen
-            // 
-            this.Btn_WelcomeScreen.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
-            this.Btn_WelcomeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_WelcomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_WelcomeScreen.Location = new System.Drawing.Point(0, 0);
-            this.Btn_WelcomeScreen.Name = "Btn_WelcomeScreen";
-            this.Btn_WelcomeScreen.Size = new System.Drawing.Size(998, 621);
-            this.Btn_WelcomeScreen.TabIndex = 3;
-            this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
-            this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
-            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
-            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -689,6 +689,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
+            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_LeftPanelMenu);
             this.Controls.Add(this.Pnl_NowaGra);
             this.Controls.Add(this.Pnl_Odstep6);
@@ -700,7 +701,6 @@
             this.Controls.Add(this.Pnl_Odstep1);
             this.Controls.Add(this.Pnl_TopPanel);
             this.Controls.Add(this.Pnl_LeftGame);
-            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RPGApp_Okno";
@@ -712,11 +712,11 @@
             this.Pnl_NowaGra.ResumeLayout(false);
             this.Pnl_NowaGra.PerformLayout();
             this.Pnl_LeftGame.ResumeLayout(false);
+            this.Pnl_WelcomeScreen.ResumeLayout(false);
+            this.Pnl_WelcomeScreen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
-            this.Pnl_WelcomeScreen.ResumeLayout(false);
-            this.Pnl_WelcomeScreen.PerformLayout();
             this.ResumeLayout(false);
 
         }

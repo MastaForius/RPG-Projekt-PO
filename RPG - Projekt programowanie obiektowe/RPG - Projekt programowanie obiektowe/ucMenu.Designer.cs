@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Pnl_MainLeft = new System.Windows.Forms.Panel();
-            this.Pnl_Odstep2 = new System.Windows.Forms.Panel();
+            this.Pnl_Odstep1 = new System.Windows.Forms.Panel();
             this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
             this.Btn_Wyjscie = new System.Windows.Forms.Button();
             this.Btn_Credits = new System.Windows.Forms.Button();
@@ -48,20 +48,20 @@
             this.Pnl_MainLeft.Controls.Add(this.Btn_WczytajGre);
             this.Pnl_MainLeft.Controls.Add(this.Btn_ZapiszGre);
             this.Pnl_MainLeft.Controls.Add(this.Btn_NowaGra);
-            this.Pnl_MainLeft.Controls.Add(this.Pnl_Odstep2);
+            this.Pnl_MainLeft.Controls.Add(this.Pnl_Odstep1);
             this.Pnl_MainLeft.Location = new System.Drawing.Point(0, 0);
             this.Pnl_MainLeft.Name = "Pnl_MainLeft";
             this.Pnl_MainLeft.Size = new System.Drawing.Size(270, 621);
             this.Pnl_MainLeft.TabIndex = 41;
             // 
-            // Pnl_Odstep2
+            // Pnl_Odstep1
             // 
-            this.Pnl_Odstep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
-            this.Pnl_Odstep2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Pnl_Odstep2.Location = new System.Drawing.Point(265, 0);
-            this.Pnl_Odstep2.Name = "Pnl_Odstep2";
-            this.Pnl_Odstep2.Size = new System.Drawing.Size(5, 621);
-            this.Pnl_Odstep2.TabIndex = 29;
+            this.Pnl_Odstep1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
+            this.Pnl_Odstep1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Pnl_Odstep1.Location = new System.Drawing.Point(265, 0);
+            this.Pnl_Odstep1.Name = "Pnl_Odstep1";
+            this.Pnl_Odstep1.Size = new System.Drawing.Size(5, 621);
+            this.Pnl_Odstep1.TabIndex = 29;
             // 
             // Btn_LeftMenuOn
             // 
@@ -171,7 +171,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.Pnl_MainLeft);
             this.Name = "ucMenu";
-            this.Size = new System.Drawing.Size(265, 621);
+            this.Size = new System.Drawing.Size(270, 621);
             this.Pnl_MainLeft.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -185,6 +185,6 @@
         internal System.Windows.Forms.Button Btn_ZapiszGre;
         internal System.Windows.Forms.Button Btn_NowaGra;
         internal System.Windows.Forms.Button Btn_LeftMenuOn;
-        internal System.Windows.Forms.Panel Pnl_Odstep2;
+        internal System.Windows.Forms.Panel Pnl_Odstep1;
     }
 }

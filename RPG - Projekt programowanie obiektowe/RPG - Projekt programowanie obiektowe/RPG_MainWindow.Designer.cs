@@ -189,6 +189,8 @@
             // Pnl_Ekran
             // 
             this.Pnl_Ekran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pnl_Ekran.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
+            this.Pnl_Ekran.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Pnl_Ekran.Location = new System.Drawing.Point(270, 55);
             this.Pnl_Ekran.Name = "Pnl_Ekran";
             this.Pnl_Ekran.Size = new System.Drawing.Size(733, 516);
@@ -251,12 +253,14 @@
             this.Btn_WelcomeScreen.TabIndex = 0;
             this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
             this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
+            this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
             // 
             // RPG_MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 681);
+            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_Odstep6);
             this.Controls.Add(this.Pnl_MainBottom);
             this.Controls.Add(this.Pnl_Ekran);
@@ -267,7 +271,6 @@
             this.Controls.Add(this.Pnl_Odstep2);
             this.Controls.Add(this.Pnl_Odstep1);
             this.Controls.Add(this.Pnl_TopPanel);
-            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RPG_MainWindow";

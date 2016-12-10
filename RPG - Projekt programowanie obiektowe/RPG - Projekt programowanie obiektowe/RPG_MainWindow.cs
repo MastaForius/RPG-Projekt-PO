@@ -205,7 +205,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
         }
         public void SchowajCreatorPostaci()
-        {
+        {   
             if (ucCreatorPostaci.Instance.Pnl_CreatorPostaci.Visible == true)
             {
                 // Schowanie zawartosci panelu
