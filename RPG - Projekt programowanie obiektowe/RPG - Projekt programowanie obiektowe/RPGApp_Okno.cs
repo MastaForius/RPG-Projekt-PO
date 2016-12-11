@@ -896,7 +896,7 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Pnl_ButtonsE3, Util.Effect.Slide, 125, 180);
                 Util.Animate(Btn_Etap3_1, Util.Effect.Center, 80, 180);
                 Odpocznij(10);
-                kosztZlota(25);
+                DodajExp(100);
             }
         }
         private void SchowajEtap3()
@@ -907,24 +907,113 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Pnl_ButtonsE3, Util.Effect.Slide, 125, 180);
             }
         }
+        private void Btn_Etap3_1_Click(object sender, EventArgs e)
+        {
+            SchowajEtap3();
+            WysunEtap4();
+        }
+
+
+
+
         // 4 Etap gry
         private void WysunEtap4()
         {
-
+            if (!Pnl_Etap4.Visible)
+            {
+                Util.Animate(Pnl_Etap4, Util.Effect.Slide, 125, 180);
+                Util.Animate(TBox_Etap4_1, Util.Effect.Center, 80, 180);
+                Util.Animate(Pnl_ButtonsE4, Util.Effect.Slide, 125, 180);
+                Util.Animate(Btn_Etap4_1, Util.Effect.Center, 80, 180);
+            }
         }
         private void SchowajEtap4()
+        {
+            if (!Pnl_Etap4.Visible)
+            {
+                Util.Animate(Pnl_Etap4, Util.Effect.Slide, 125, 180);
+                Util.Animate(Pnl_ButtonsE4, Util.Effect.Slide, 125, 180);
+            }
+        }
+
+        private void Btn_Etap4_1_Click(object sender, EventArgs e)
+        {
+            if (!TBox_Etap4_2.Visible)
+            {
+                Util.Animate(TBox_Etap4_2, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap4_2, Util.Effect.Center, 80, 180);
+                Zmeczenie(10);
+                DodajExp(10);
+                hero.maxPoziomZdrowia += hero.maxPoziomZdrowia + 50;
+                Cpb_Health.Maximum = hero.maxPoziomZdrowia;
+            }
+
+        }
+
+        private void Btn_Etap4_2_Click(object sender, EventArgs e)
+        {
+            if (!TBox_Etap4_3.Visible)
+            {
+                SchowajEtap4();
+                WysunEtap5();
+
+                Zmeczenie(60);
+                DodajExp(300);
+                zadajObrazenia(40);
+            }
+        }
+
+        private void Btn_Etap4_4_Click(object sender, EventArgs e)
+        {
+            Wygrana();
+        }
+
+        private void Btn_Etap4_3_Click(object sender, EventArgs e)
         {
 
         }
         // 5 Etap gry
         private void WysunEtap5()
         {
-
+            if (!Pnl_Etap5.Visible)
+            {
+                Util.Animate(Pnl_Etap5, Util.Effect.Slide, 125, 180);
+                Util.Animate(TBox_Etap5_1, Util.Effect.Center, 80, 180);
+                Util.Animate(Pnl_ButtonsE5, Util.Effect.Slide, 125, 180);
+                Util.Animate(Btn_Etap5_1, Util.Effect.Center, 80, 180);
+            }
+            Zmeczenie(40);
+            DodajExp(30);
         }
         private void SchowajEtap5()
         {
+            if (!Pnl_Etap5.Visible)
+            {
+                Util.Animate(Pnl_Etap5, Util.Effect.Slide, 125, 180);
+                Util.Animate(Pnl_ButtonsE5, Util.Effect.Slide, 125, 180);
+            }
+        }
+
+        private void Btn_Etap5_1_Click(object sender, EventArgs e)
+        {
+            Util.Animate(TBox_Etap5_1, Util.Effect.Center, 80, 180);
+            Util.Animate(Btn_Etap5_1, Util.Effect.Center, 80, 180);
+        }
+
+        private void Btn_Etap5_2_Click(object sender, EventArgs e)
+        {
 
         }
+
+        private void Btn_Etap5_4_Click(object sender, EventArgs e)
+        {
+            SchowajEtap5();
+            WysunEtap4();
+        }
+
+        //
+        // Ciąg dalszy nastąpi ...
+        //
 
 
 
@@ -933,6 +1022,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         {
 
         }
+
         #endregion
     }
 }

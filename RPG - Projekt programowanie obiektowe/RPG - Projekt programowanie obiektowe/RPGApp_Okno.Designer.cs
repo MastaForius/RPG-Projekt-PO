@@ -986,6 +986,7 @@
             this.Btn_Etap3_1.Text = "Udaj się do karczmy";
             this.Btn_Etap3_1.UseVisualStyleBackColor = true;
             this.Btn_Etap3_1.Visible = false;
+            this.Btn_Etap3_1.Click += new System.EventHandler(this.Btn_Etap3_1_Click);
             // 
             // Btn_Etap3_2
             // 
@@ -1058,6 +1059,7 @@
             this.Btn_Etap4_1.Text = "Podejdź do karczmarza";
             this.Btn_Etap4_1.UseVisualStyleBackColor = true;
             this.Btn_Etap4_1.Visible = false;
+            this.Btn_Etap4_1.Click += new System.EventHandler(this.Btn_Etap4_1_Click);
             // 
             // Btn_Etap4_2
             // 
@@ -1071,6 +1073,7 @@
             this.Btn_Etap4_2.Text = "Podejmij się wyzwania";
             this.Btn_Etap4_2.UseVisualStyleBackColor = true;
             this.Btn_Etap4_2.Visible = false;
+            this.Btn_Etap4_2.Click += new System.EventHandler(this.Btn_Etap4_2_Click);
             // 
             // Btn_Etap4_3
             // 
@@ -1084,6 +1087,7 @@
             this.Btn_Etap4_3.Text = "Wygrana (część dalsza nastąpi)";
             this.Btn_Etap4_3.UseVisualStyleBackColor = true;
             this.Btn_Etap4_3.Visible = false;
+            this.Btn_Etap4_3.Click += new System.EventHandler(this.Btn_Etap4_3_Click);
             // 
             // Btn_Etap4_4
             // 
@@ -1097,6 +1101,7 @@
             this.Btn_Etap4_4.Text = "Wytrop bandytów";
             this.Btn_Etap4_4.UseVisualStyleBackColor = true;
             this.Btn_Etap4_4.Visible = false;
+            this.Btn_Etap4_4.Click += new System.EventHandler(this.Btn_Etap4_4_Click);
             // 
             // Pnl_OdstepE4
             // 
@@ -1133,6 +1138,7 @@
             this.Btn_Etap5_1.Text = "Przedostań się do obozu";
             this.Btn_Etap5_1.UseVisualStyleBackColor = true;
             this.Btn_Etap5_1.Visible = false;
+            this.Btn_Etap5_1.Click += new System.EventHandler(this.Btn_Etap5_1_Click);
             // 
             // Btn_Etap5_2
             // 
@@ -1146,6 +1152,7 @@
             this.Btn_Etap5_2.Text = "Zabij przywódcę";
             this.Btn_Etap5_2.UseVisualStyleBackColor = true;
             this.Btn_Etap5_2.Visible = false;
+            this.Btn_Etap5_2.Click += new System.EventHandler(this.Btn_Etap5_2_Click);
             // 
             // Btn_Etap5_3
             // 
@@ -1171,6 +1178,7 @@
             this.Btn_Etap5_4.Text = "Wróć do karczmy";
             this.Btn_Etap5_4.UseVisualStyleBackColor = true;
             this.Btn_Etap5_4.Visible = false;
+            this.Btn_Etap5_4.Click += new System.EventHandler(this.Btn_Etap5_4_Click);
             // 
             // Pnl_OdstepE5
             // 
@@ -1256,10 +1264,10 @@
             // 
             this.Pnl_Etap4.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.karczma;
             this.Pnl_Etap4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pnl_Etap4.Controls.Add(this.TBox_Etap4_4);
             this.Pnl_Etap4.Controls.Add(this.TBox_Etap4_1);
             this.Pnl_Etap4.Controls.Add(this.TBox_Etap4_2);
             this.Pnl_Etap4.Controls.Add(this.TBox_Etap4_3);
+            this.Pnl_Etap4.Controls.Add(this.TBox_Etap4_4);
             this.Pnl_Etap4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_Etap4.Location = new System.Drawing.Point(0, 0);
             this.Pnl_Etap4.Name = "Pnl_Etap4";
