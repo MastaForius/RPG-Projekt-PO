@@ -1037,7 +1037,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         //Wygrana
         public void Wygrana()
         {
-            MessageBox.Show("Braow wygrałeś! Niedługo czeka cię dłuższa przygoda");
+            MessageBox.Show("Braow wygrałeś! Niedługo czeka cię dłuższa przygoda, do zobaczenia następnym razem");
         }
 
         #endregion
