@@ -32,12 +32,12 @@
             this.TBox_Credits = new System.Windows.Forms.TextBox();
             this.Btn_Zamknij = new System.Windows.Forms.Button();
             this.Pnl_TopPanel = new System.Windows.Forms.Panel();
+            this.Pic_LogoCredits = new System.Windows.Forms.PictureBox();
             this.Lbl_Credits = new System.Windows.Forms.Label();
             this.Pnl_TopPanelOdzielenie = new System.Windows.Forms.Panel();
             this.Pnl_OdstepCreditsRight = new System.Windows.Forms.Panel();
             this.Pnl_OdstepCreditsLeft = new System.Windows.Forms.Panel();
             this.Pnl_OdstepCreditsBottom = new System.Windows.Forms.Panel();
-            this.Pic_LogoCredits = new System.Windows.Forms.PictureBox();
             this.Pnl_TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_LogoCredits)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +57,7 @@
             this.TBox_Credits.Name = "TBox_Credits";
             this.TBox_Credits.Size = new System.Drawing.Size(1000, 577);
             this.TBox_Credits.TabIndex = 1;
-            this.TBox_Credits.Text = "Gra RPG wykonana na projekt z programowania obiektowego.\r\n\r\nZostała wykonana prze" +
-    "z:\r\nRobert Maciuszonek\r\nJakub Mendalka\r\n\r\nLista materiałów zaporzyczonych oraz l" +
-    "inki do nich";
+            this.TBox_Credits.Text = resources.GetString("TBox_Credits.Text");
             this.TBox_Credits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TBox_Credits.TextChanged += new System.EventHandler(this.TBox_Credits_TextChanged);
             // 
@@ -90,6 +88,16 @@
             this.Pnl_TopPanel.Size = new System.Drawing.Size(1024, 50);
             this.Pnl_TopPanel.TabIndex = 3;
             this.Pnl_TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pnl_TopPanel_MouseDown);
+            // 
+            // Pic_LogoCredits
+            // 
+            this.Pic_LogoCredits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.Pic_LogoCredits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_LogoCredits.Location = new System.Drawing.Point(0, 0);
+            this.Pic_LogoCredits.Name = "Pic_LogoCredits";
+            this.Pic_LogoCredits.Size = new System.Drawing.Size(75, 50);
+            this.Pic_LogoCredits.TabIndex = 2;
+            this.Pic_LogoCredits.TabStop = false;
             // 
             // Lbl_Credits
             // 
@@ -141,16 +149,6 @@
             this.Pnl_OdstepCreditsBottom.Name = "Pnl_OdstepCreditsBottom";
             this.Pnl_OdstepCreditsBottom.Size = new System.Drawing.Size(1014, 5);
             this.Pnl_OdstepCreditsBottom.TabIndex = 14;
-            // 
-            // Pic_LogoCredits
-            // 
-            this.Pic_LogoCredits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
-            this.Pic_LogoCredits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_LogoCredits.Location = new System.Drawing.Point(0, 0);
-            this.Pic_LogoCredits.Name = "Pic_LogoCredits";
-            this.Pic_LogoCredits.Size = new System.Drawing.Size(75, 50);
-            this.Pic_LogoCredits.TabIndex = 2;
-            this.Pic_LogoCredits.TabStop = false;
             // 
             // CreditsInfo
             // 

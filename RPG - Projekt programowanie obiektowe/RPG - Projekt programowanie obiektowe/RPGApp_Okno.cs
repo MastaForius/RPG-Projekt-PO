@@ -872,7 +872,6 @@ namespace RPG___Projekt_programowanie_obiektowe
         private void Btn_Etap2_3_Click(object sender, EventArgs e)
         {
             Util.Animate(TBox_Etap2_4, Util.Effect.Center, 80, 180);
-            Util.Animate(TBox_Etap2_4, Util.Effect.Center, 80, 180);
             Util.Animate(Btn_Etap2_4, Util.Effect.Center, 80, 180);
             Zmeczenie(20);
             zadajObrazenia(40);
@@ -881,7 +880,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         }
         private void Btn_Etap2_4_Click(object sender, EventArgs e)
         {
-            Zmeczenie(80);
+            Zmeczenie(60);
             SchowajEtap2();
             WysunEtap3();
         }
@@ -901,7 +900,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         }
         private void SchowajEtap3()
         {
-            if (!Pnl_Etap3.Visible)
+            if (Pnl_Etap3.Visible)
             {
                 Util.Animate(Pnl_Etap3, Util.Effect.Slide, 125, 180);
                 Util.Animate(Pnl_ButtonsE3, Util.Effect.Slide, 125, 180);
@@ -996,19 +995,37 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         private void Btn_Etap5_1_Click(object sender, EventArgs e)
         {
-            Util.Animate(TBox_Etap5_1, Util.Effect.Center, 80, 180);
-            Util.Animate(Btn_Etap5_1, Util.Effect.Center, 80, 180);
+            if (!Btn_Etap5_2.Visible)
+            {
+                Util.Animate(TBox_Etap5_2, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap5_2, Util.Effect.Center, 80, 180);
+                Zmeczenie(40);
+                zadajObrazenia(10);
+                DodajExp(200);
+            }
         }
 
         private void Btn_Etap5_2_Click(object sender, EventArgs e)
         {
-
+            Util.Animate(TBox_Etap5_3, Util.Effect.Center, 80, 180);
+            Util.Animate(Btn_Etap5_3, Util.Effect.Center, 80, 180);
+            DodajExp(600);
+            dodajZloto(4000);
+            zadajObrazenia(80);
         }
 
         private void Btn_Etap5_4_Click(object sender, EventArgs e)
         {
             SchowajEtap5();
             WysunEtap4();
+            if (!TBox_Etap4_4.Visible)
+            {
+                Util.Animate(TBox_Etap4_4, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap4_4, Util.Effect.Center, 80, 180);
+            }
+            Zmeczenie(20);
+            DodajExp(400);
+            dodajZloto(10);
         }
 
         //
@@ -1020,7 +1037,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         //Wygrana
         public void Wygrana()
         {
-
+            MessageBox.Show("Braow wygrałeś! Niedługo czeka cię dłuższa przygoda");
         }
 
         #endregion

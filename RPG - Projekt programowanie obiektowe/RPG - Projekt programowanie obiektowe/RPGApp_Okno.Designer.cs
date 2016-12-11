@@ -299,8 +299,8 @@
             // 
             this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_1);
             this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_2);
-            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_4);
             this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_3);
+            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_4);
             this.Pnl_ButtonsE2.Controls.Add(this.Pnl_OdstepE2);
             this.Pnl_ButtonsE2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_ButtonsE2.Location = new System.Drawing.Point(0, 0);
@@ -1886,11 +1886,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
-            this.Controls.Add(this.Pnl_Etapy);
-            this.Controls.Add(this.Pnl_BottomPanel);
             this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_WczytajGre);
             this.Controls.Add(this.Pnl_CreatorPostaci);
+            this.Controls.Add(this.Pnl_Etapy);
+            this.Controls.Add(this.Pnl_BottomPanel);
             this.Controls.Add(this.Pnl_LeftPanelMenu);
             this.Controls.Add(this.Pnl_LeftGame);
             this.Controls.Add(this.Pnl_Odstep6);
