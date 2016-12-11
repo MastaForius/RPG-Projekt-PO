@@ -11,8 +11,8 @@ namespace RPG___Projekt_programowanie_obiektowe
         public string name;
         public bool gender;
         public int numerAvatara;
-        //          Misje
-        public int[] statusMisji = { };
+        //          Misje        Start  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
+        public int[] statusMisji = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         //          Poziom                    1   2   3    4     5    6    7    8     9     10
         public readonly int[] expNaPoziom = { 75, 120, 185, 260, 410, 600, 920, 1430, 2000, 3000 };
         public int doswiadczenie = 0;

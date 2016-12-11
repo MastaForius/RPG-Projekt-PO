@@ -22,7 +22,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             InitializeComponent();
             this.ActiveControl = Btn_WelcomeScreen;
         }
-        string path = Environment.CurrentDirectory + "/";
+        string path = @"C:/Users/Admin/AppData/Local/Temp/";
+        string nazwaFolderu = "RPG Projekt programowanie obiektowe";
         // Stworzenie bohatera
         Bohater hero = new Bohater("imie bohatera", true, -1);
 
@@ -298,6 +299,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             {
                 // Zapisanie postaci
                 NowyBohater();
+                StworzFolder();
                 ZapiszBohatera();
                 // Schowanie zawartosci panelu tworzenia postaci
                 SchowajTworzeniePostaci();
@@ -312,11 +314,17 @@ namespace RPG___Projekt_programowanie_obiektowe
         #endregion
 
         #region Zapisz gre
-
+        private void Btn_ZapiszGre_Click(object sender, EventArgs e)
+        {
+            ZapiszBohatera();
+        }
         #endregion
 
         #region Wczytaj gre
-
+        private void Btn_WczytajGre_Click(object sender, EventArgs e)
+        {
+            WczytajBohatera();
+        }
         #endregion
 
         #region Credits
@@ -354,20 +362,78 @@ namespace RPG___Projekt_programowanie_obiektowe
             dodajZloto(0);
         }
         // Zapis
-        private void ZapiszBohatera()
+        private void StworzFolder()
         {
+            string dirPath = path + nazwaFolderu;
+            if (!Directory.Exists(dirPath))
+            {
+                Directory.CreateDirectory(dirPath);
+            }
 
-            string tempPath = path + hero.name+".txt";
+        }
+        private void StworzPlik()
+        {
+            string tempPath = path + nazwaFolderu + "/" + hero.name + ".txt";
             if (!File.Exists(tempPath))
             {
-                File.Create(tempPath);
-                //File.OpenWrite(tempPath).
-            } 
+                FileStream fs = File.Create(tempPath);
+                fs.Close();
+                fs.Dispose();
+            }
+        }
+        private void ZapiszBohatera()
+        {
+            string tempPath = path + nazwaFolderu + "/" + hero.name + ".txt";
+            if (!File.Exists(tempPath))
+            {
+                StworzPlik();
+            }
+            if (File.Exists(tempPath))
+            {
+                using (StreamWriter zapis = new StreamWriter(tempPath))
+                {
+                    zapis.WriteLine(hero.name);
+                    zapis.WriteLine(hero.gender);
+                    zapis.WriteLine(hero.numerAvatara);
+                    zapis.WriteLine(hero.doswiadczenie);
+                    zapis.WriteLine(hero.poziom);
+                    zapis.WriteLine(hero.poziomZdrowia);
+                    zapis.WriteLine(hero.maxPoziomZdrowia);
+                    zapis.WriteLine(hero.wytrzymalosc);
+                    zapis.WriteLine(hero.maxPoziomWytrzymalosc);
+                    zapis.WriteLine(hero.zloto);
+                    for (int i = 0; i < 16; i++)
+                    {
+                        zapis.WriteLine(hero.statusMisji[i]);
+                    }
+                    zapis.Close();
+                    zapis.Dispose();
+                }
+            }
         }
         // Odczyt
         private void WczytajBohatera()
         {
 
+            //using (StreamReader odczyt = new StreamReader(wczytaj))
+            //{
+            //    hero.name = odczyt.ReadLine();
+            //    hero.gender = Convert.ToBoolean(odczyt.ReadLine());
+            //    hero.numerAvatara = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.doswiadczenie = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.poziom = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.poziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.maxPoziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.wytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.maxPoziomWytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
+            //    hero.zloto = Convert.ToInt32(odczyt.ReadLine());
+            //    for (int i = 0; i < 16; i++)
+            //    {
+            //        hero.statusMisji[i] = Convert.ToInt32(odczyt.ReadLine());
+            //    }
+            //    odczyt.Close();
+            //    odczyt.Dispose();
+            //}
         }
         // zarzadzanie doswiadczeniem
         private void DodajExp(int plusExp)

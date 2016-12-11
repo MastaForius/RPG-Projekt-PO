@@ -65,6 +65,7 @@
             this.Rdo_Female = new System.Windows.Forms.RadioButton();
             this.Rdo_Male = new System.Windows.Forms.RadioButton();
             this.Pnl_LeftGame = new System.Windows.Forms.Panel();
+            this.Lbl_Nick = new System.Windows.Forms.Label();
             this.Cpb_Stamina = new CircularProgressBar.CircularProgressBar();
             this.Cpb_Health = new CircularProgressBar.CircularProgressBar();
             this.Lbl_IloscZlota = new System.Windows.Forms.Label();
@@ -82,7 +83,6 @@
             this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
             this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
             this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
-            this.Lbl_Nick = new System.Windows.Forms.Label();
             this.Pnl_TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
@@ -248,6 +248,7 @@
             this.Btn_WczytajGre.TabIndex = 17;
             this.Btn_WczytajGre.Text = "Wczytaj grę";
             this.Btn_WczytajGre.UseVisualStyleBackColor = true;
+            this.Btn_WczytajGre.Click += new System.EventHandler(this.Btn_WczytajGre_Click);
             // 
             // Btn_ZapiszGre
             // 
@@ -264,6 +265,7 @@
             this.Btn_ZapiszGre.TabIndex = 16;
             this.Btn_ZapiszGre.Text = "Zapisz grę";
             this.Btn_ZapiszGre.UseVisualStyleBackColor = true;
+            this.Btn_ZapiszGre.Click += new System.EventHandler(this.Btn_ZapiszGre_Click);
             // 
             // Btn_NowaGra
             // 
@@ -581,6 +583,19 @@
             this.Pnl_LeftGame.Size = new System.Drawing.Size(265, 621);
             this.Pnl_LeftGame.TabIndex = 29;
             // 
+            // Lbl_Nick
+            // 
+            this.Lbl_Nick.AutoSize = true;
+            this.Lbl_Nick.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lbl_Nick.Location = new System.Drawing.Point(5, 155);
+            this.Lbl_Nick.MinimumSize = new System.Drawing.Size(255, 0);
+            this.Lbl_Nick.Name = "Lbl_Nick";
+            this.Lbl_Nick.Size = new System.Drawing.Size(255, 43);
+            this.Lbl_Nick.TabIndex = 56;
+            this.Lbl_Nick.Text = "Nick";
+            this.Lbl_Nick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_Nick.Visible = false;
+            // 
             // Cpb_Stamina
             // 
             this.Cpb_Stamina.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("Cpb_Stamina.AnimationFunction")));
@@ -855,19 +870,6 @@
             this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
             this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
             // 
-            // Lbl_Nick
-            // 
-            this.Lbl_Nick.AutoSize = true;
-            this.Lbl_Nick.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Lbl_Nick.Location = new System.Drawing.Point(5, 155);
-            this.Lbl_Nick.MinimumSize = new System.Drawing.Size(255, 0);
-            this.Lbl_Nick.Name = "Lbl_Nick";
-            this.Lbl_Nick.Size = new System.Drawing.Size(255, 43);
-            this.Lbl_Nick.TabIndex = 56;
-            this.Lbl_Nick.Text = "Nick";
-            this.Lbl_Nick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Lbl_Nick.Visible = false;
-            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -876,8 +878,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
-            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_LeftPanelMenu);
+            this.Controls.Add(this.Pnl_WelcomeScreen);
             this.Controls.Add(this.Pnl_LeftGame);
             this.Controls.Add(this.Pnl_NowaGra);
             this.Controls.Add(this.Pnl_Odstep6);
