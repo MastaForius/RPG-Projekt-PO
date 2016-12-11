@@ -183,18 +183,14 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="TBox_Etap2_1.Text" xml:space="preserve">
-    <value>Pewnego dnia pewien rozbitek znalazł się na brzegu plaży. Gdy był jeszcze nieprzytomny to strażnicy z pobliskiego zamku znaleźli go. Na czas aż odzyska przytomność został zamknięty w celi. Okazało się, że jest On/a zbiegiem i poszukiwany listem gończym. 
-Zostaje wydany wyrok kary śmierci.</value>
-  </data>
-  <data name="TBox_Etap2_2.Text" xml:space="preserve">
-    <value>Dwa dni przed egzekucją w więzieniu nagle zaczyna się szturm na więzienie. W jednej z cel siedzi jeden z najwspanialszych piratów jakich znało wtedy morze. Gdy jego załoga wtargnęła do więzienia i przedarła się do sektora, w którym znajdował się ich kapitan, zaczęli uwalniać wszystkich więźniów. </value>
-  </data>
   <data name="TBox_Etap2_3.Text" xml:space="preserve">
-    <value>Rozpoczynasz ucieczkę z więzienia. Przy jednym ze strażników, który zginął broniąc więzienia znajdujesz pęknięty miecz. Zaczynasz szukać wyjścia i napotykasz się na strażnika, który został poważnie ranny podczas ataku, ale nie pozwala Ci przejść i musisz go pokonać. </value>
+    <value> Po powrocie do chaty spotykasz właściciela, który domaga się zapłaty za nocleg. Nie mając pieniędzy i widząc, że właściciel ma jakiś problem, że zamiast pieniędzy możesz wykonać dla niego zadanie, które go dręczy. Musisz udać na zachód, gdzie jest nora wilków i je zabić.</value>
   </data>
   <data name="TBox_Etap2_4.Text" xml:space="preserve">
-    <value>Po pokonaniu strażnika i będąc lekko ranny idziesz dalej w poszukiwaniu wyjścia. Napotykasz na swojej drodze drzwi ze stali, których nie udaje Ci się wyłamać. Przy jednym z poległych strażników znajdujesz klucz i udaje Ci się otworzyć drzwi. Za drzwiami znajduje się wyłom, który zrobiła jedna z armat przy ataku na więzienie. Udaje Ci się uciec do lasu.</value>
+    <value> Po przejściu 2 kilometrów widzisz norę wilków. Nie było ich zbyt wiele i atakujesz jednego. Po pokonaniu największego wilka reszta ucieka. Postanawiasz oskórować wilka, aby zrobić sobie jakieś ubranie.</value>
+  </data>
+  <data name="TBox_Etap2_5.Text" xml:space="preserve">
+    <value>Wracasz do właściciela i pokazujesz mu na dowód skórę wilka oraz jego kły. Ten na dowód wdzięczności pokazuje Ci jak się udać do miasta. Po chwili opuszczenia chatki znajdujesz drogę i udajesz się do miasta.</value>
   </data>
   <data name="TBox_Etap1_1.Text" xml:space="preserve">
     <value>Pewnego dnia pewien rozbitek znalazł się na brzegu plaży. Gdy był jeszcze nieprzytomny to strażnicy z pobliskiego zamku znaleźli go. Na czas aż odzyska przytomność został zamknięty w celi. Okazało się, że jest On/a zbiegiem i poszukiwany listem gończym. 

@@ -106,7 +106,7 @@
             this.TBox_Etap2_1 = new System.Windows.Forms.TextBox();
             this.TBox_Etap2_2 = new System.Windows.Forms.TextBox();
             this.TBox_Etap2_3 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap2_4 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap2_5 = new System.Windows.Forms.TextBox();
             this.Pnl_Etap1 = new System.Windows.Forms.Panel();
             this.TBox_Etap1_1 = new System.Windows.Forms.TextBox();
             this.TBox_Etap1_2 = new System.Windows.Forms.TextBox();
@@ -116,6 +116,7 @@
             this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
             this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
             this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
+            this.TBox_Etap2_4 = new System.Windows.Forms.TextBox();
             this.Pnl_TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
@@ -386,9 +387,10 @@
             this.Btn_Etap2_1.Name = "Btn_Etap2_1";
             this.Btn_Etap2_1.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap2_1.TabIndex = 5;
-            this.Btn_Etap2_1.Text = "Czekaj na wyrok";
+            this.Btn_Etap2_1.Text = "Wstań";
             this.Btn_Etap2_1.UseVisualStyleBackColor = true;
             this.Btn_Etap2_1.Visible = false;
+            this.Btn_Etap2_1.Click += new System.EventHandler(this.Btn_Etap2_1_Click);
             // 
             // Btn_Etap2_2
             // 
@@ -399,9 +401,10 @@
             this.Btn_Etap2_2.Name = "Btn_Etap2_2";
             this.Btn_Etap2_2.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap2_2.TabIndex = 6;
-            this.Btn_Etap2_2.Text = "Rozpocznij ucieczkę";
+            this.Btn_Etap2_2.Text = "Poszukaj jedzenia";
             this.Btn_Etap2_2.UseVisualStyleBackColor = true;
             this.Btn_Etap2_2.Visible = false;
+            this.Btn_Etap2_2.Click += new System.EventHandler(this.Btn_Etap2_2_Click);
             // 
             // Btn_Etap2_4
             // 
@@ -412,9 +415,10 @@
             this.Btn_Etap2_4.Name = "Btn_Etap2_4";
             this.Btn_Etap2_4.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap2_4.TabIndex = 8;
-            this.Btn_Etap2_4.Text = "Uciekaj do lasu";
+            this.Btn_Etap2_4.Text = "Idź do miasta";
             this.Btn_Etap2_4.UseVisualStyleBackColor = true;
             this.Btn_Etap2_4.Visible = false;
+            this.Btn_Etap2_4.Click += new System.EventHandler(this.Btn_Etap2_4_Click);
             // 
             // Btn_Etap2_3
             // 
@@ -425,9 +429,10 @@
             this.Btn_Etap2_3.Name = "Btn_Etap2_3";
             this.Btn_Etap2_3.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap2_3.TabIndex = 7;
-            this.Btn_Etap2_3.Text = "Zabij strażnika";
+            this.Btn_Etap2_3.Text = "Zabij wilki";
             this.Btn_Etap2_3.UseVisualStyleBackColor = true;
             this.Btn_Etap2_3.Visible = false;
+            this.Btn_Etap2_3.Click += new System.EventHandler(this.Btn_Etap2_3_Click);
             // 
             // Pnl_OdstepE2
             // 
@@ -1166,6 +1171,7 @@
             this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_2);
             this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_3);
             this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_4);
+            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_5);
             this.Pnl_Etap2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_Etap2.Location = new System.Drawing.Point(0, 0);
             this.Pnl_Etap2.Name = "Pnl_Etap2";
@@ -1179,13 +1185,15 @@
             this.TBox_Etap2_1.Enabled = false;
             this.TBox_Etap2_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
             this.TBox_Etap2_1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_1.Location = new System.Drawing.Point(360, 10);
+            this.TBox_Etap2_1.Location = new System.Drawing.Point(476, 10);
             this.TBox_Etap2_1.Multiline = true;
             this.TBox_Etap2_1.Name = "TBox_Etap2_1";
-            this.TBox_Etap2_1.Size = new System.Drawing.Size(354, 180);
+            this.TBox_Etap2_1.Size = new System.Drawing.Size(238, 158);
             this.TBox_Etap2_1.TabIndex = 1;
             this.TBox_Etap2_1.TabStop = false;
-            this.TBox_Etap2_1.Text = resources.GetString("TBox_Etap2_1.Text");
+            this.TBox_Etap2_1.Text = "Po kilku godzinnej ucieczce z więzienia napotykasz na swojej drodze chaty, który " +
+    "wygląda na opuszczony. Opadając z sił wchodzisz do niej, kładziesz się i zapadas" +
+    "z w sen.";
             this.TBox_Etap2_1.Visible = false;
             // 
             // TBox_Etap2_2
@@ -1194,13 +1202,15 @@
             this.TBox_Etap2_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
             this.TBox_Etap2_2.ForeColor = System.Drawing.SystemColors.GrayText;
             this.TBox_Etap2_2.HideSelection = false;
-            this.TBox_Etap2_2.Location = new System.Drawing.Point(6, 65);
+            this.TBox_Etap2_2.Location = new System.Drawing.Point(40, 21);
             this.TBox_Etap2_2.Multiline = true;
             this.TBox_Etap2_2.Name = "TBox_Etap2_2";
-            this.TBox_Etap2_2.Size = new System.Drawing.Size(353, 177);
+            this.TBox_Etap2_2.Size = new System.Drawing.Size(353, 126);
             this.TBox_Etap2_2.TabIndex = 3;
             this.TBox_Etap2_2.TabStop = false;
-            this.TBox_Etap2_2.Text = resources.GetString("TBox_Etap2_2.Text");
+            this.TBox_Etap2_2.Text = "O poranku budzi Cię burczenie brzucha. Wychodząc z chatki zaczynasz poszukiwanie " +
+    "jedzenia. Po godzinie udaje Ci się znaleźć trochę jagód, porzeczek i malin. Udaj" +
+    "e Ci się trochę zaspokoić głód.";
             this.TBox_Etap2_2.Visible = false;
             // 
             // TBox_Etap2_3
@@ -1208,28 +1218,28 @@
             this.TBox_Etap2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.TBox_Etap2_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
             this.TBox_Etap2_3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_3.Location = new System.Drawing.Point(6, 257);
+            this.TBox_Etap2_3.Location = new System.Drawing.Point(23, 182);
             this.TBox_Etap2_3.Multiline = true;
             this.TBox_Etap2_3.Name = "TBox_Etap2_3";
-            this.TBox_Etap2_3.Size = new System.Drawing.Size(353, 153);
+            this.TBox_Etap2_3.Size = new System.Drawing.Size(357, 158);
             this.TBox_Etap2_3.TabIndex = 4;
             this.TBox_Etap2_3.TabStop = false;
             this.TBox_Etap2_3.Text = resources.GetString("TBox_Etap2_3.Text");
             this.TBox_Etap2_3.Visible = false;
             // 
-            // TBox_Etap2_4
+            // TBox_Etap2_5
             // 
-            this.TBox_Etap2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap2_4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_4.Location = new System.Drawing.Point(365, 293);
-            this.TBox_Etap2_4.Multiline = true;
-            this.TBox_Etap2_4.Name = "TBox_Etap2_4";
-            this.TBox_Etap2_4.Size = new System.Drawing.Size(357, 202);
-            this.TBox_Etap2_4.TabIndex = 2;
-            this.TBox_Etap2_4.TabStop = false;
-            this.TBox_Etap2_4.Text = resources.GetString("TBox_Etap2_4.Text");
-            this.TBox_Etap2_4.Visible = false;
+            this.TBox_Etap2_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_5.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_5.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_5.Location = new System.Drawing.Point(424, 357);
+            this.TBox_Etap2_5.Multiline = true;
+            this.TBox_Etap2_5.Name = "TBox_Etap2_5";
+            this.TBox_Etap2_5.Size = new System.Drawing.Size(297, 153);
+            this.TBox_Etap2_5.TabIndex = 2;
+            this.TBox_Etap2_5.TabStop = false;
+            this.TBox_Etap2_5.Text = resources.GetString("TBox_Etap2_5.Text");
+            this.TBox_Etap2_5.Visible = false;
             // 
             // Pnl_Etap1
             // 
@@ -1354,6 +1364,20 @@
             this.Btn_WelcomeScreen.UseVisualStyleBackColor = true;
             this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
             this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
+            // 
+            // TBox_Etap2_4
+            // 
+            this.TBox_Etap2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_4.Location = new System.Drawing.Point(53, 386);
+            this.TBox_Etap2_4.Multiline = true;
+            this.TBox_Etap2_4.Name = "TBox_Etap2_4";
+            this.TBox_Etap2_4.Size = new System.Drawing.Size(327, 104);
+            this.TBox_Etap2_4.TabIndex = 5;
+            this.TBox_Etap2_4.TabStop = false;
+            this.TBox_Etap2_4.Text = resources.GetString("TBox_Etap2_4.Text");
+            this.TBox_Etap2_4.Visible = false;
             // 
             // RPGApp_Okno
             // 
@@ -1495,8 +1519,9 @@
         private System.Windows.Forms.TextBox TBox_Etap2_1;
         private System.Windows.Forms.TextBox TBox_Etap2_2;
         private System.Windows.Forms.TextBox TBox_Etap2_3;
-        private System.Windows.Forms.TextBox TBox_Etap2_4;
+        private System.Windows.Forms.TextBox TBox_Etap2_5;
         private System.Windows.Forms.Button Btn_Zaleczrany;
         private System.Windows.Forms.Button Btn_Odpocznij;
+        private System.Windows.Forms.TextBox TBox_Etap2_4;
     }
 }

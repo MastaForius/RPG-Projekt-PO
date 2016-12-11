@@ -604,7 +604,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
             else
             {
-                MessageBox.Show("Brak wytrzymalosci");
+                MessageBox.Show("Brak wytrzymalosci, otrzymujesz obrazenia");
+                zadajObrazenia(hero.poziom*5);
             }
             Cpb_Stamina.Value = hero.wytrzymalosc;
         }
@@ -756,6 +757,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
         }
 
+
+
         // Wysun ekran gre
         private void WysunEkranGry()
         {
@@ -785,6 +788,14 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Btn_Etap1_1, Util.Effect.Center, 80, 180);
             }
         }
+        private void SchowajEtap1()
+        {
+            if (Pnl_Etap1.Visible)
+            {
+                Util.Animate(Pnl_Etap1, Util.Effect.Slide, 125, 180);
+                Util.Animate(Pnl_ButtonsE1, Util.Effect.Slide, 125, 180);
+            }
+        }
         private void Btn_Etap1_1_Click(object sender, EventArgs e)
         {
             if (!Btn_Etap1_2.Visible)
@@ -800,8 +811,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             if (!Btn_Etap1_3.Visible)
             {
                 DodajExp(40);
-                dodajZloto(25);
-                zadajObrazenia(5);
+                dodajZloto(50);
+                zadajObrazenia(15);
                 Zmeczenie(10);
                 MessageBox.Show("Znalazłeś Miecz!");
                 Util.Animate(TBox_Etap1_3, Util.Effect.Center, 80, 180);
@@ -820,22 +831,62 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         private void Btn_Etap1_4_Click(object sender, EventArgs e)
         {
-            Zmeczenie(10);
+            Zmeczenie(40);
             SchowajEtap1();
             WysunEtap2();
-        }
-        private void SchowajEtap1()
-        {
-
         }
         // 2 Etap gry
         private void WysunEtap2()
         {
-
+            if (!Pnl_Etap2.Visible)
+            {
+                Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
+                Util.Animate(TBox_Etap2_1, Util.Effect.Center, 80, 180);
+                Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
+                Util.Animate(Btn_Etap1_2, Util.Effect.Center, 80, 180);
+                Ulecz(20);
+                Odpocznij(35);
+            }
         }
         private void SchowajEtap2()
         {
+            Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
+            Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
+        }
 
+
+        private void Btn_Etap2_1_Click(object sender, EventArgs e)
+        {
+            Util.Animate(TBox_Etap2_2, Util.Effect.Center, 80, 180);
+            Util.Animate(Btn_Etap2_2, Util.Effect.Center, 80, 180);
+            zadajObrazenia(20);
+        }
+
+        private void Btn_Etap2_2_Click(object sender, EventArgs e)
+        {
+            Util.Animate(TBox_Etap2_3, Util.Effect.Center, 80, 180);
+            Util.Animate(Btn_Etap2_3, Util.Effect.Center, 80, 180);
+            DodajExp(5);
+            Zmeczenie(35);
+            Ulecz(15);
+        }
+
+        private void Btn_Etap2_3_Click(object sender, EventArgs e)
+        {
+            Util.Animate(TBox_Etap2_4, Util.Effect.Center, 80, 180);
+            Util.Animate(TBox_Etap2_4, Util.Effect.Center, 80, 180);
+            Util.Animate(Btn_Etap2_4, Util.Effect.Center, 80, 180);
+            Zmeczenie(20);
+            zadajObrazenia(40);
+            DodajExp(50);
+            dodajZloto(5);
+        }
+
+        private void Btn_Etap2_4_Click(object sender, EventArgs e)
+        {
+            Zmeczenie(25);
+            SchowajEtap2();
+            WysunEtap3();
         }
         // 3 Etap gry
         private void WysunEtap3()
