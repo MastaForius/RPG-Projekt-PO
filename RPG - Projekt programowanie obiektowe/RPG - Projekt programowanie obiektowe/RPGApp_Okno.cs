@@ -301,6 +301,8 @@ namespace RPG___Projekt_programowanie_obiektowe
                 NowyBohater();
                 StworzFolder();
                 ZapiszBohatera();
+                WysunEkranGry();
+                WysunEtap1();
                 // Schowanie zawartosci panelu tworzenia postaci
                 SchowajTworzeniePostaci();
                 // Schowanie Menu gry
@@ -567,7 +569,8 @@ namespace RPG___Projekt_programowanie_obiektowe
                 hero.poziomZdrowia = 0;
                 if (MessageBox.Show("Przegrałeś. :-(", "Czy chcesz spróbować jeszcze raz?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-
+                    System.Diagnostics.Process.Start(Application.ExecutablePath); // otwieroa nowe okno aplikacji
+                    this.Close(); // zamyka stare okno aplikacji
                 }
             }
             Cpb_Health.Value = hero.poziomZdrowia;
@@ -662,13 +665,13 @@ namespace RPG___Projekt_programowanie_obiektowe
         // Panel tworzenia postaci
         private void WysunTworzeniePostaci()
         {
-            if (Pnl_NowaGra.Visible == false)
+            if (Pnl_CreatorPostaci.Visible == false)
             {
                 // Zapobiega blednemu wysunieciu panelu za pierwszym razem zwiazanego prawdopodobnie z brakiem inicjalizacji na niewidocznym elemencie
-                Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
-                Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
+                Pnl_CreatorPostaci.Visible = !Pnl_CreatorPostaci.Visible;
+                Pnl_CreatorPostaci.Visible = !Pnl_CreatorPostaci.Visible;
                 // Wysuniecie panelu tworzenia postaci
-                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+                Util.Animate(Pnl_CreatorPostaci, Util.Effect.Slide, 250, 180);
                 // Wysuniecie zawartosci panelu
                 Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
                 Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
@@ -686,7 +689,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         }
         private void SchowajTworzeniePostaci()
         {
-            if (Pnl_NowaGra.Visible == true)
+            if (Pnl_CreatorPostaci.Visible == true)
             {
                 // Schowanie zawartosci panelu
                 Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
@@ -701,7 +704,7 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
                 Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
                 // Schowanie panelu tworzenia postaci
-                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+                Util.Animate(Pnl_CreatorPostaci, Util.Effect.Slide, 250, 180);
             }
         }
         // Elementy Postaci
@@ -744,8 +747,63 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
         }
 
+        // Wysun ekran gre
+        private void WysunEkranGry()
+        {
+            Pnl_Etapy.Visible = !Pnl_Etapy.Visible;
+            Pnl_Etapy.Visible = !Pnl_Etapy.Visible;
+            if (!Pnl_Etapy.Visible)
+            {
+                Util.Animate(Pnl_Etapy, Util.Effect.Slide, 125, 180);
+            }
+        }
+        // Schowaj ekran gre
+        private void SchowajEkranGry()
+        {
+            if (Pnl_Etapy.Visible)
+            {
+                Util.Animate(Pnl_Etapy, Util.Effect.Slide, 125, 180);
+            }
+        }
         // 1 Etap gry
         private void WysunEtap1()
+        {
+            if (!Pnl_Etap1.Visible)
+            {
+                Util.Animate(Pnl_Etap1, Util.Effect.Slide, 125, 180);
+                Util.Animate(TBox_Etap1_1, Util.Effect.Center, 80, 180);
+                Util.Animate(Pnl_ButtonsE1, Util.Effect.Slide, 125, 180);
+                Util.Animate(Btn_Etap1_1, Util.Effect.Center, 80, 180);
+            }
+        }
+        private void Btn_Etap1_1_Click(object sender, EventArgs e)
+        {
+            if (!Btn_Etap1_2.Visible)
+            {
+                Util.Animate(TBox_Etap1_2, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap1_2, Util.Effect.Center, 80, 180);
+            }
+        }
+
+        private void Btn_Etap1_2_Click(object sender, EventArgs e)
+        {
+            if (!Btn_Etap1_3.Visible)
+            {
+                Util.Animate(TBox_Etap1_3, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap1_3, Util.Effect.Center, 80, 180);
+            }
+        }
+
+        private void Btn_Etap1_3_Click(object sender, EventArgs e)
+        {
+            if (!Btn_Etap1_4.Visible)
+            {
+                Util.Animate(TBox_Etap1_4, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap1_4, Util.Effect.Center, 80, 180);
+            }
+        }
+
+        private void Btn_Etap1_4_Click(object sender, EventArgs e)
         {
 
         }
@@ -790,6 +848,5 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         }
         #endregion
-                
     }
 }

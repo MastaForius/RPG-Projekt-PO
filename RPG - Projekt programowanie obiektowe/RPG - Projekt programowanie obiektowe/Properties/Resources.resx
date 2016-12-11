@@ -118,29 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Avatar Unkown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar Unkown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="300-Spartan-Workout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\300-Spartan-Workout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Avatar Unkown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Avatar Unkown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kraty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kraty.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu_Button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu_Button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="300-Spartan-Workout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\300-Spartan-Workout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Menu_Button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="decorative-gold-frame-on-a-black-gradient-background_przycisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\decorative-gold-frame-on-a-black-gradient-background_przycisk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Female2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Female2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,10 +139,28 @@
   <data name="Male1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Female1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avatar Unkown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar Unkown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avatar Unkown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar Unkown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Male2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Menu_Button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu_Button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Male3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duskwood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duskwood.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wiezienie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wiezienie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

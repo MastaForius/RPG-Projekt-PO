@@ -88,6 +88,7 @@
     <Compile Include="RPGApp_Okno.Designer.cs">
       <DependentUpon>RPGApp_Okno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wrog.cs" />
     <EmbeddedResource Include="CreditsInfo.resx">
       <DependentUpon>CreditsInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Male3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duskwood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wiezienie.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

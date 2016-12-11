@@ -183,6 +183,32 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="TBox_Etap2_1.Text" xml:space="preserve">
+    <value>Pewnego dnia pewien rozbitek znalazł się na brzegu plaży. Gdy był jeszcze nieprzytomny to strażnicy z pobliskiego zamku znaleźli go. Na czas aż odzyska przytomność został zamknięty w celi. Okazało się, że jest On/a zbiegiem i poszukiwany listem gończym. 
+Zostaje wydany wyrok kary śmierci.</value>
+  </data>
+  <data name="TBox_Etap2_2.Text" xml:space="preserve">
+    <value>Dwa dni przed egzekucją w więzieniu nagle zaczyna się szturm na więzienie. W jednej z cel siedzi jeden z najwspanialszych piratów jakich znało wtedy morze. Gdy jego załoga wtargnęła do więzienia i przedarła się do sektora, w którym znajdował się ich kapitan, zaczęli uwalniać wszystkich więźniów. </value>
+  </data>
+  <data name="TBox_Etap2_3.Text" xml:space="preserve">
+    <value>Rozpoczynasz ucieczkę z więzienia. Przy jednym ze strażników, który zginął broniąc więzienia znajdujesz pęknięty miecz. Zaczynasz szukać wyjścia i napotykasz się na strażnika, który został poważnie ranny podczas ataku, ale nie pozwala Ci przejść i musisz go pokonać. </value>
+  </data>
+  <data name="TBox_Etap2_4.Text" xml:space="preserve">
+    <value>Po pokonaniu strażnika i będąc lekko ranny idziesz dalej w poszukiwaniu wyjścia. Napotykasz na swojej drodze drzwi ze stali, których nie udaje Ci się wyłamać. Przy jednym z poległych strażników znajdujesz klucz i udaje Ci się otworzyć drzwi. Za drzwiami znajduje się wyłom, który zrobiła jedna z armat przy ataku na więzienie. Udaje Ci się uciec do lasu.</value>
+  </data>
+  <data name="TBox_Etap1_1.Text" xml:space="preserve">
+    <value>Pewnego dnia pewien rozbitek znalazł się na brzegu plaży. Gdy był jeszcze nieprzytomny to strażnicy z pobliskiego zamku znaleźli go. Na czas aż odzyska przytomność został zamknięty w celi. Okazało się, że jest On/a zbiegiem i poszukiwany listem gończym. 
+Zostaje wydany wyrok kary śmierci.</value>
+  </data>
+  <data name="TBox_Etap1_2.Text" xml:space="preserve">
+    <value>Dwa dni przed egzekucją w więzieniu nagle zaczyna się szturm na więzienie. W jednej z cel siedzi jeden z najwspanialszych piratów jakich znało wtedy morze. Gdy jego załoga wtargnęła do więzienia i przedarła się do sektora, w którym znajdował się ich kapitan, zaczęli uwalniać wszystkich więźniów. </value>
+  </data>
+  <data name="TBox_Etap1_3.Text" xml:space="preserve">
+    <value>Rozpoczynasz ucieczkę z więzienia. Przy jednym ze strażników, który zginął broniąc więzienia znajdujesz pęknięty miecz. Zaczynasz szukać wyjścia i napotykasz się na strażnika, który został poważnie ranny podczas ataku, ale nie pozwala Ci przejść i musisz go pokonać. </value>
+  </data>
+  <data name="TBox_Etap1_4.Text" xml:space="preserve">
+    <value>Po pokonaniu strażnika i będąc lekko ranny idziesz dalej w poszukiwaniu wyjścia. Napotykasz na swojej drodze drzwi ze stali, których nie udaje Ci się wyłamać. Przy jednym z poległych strażników znajdujesz klucz i udaje Ci się otworzyć drzwi. Za drzwiami znajduje się wyłom, który zrobiła jedna z armat przy ataku na więzienie. Udaje Ci się uciec do lasu.</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

@@ -103,6 +103,16 @@ namespace RPG___Projekt_programowanie_obiektowe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap duskwood {
+            get {
+                object obj = ResourceManager.GetObject("duskwood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Female1 {
             get {
                 object obj = ResourceManager.GetObject("Female1", resourceCulture);
@@ -186,6 +196,16 @@ namespace RPG___Projekt_programowanie_obiektowe.Properties {
         internal static System.Drawing.Bitmap Menu_Button2 {
             get {
                 object obj = ResourceManager.GetObject("Menu_Button2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wiezienie {
+            get {
+                object obj = ResourceManager.GetObject("wiezienie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
