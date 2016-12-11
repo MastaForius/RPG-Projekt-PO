@@ -10,6 +10,8 @@ using System.Windows.Forms;
 // biblioteka wymagana do pobierania danych zwiazanych z przesuwaniem okna przy pomocy myszy
 using System.Runtime.InteropServices;
 using RPG___Projekt_programowanie_obiektowe.Properties;
+// Do zapisywania/wczytywania plikow
+using System.IO;
 
 namespace RPG___Projekt_programowanie_obiektowe
 {
@@ -20,8 +22,9 @@ namespace RPG___Projekt_programowanie_obiektowe
             InitializeComponent();
             this.ActiveControl = Btn_WelcomeScreen;
         }
+        string path = Environment.CurrentDirectory + "/";
         // Stworzenie bohatera
-        Bohater hero = new Bohater("imie bohatera", true, Properties.Resources.Avatar_Unkown1);
+        Bohater hero = new Bohater("imie bohatera", true, -1);
 
         #region Funkcja wysuwania menu/ paneli
         // Algorytm wysuwanego menu
@@ -198,71 +201,59 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         #region Stworz
         // Zmiana plci
-        int ktoryMaleAvatar = 0;
-        int ktoryFemaleAvatar = 0;
+        int ktoryAvatar = 0;
         private void Rdo_Male_CheckedChanged(object sender, EventArgs e)
         {
             Pic_ChooseAvatar.Image = Resources.Male1;
             Lbl_CheckPlec.Text = "";
-            ktoryMaleAvatar = 0;
+            hero.gender = true;
+            ktoryAvatar = 0;
         }
         private void Rdo_Female_CheckedChanged(object sender, EventArgs e)
         {
             Pic_ChooseAvatar.Image = Resources.Female1;
             Lbl_CheckPlec.Text = "";
-            ktoryFemaleAvatar = 0;
+            hero.gender = false;
+            ktoryAvatar = 0;
         }
         // Zmiana avatara
         private void Btn_PrevAvatarView_Click(object sender, EventArgs e)
         {
-            if (ktoryMaleAvatar > 0 && Rdo_Male.Checked == true)
-                ktoryMaleAvatar--;
-            if (ktoryFemaleAvatar > 0 && Rdo_Female.Checked == true)
-                ktoryFemaleAvatar--;
-
-            if (Rdo_Male.Checked == true)
-            {
-                if (ktoryMaleAvatar == 0)
-                    Pic_ChooseAvatar.Image = Resources.Male1;
-                else if (ktoryMaleAvatar == 1)
-                    Pic_ChooseAvatar.Image = Resources.Male2;
-                else
-                    Pic_ChooseAvatar.Image = Resources.Male3;
-            }
-            else if (Rdo_Female.Checked == true)
-            {
-                if (ktoryFemaleAvatar == 0)
-                    Pic_ChooseAvatar.Image = Resources.Female1;
-                else if (ktoryFemaleAvatar == 1)
-                    Pic_ChooseAvatar.Image = Resources.Female2;
-                else
-                    Pic_ChooseAvatar.Image = Resources.Female3;
-            }
+            if (ktoryAvatar > 0)
+                ktoryAvatar--;
+            Pic_ChooseAvatar.Image = jakiAvatar(Rdo_Male.Checked, ktoryAvatar);
         }
         private void Btn_NextAvatarView_Click(object sender, EventArgs e)
         {
-            if (ktoryMaleAvatar < 2 && Rdo_Male.Checked == true)
-                ktoryMaleAvatar++;
-            if (ktoryFemaleAvatar < 2 && Rdo_Female.Checked == true)
-                ktoryFemaleAvatar++;
+            if (ktoryAvatar < 2)
+                ktoryAvatar++;
 
-            if (Rdo_Male.Checked == true)
+            Pic_ChooseAvatar.Image = jakiAvatar(Rdo_Male.Checked, ktoryAvatar);
+        }
+        // Schemat wyboru avatara
+        private System.Drawing.Image jakiAvatar(bool plec, int numer)
+        {
+            if (plec == true)
             {
-                if (ktoryMaleAvatar == 0)
-                    Pic_ChooseAvatar.Image = Resources.Male1;
-                else if (ktoryMaleAvatar == 1)
-                    Pic_ChooseAvatar.Image = Resources.Male2;
+                if (numer == 0)
+                    return Resources.Male1;
+                else if (numer == 1)
+                    return Resources.Male2;
                 else
-                    Pic_ChooseAvatar.Image = Resources.Male3;
+                    return Resources.Male3;
             }
-            else if (Rdo_Female.Checked == true)
+            else if (plec == false)
             {
-                if (ktoryFemaleAvatar == 0)
-                    Pic_ChooseAvatar.Image = Resources.Female1;
-                else if (ktoryFemaleAvatar == 1)
-                    Pic_ChooseAvatar.Image = Resources.Female2;
+                if (numer == 0)
+                    return Resources.Female1;
+                else if (numer == 1)
+                    return Resources.Female2;
                 else
-                    Pic_ChooseAvatar.Image = Resources.Female3;
+                    return Resources.Female3;
+            }
+            else
+            {
+                return Resources.Avatar_Unkown1;
             }
         }
 
@@ -354,8 +345,9 @@ namespace RPG___Projekt_programowanie_obiektowe
         {
             hero.name = TBox_NazwaPostaci.Text;
             Lbl_Nick.Text = hero.name;
-            hero.avatar = Pic_ChooseAvatar.Image;
-            Pic_Avatar.BackgroundImage = hero.avatar;
+            hero.gender =Rdo_Male.Checked;
+            hero.numerAvatara = ktoryAvatar;
+            Pic_Avatar.BackgroundImage =  jakiAvatar(hero.gender, hero.numerAvatara);
             DodajExp(0);
             Ulecz(9999);
             Odpocznij(9999);
@@ -365,6 +357,12 @@ namespace RPG___Projekt_programowanie_obiektowe
         private void ZapiszBohatera()
         {
 
+            string tempPath = path + hero.name+".txt";
+            if (!File.Exists(tempPath))
+            {
+                File.Create(tempPath);
+                //File.OpenWrite(tempPath).
+            } 
         }
         // Odczyt
         private void WczytajBohatera()
