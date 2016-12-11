@@ -83,6 +83,14 @@
             this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
             this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
             this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
+            this.Pnl_WczytajGre = new System.Windows.Forms.Panel();
+            this.Btn_OtworzZapis = new System.Windows.Forms.Button();
+            this.Lbl_PodajNazweBohateraWczytywanie = new System.Windows.Forms.Label();
+            this.TBox_WczytajGre = new System.Windows.Forms.TextBox();
+            this.Pnl_TytulWczytajGre = new System.Windows.Forms.Panel();
+            this.Btn_ZamknijWczytywanieGry = new System.Windows.Forms.Button();
+            this.Lbl_Wczytaj = new System.Windows.Forms.Label();
+            this.PBox_Wczytaj = new System.Windows.Forms.PictureBox();
             this.Pnl_TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
@@ -91,6 +99,9 @@
             this.Pnl_LeftGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
             this.Pnl_WelcomeScreen.SuspendLayout();
+            this.Pnl_WczytajGre.SuspendLayout();
+            this.Pnl_TytulWczytajGre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_TopPanel
@@ -488,7 +499,7 @@
             this.TBox_NazwaPostaci.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TBox_NazwaPostaci.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
             this.TBox_NazwaPostaci.Location = new System.Drawing.Point(235, 15);
-            this.TBox_NazwaPostaci.MaxLength = 15;
+            this.TBox_NazwaPostaci.MaxLength = 16;
             this.TBox_NazwaPostaci.Name = "TBox_NazwaPostaci";
             this.TBox_NazwaPostaci.Size = new System.Drawing.Size(256, 55);
             this.TBox_NazwaPostaci.TabIndex = 5;
@@ -870,6 +881,108 @@
             this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
             this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
             // 
+            // Pnl_WczytajGre
+            // 
+            this.Pnl_WczytajGre.Controls.Add(this.Btn_OtworzZapis);
+            this.Pnl_WczytajGre.Controls.Add(this.Lbl_PodajNazweBohateraWczytywanie);
+            this.Pnl_WczytajGre.Controls.Add(this.TBox_WczytajGre);
+            this.Pnl_WczytajGre.Controls.Add(this.Pnl_TytulWczytajGre);
+            this.Pnl_WczytajGre.Location = new System.Drawing.Point(354, 234);
+            this.Pnl_WczytajGre.Name = "Pnl_WczytajGre";
+            this.Pnl_WczytajGre.Size = new System.Drawing.Size(392, 205);
+            this.Pnl_WczytajGre.TabIndex = 4;
+            this.Pnl_WczytajGre.Visible = false;
+            // 
+            // Btn_OtworzZapis
+            // 
+            this.Btn_OtworzZapis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_OtworzZapis.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_OtworzZapis.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_OtworzZapis.Location = new System.Drawing.Point(245, 123);
+            this.Btn_OtworzZapis.Name = "Btn_OtworzZapis";
+            this.Btn_OtworzZapis.Size = new System.Drawing.Size(141, 55);
+            this.Btn_OtworzZapis.TabIndex = 22;
+            this.Btn_OtworzZapis.Text = "Wczytaj";
+            this.Btn_OtworzZapis.UseVisualStyleBackColor = true;
+            this.Btn_OtworzZapis.Click += new System.EventHandler(this.Btn_OtworzZapis_Click);
+            // 
+            // Lbl_PodajNazweBohateraWczytywanie
+            // 
+            this.Lbl_PodajNazweBohateraWczytywanie.AutoSize = true;
+            this.Lbl_PodajNazweBohateraWczytywanie.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_PodajNazweBohateraWczytywanie.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Lbl_PodajNazweBohateraWczytywanie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.Lbl_PodajNazweBohateraWczytywanie.Location = new System.Drawing.Point(36, 64);
+            this.Lbl_PodajNazweBohateraWczytywanie.Name = "Lbl_PodajNazweBohateraWczytywanie";
+            this.Lbl_PodajNazweBohateraWczytywanie.Size = new System.Drawing.Size(326, 47);
+            this.Lbl_PodajNazweBohateraWczytywanie.TabIndex = 21;
+            this.Lbl_PodajNazweBohateraWczytywanie.Text = "Podaj nazwę bohatera";
+            this.Lbl_PodajNazweBohateraWczytywanie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TBox_WczytajGre
+            // 
+            this.TBox_WczytajGre.BackColor = System.Drawing.Color.Gray;
+            this.TBox_WczytajGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_WczytajGre.ForeColor = System.Drawing.Color.Maroon;
+            this.TBox_WczytajGre.Location = new System.Drawing.Point(17, 123);
+            this.TBox_WczytajGre.MaxLength = 16;
+            this.TBox_WczytajGre.Name = "TBox_WczytajGre";
+            this.TBox_WczytajGre.Size = new System.Drawing.Size(222, 55);
+            this.TBox_WczytajGre.TabIndex = 5;
+            // 
+            // Pnl_TytulWczytajGre
+            // 
+            this.Pnl_TytulWczytajGre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(80)))));
+            this.Pnl_TytulWczytajGre.Controls.Add(this.Btn_ZamknijWczytywanieGry);
+            this.Pnl_TytulWczytajGre.Controls.Add(this.Lbl_Wczytaj);
+            this.Pnl_TytulWczytajGre.Controls.Add(this.PBox_Wczytaj);
+            this.Pnl_TytulWczytajGre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pnl_TytulWczytajGre.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_TytulWczytajGre.Name = "Pnl_TytulWczytajGre";
+            this.Pnl_TytulWczytajGre.Size = new System.Drawing.Size(392, 50);
+            this.Pnl_TytulWczytajGre.TabIndex = 4;
+            this.Pnl_TytulWczytajGre.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pnl_TytulWczytajGre_MouseDown);
+            // 
+            // Btn_ZamknijWczytywanieGry
+            // 
+            this.Btn_ZamknijWczytywanieGry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
+            this.Btn_ZamknijWczytywanieGry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ZamknijWczytywanieGry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ZamknijWczytywanieGry.Font = new System.Drawing.Font("Swis721 BlkEx BT", 18F, System.Drawing.FontStyle.Italic);
+            this.Btn_ZamknijWczytywanieGry.ForeColor = System.Drawing.Color.Red;
+            this.Btn_ZamknijWczytywanieGry.Location = new System.Drawing.Point(346, 5);
+            this.Btn_ZamknijWczytywanieGry.Name = "Btn_ZamknijWczytywanieGry";
+            this.Btn_ZamknijWczytywanieGry.Size = new System.Drawing.Size(40, 40);
+            this.Btn_ZamknijWczytywanieGry.TabIndex = 22;
+            this.Btn_ZamknijWczytywanieGry.Text = "X";
+            this.Btn_ZamknijWczytywanieGry.UseVisualStyleBackColor = false;
+            this.Btn_ZamknijWczytywanieGry.Click += new System.EventHandler(this.ZamknijWczytywanieGry_Click);
+            // 
+            // Lbl_Wczytaj
+            // 
+            this.Lbl_Wczytaj.AutoSize = true;
+            this.Lbl_Wczytaj.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_Wczytaj.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Lbl_Wczytaj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.Lbl_Wczytaj.Location = new System.Drawing.Point(81, 0);
+            this.Lbl_Wczytaj.Name = "Lbl_Wczytaj";
+            this.Lbl_Wczytaj.Size = new System.Drawing.Size(183, 47);
+            this.Lbl_Wczytaj.TabIndex = 20;
+            this.Lbl_Wczytaj.Text = "Wczytaj gre";
+            this.Lbl_Wczytaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_Wczytaj.Click += new System.EventHandler(this.Btn_WczytajGre_Click);
+            this.Lbl_Wczytaj.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lbl_Wczytaj_MouseDown);
+            // 
+            // PBox_Wczytaj
+            // 
+            this.PBox_Wczytaj.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.PBox_Wczytaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBox_Wczytaj.Location = new System.Drawing.Point(0, 0);
+            this.PBox_Wczytaj.Name = "PBox_Wczytaj";
+            this.PBox_Wczytaj.Size = new System.Drawing.Size(75, 50);
+            this.PBox_Wczytaj.TabIndex = 1;
+            this.PBox_Wczytaj.TabStop = false;
+            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -878,10 +991,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 681);
-            this.Controls.Add(this.Pnl_LeftPanelMenu);
             this.Controls.Add(this.Pnl_WelcomeScreen);
-            this.Controls.Add(this.Pnl_LeftGame);
+            this.Controls.Add(this.Pnl_WczytajGre);
             this.Controls.Add(this.Pnl_NowaGra);
+            this.Controls.Add(this.Pnl_LeftPanelMenu);
+            this.Controls.Add(this.Pnl_LeftGame);
             this.Controls.Add(this.Pnl_Odstep6);
             this.Controls.Add(this.Pnl_Odstep5);
             this.Controls.Add(this.Pnl_BottomPanel);
@@ -907,6 +1021,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
             this.Pnl_WelcomeScreen.ResumeLayout(false);
             this.Pnl_WelcomeScreen.PerformLayout();
+            this.Pnl_WczytajGre.ResumeLayout(false);
+            this.Pnl_WczytajGre.PerformLayout();
+            this.Pnl_TytulWczytajGre.ResumeLayout(false);
+            this.Pnl_TytulWczytajGre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -965,5 +1084,13 @@
         internal CircularProgressBar.CircularProgressBar Cpb_Exp;
         internal System.Windows.Forms.PictureBox Pic_Avatar;
         private System.Windows.Forms.Label Lbl_Nick;
+        private System.Windows.Forms.Panel Pnl_WczytajGre;
+        private System.Windows.Forms.Label Lbl_PodajNazweBohateraWczytywanie;
+        private System.Windows.Forms.TextBox TBox_WczytajGre;
+        private System.Windows.Forms.Panel Pnl_TytulWczytajGre;
+        private System.Windows.Forms.Button Btn_ZamknijWczytywanieGry;
+        private System.Windows.Forms.Label Lbl_Wczytaj;
+        private System.Windows.Forms.PictureBox PBox_Wczytaj;
+        private System.Windows.Forms.Button Btn_OtworzZapis;
     }
 }

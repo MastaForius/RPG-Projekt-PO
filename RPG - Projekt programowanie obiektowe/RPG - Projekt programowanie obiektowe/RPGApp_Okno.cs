@@ -25,7 +25,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         string path = @"C:/Users/Admin/AppData/Local/Temp/";
         string nazwaFolderu = "RPG Projekt programowanie obiektowe";
         // Stworzenie bohatera
-        Bohater hero = new Bohater("imie bohatera", true, -1);
+        Bohater hero = new Bohater("Domyslny bohater gry", true, -1);
 
         #region Funkcja wysuwania menu/ paneli
         // Algorytm wysuwanego menu
@@ -321,9 +321,46 @@ namespace RPG___Projekt_programowanie_obiektowe
         #endregion
 
         #region Wczytaj gre
+        // Zachowanie okienka
+        private void Pnl_TytulWczytajGre_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void Lbl_Wczytaj_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        // Wywołanie okna
         private void Btn_WczytajGre_Click(object sender, EventArgs e)
         {
-            WczytajBohatera();
+            if (Pnl_WczytajGre.Visible == false)
+            {
+                Pnl_WczytajGre.Visible = !Pnl_WczytajGre.Visible;
+                Pnl_WczytajGre.Visible = !Pnl_WczytajGre.Visible;
+                Util.Animate(Pnl_WczytajGre, Util.Effect.Center, 100, 0);
+            }
+        }
+        // Sprawdzenie czy istnieje taki bohater
+        private void Btn_OtworzZapis_Click(object sender, EventArgs e)
+        {
+            WczytajBohatera(TBox_WczytajGre.Text);
+        }
+        // Zamkniecie okna
+        private void ZamknijWczytywanieGry_Click(object sender, EventArgs e)
+        {
+            if (Pnl_WczytajGre.Visible == true)
+            {
+                Util.Animate(Pnl_WczytajGre, Util.Effect.Center, 100, 0);
+            }
         }
         #endregion
 
@@ -348,6 +385,12 @@ namespace RPG___Projekt_programowanie_obiektowe
 
 
         #region Zarzadzanie bohaterem
+        //
+        // Zbiór funkcji odpowiedzialnych za zmieny obiektu klasy bohater
+        //
+
+
+
         // Nowy Bohater
         private void NowyBohater()
         {
@@ -369,7 +412,6 @@ namespace RPG___Projekt_programowanie_obiektowe
             {
                 Directory.CreateDirectory(dirPath);
             }
-
         }
         private void StworzPlik()
         {
@@ -412,28 +454,55 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
         }
         // Odczyt
-        private void WczytajBohatera()
+        private void WczytajBohatera(string fileName)
         {
-
-            //using (StreamReader odczyt = new StreamReader(wczytaj))
-            //{
-            //    hero.name = odczyt.ReadLine();
-            //    hero.gender = Convert.ToBoolean(odczyt.ReadLine());
-            //    hero.numerAvatara = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.doswiadczenie = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.poziom = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.poziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.maxPoziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.wytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.maxPoziomWytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
-            //    hero.zloto = Convert.ToInt32(odczyt.ReadLine());
-            //    for (int i = 0; i < 16; i++)
-            //    {
-            //        hero.statusMisji[i] = Convert.ToInt32(odczyt.ReadLine());
-            //    }
-            //    odczyt.Close();
-            //    odczyt.Dispose();
-            //}
+            string tempPath = path + nazwaFolderu + "/" + fileName + ".txt";
+            if (File.Exists(tempPath))
+            {
+                using (StreamReader odczyt = new StreamReader(tempPath))
+                {
+                    hero.name = odczyt.ReadLine();
+                    hero.gender = Convert.ToBoolean(odczyt.ReadLine());
+                    hero.numerAvatara = Convert.ToInt32(odczyt.ReadLine());
+                    hero.doswiadczenie = Convert.ToInt32(odczyt.ReadLine());
+                    hero.poziom = Convert.ToInt32(odczyt.ReadLine());
+                    hero.poziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
+                    hero.maxPoziomZdrowia = Convert.ToInt32(odczyt.ReadLine());
+                    hero.wytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
+                    hero.maxPoziomWytrzymalosc = Convert.ToInt32(odczyt.ReadLine());
+                    hero.zloto = Convert.ToInt32(odczyt.ReadLine());
+                    for (int i = 0; i < 16; i++)
+                    {
+                        hero.statusMisji[i] = Convert.ToInt32(odczyt.ReadLine());
+                    }
+                    odczyt.Close();
+                    odczyt.Dispose();
+                }
+                MessageBox.Show("Wczytano postać " +fileName);
+                TBox_WczytajGre.Text = "";
+                
+                // Schowanie paneli
+                if (Pnl_WczytajGre.Visible == true)
+                {
+                    Util.Animate(Pnl_WczytajGre, Util.Effect.Center, 100, 0);
+                }
+                PokazPrzyciskMenu();
+                SchowajMenu();
+                // Załadowanie panelu bohatera
+                DodajExp(hero.doswiadczenie);
+                Lbl_Nick.Text = hero.name;
+                Pic_Avatar.BackgroundImage = jakiAvatar(hero.gender, hero.numerAvatara);
+                Ulecz(0);
+                Odpocznij(0);
+                dodajZloto(0);
+                // Wysuniecie paneli
+                WysunBohater();
+            }
+            else
+            {
+                MessageBox.Show("Nie poprawna nazwa postaci lub brak pliku zapisu na tym komputerze");
+                TBox_WczytajGre.Text = "";
+            }
         }
         // zarzadzanie doswiadczeniem
         private void DodajExp(int plusExp)
@@ -496,6 +565,10 @@ namespace RPG___Projekt_programowanie_obiektowe
             else
             {
                 hero.poziomZdrowia = 0;
+                if (MessageBox.Show("Przegrałeś. :-(", "Czy chcesz spróbować jeszcze raz?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                }
             }
             Cpb_Health.Value = hero.poziomZdrowia;
         }
@@ -508,6 +581,10 @@ namespace RPG___Projekt_programowanie_obiektowe
             else
             {
                 hero.poziomZdrowia = hero.maxPoziomZdrowia;
+                if (Pnl_LeftGame.Visible)
+                {
+                    MessageBox.Show("Zostałeś uleczony do pełna");
+                }
             }
             Cpb_Health.Value = hero.poziomZdrowia;
         }
@@ -533,7 +610,10 @@ namespace RPG___Projekt_programowanie_obiektowe
             else
             {
                 hero.wytrzymalosc = hero.maxPoziomWytrzymalosc;
-                MessageBox.Show("Jestes w pełni wypoczety");
+                if (Pnl_LeftGame.Visible)
+                {
+                    MessageBox.Show("Jestes w pełni wypoczety");
+                }
             }
             Cpb_Stamina.Value = hero.wytrzymalosc;
         }
@@ -710,5 +790,6 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         }
         #endregion
+                
     }
 }

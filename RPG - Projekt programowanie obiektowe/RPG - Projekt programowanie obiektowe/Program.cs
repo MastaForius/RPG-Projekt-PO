@@ -17,7 +17,6 @@ namespace RPG___Projekt_programowanie_obiektowe
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new RPGApp_Okno());
-            //Application.Run(new RPG_MainWindow());
         }
     }
 }
