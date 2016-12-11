@@ -145,8 +145,14 @@
   <data name="Avatar Unkown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Unkown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="stormwind-lightsabers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stormwind-lightsabers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Avatar Unkown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avatar Unkown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wiezienie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wiezienie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Male2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,13 +160,13 @@
   <data name="Menu_Button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu_Button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Male3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="duskwood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duskwood.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wiezienie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wiezienie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Male3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Male3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karczma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karczma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

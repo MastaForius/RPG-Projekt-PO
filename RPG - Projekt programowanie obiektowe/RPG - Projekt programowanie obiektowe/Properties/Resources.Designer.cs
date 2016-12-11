@@ -143,6 +143,16 @@ namespace RPG___Projekt_programowanie_obiektowe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap karczma {
+            get {
+                object obj = ResourceManager.GetObject("karczma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kraty {
             get {
                 object obj = ResourceManager.GetObject("Kraty", resourceCulture);
@@ -196,6 +206,16 @@ namespace RPG___Projekt_programowanie_obiektowe.Properties {
         internal static System.Drawing.Bitmap Menu_Button2 {
             get {
                 object obj = ResourceManager.GetObject("Menu_Button2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stormwind_lightsabers {
+            get {
+                object obj = ResourceManager.GetObject("stormwind-lightsabers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

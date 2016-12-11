@@ -777,6 +777,7 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Pnl_Etapy, Util.Effect.Slide, 125, 180);
             }
         }
+
         // 1 Etap gry
         private void WysunEtap1()
         {
@@ -805,7 +806,6 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Zmeczenie(5);
             }
         }
-
         private void Btn_Etap1_2_Click(object sender, EventArgs e)
         {
             if (!Btn_Etap1_3.Visible)
@@ -819,7 +819,6 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Btn_Etap1_3, Util.Effect.Center, 80, 180);
             }
         }
-
         private void Btn_Etap1_3_Click(object sender, EventArgs e)
         {
             if (!Btn_Etap1_4.Visible)
@@ -828,13 +827,13 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Btn_Etap1_4, Util.Effect.Center, 80, 180);
             }
         }
-
         private void Btn_Etap1_4_Click(object sender, EventArgs e)
         {
             Zmeczenie(40);
             SchowajEtap1();
             WysunEtap2();
         }
+
         // 2 Etap gry
         private void WysunEtap2()
         {
@@ -843,25 +842,25 @@ namespace RPG___Projekt_programowanie_obiektowe
                 Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
                 Util.Animate(TBox_Etap2_1, Util.Effect.Center, 80, 180);
                 Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
-                Util.Animate(Btn_Etap1_2, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_Etap2_1, Util.Effect.Center, 80, 180);
                 Ulecz(20);
                 Odpocznij(35);
             }
         }
         private void SchowajEtap2()
         {
-            Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
-            Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
+            if (Pnl_Etap1.Visible)
+            {
+                Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
+                Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
+            }
         }
-
-
         private void Btn_Etap2_1_Click(object sender, EventArgs e)
         {
             Util.Animate(TBox_Etap2_2, Util.Effect.Center, 80, 180);
             Util.Animate(Btn_Etap2_2, Util.Effect.Center, 80, 180);
             zadajObrazenia(20);
         }
-
         private void Btn_Etap2_2_Click(object sender, EventArgs e)
         {
             Util.Animate(TBox_Etap2_3, Util.Effect.Center, 80, 180);
@@ -870,7 +869,6 @@ namespace RPG___Projekt_programowanie_obiektowe
             Zmeczenie(35);
             Ulecz(15);
         }
-
         private void Btn_Etap2_3_Click(object sender, EventArgs e)
         {
             Util.Animate(TBox_Etap2_4, Util.Effect.Center, 80, 180);
@@ -881,21 +879,33 @@ namespace RPG___Projekt_programowanie_obiektowe
             DodajExp(50);
             dodajZloto(5);
         }
-
         private void Btn_Etap2_4_Click(object sender, EventArgs e)
         {
-            Zmeczenie(25);
+            Zmeczenie(80);
             SchowajEtap2();
             WysunEtap3();
         }
+
         // 3 Etap gry
         private void WysunEtap3()
         {
-
+            if (!Pnl_Etap3.Visible)
+            {
+                Util.Animate(Pnl_Etap3, Util.Effect.Slide, 125, 180);
+                Util.Animate(TBox_Etap3_1, Util.Effect.Center, 80, 180);
+                Util.Animate(Pnl_ButtonsE3, Util.Effect.Slide, 125, 180);
+                Util.Animate(Btn_Etap3_1, Util.Effect.Center, 80, 180);
+                Odpocznij(10);
+                kosztZlota(25);
+            }
         }
         private void SchowajEtap3()
         {
-
+            if (!Pnl_Etap3.Visible)
+            {
+                Util.Animate(Pnl_Etap3, Util.Effect.Slide, 125, 180);
+                Util.Animate(Pnl_ButtonsE3, Util.Effect.Slide, 125, 180);
+            }
         }
         // 4 Etap gry
         private void WysunEtap4()
@@ -912,6 +922,14 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         }
         private void SchowajEtap5()
+        {
+
+        }
+
+
+
+        //Wygrana
+        public void Wygrana()
         {
 
         }

@@ -183,6 +183,31 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="TBox_Etap4_4.Text" xml:space="preserve">
+    <value>Udało Ci się dotrzeć do miasta w 11 dni. Ruszasz szybkim krokiem do karczmy, aby pochwalić się swoim łupem oraz otrzymać nagrodę od karczmarza za wykonanie zadania. Pokazujesz karczmarzowi naszyjnik, za który daje Ci 1000 monet oraz darmowa ucztę i zimne piwko. Słysząc to jeden z ludzi podchodzi do Ciebie i mówi, że szukają takich jak Ty do gildii. Na następny dzień idziesz na rekrutację do gildii i zostajesz przyjęty.
+
+</value>
+  </data>
+  <data name="TBox_Etap5_2.Text" xml:space="preserve">
+    <value>Udało Ci się przedostać do ich obozu i po cichu zabiłeś ich przywódcę. Zdobyłeś jego dwuręczny miecz ze stali, której jeszcze nigdy nie widziałeś na oczy oraz z jego ubrania wyciągnąłeś naszyjnik, który pokażesz jako dowód wykonania zadania. </value>
+  </data>
+  <data name="TBox_Etap5_3.Text" xml:space="preserve">
+    <value>Po wyjściu z namiotu przywódcy bandytów, dostrzegło Cię 2 innych bandytów, którzy są lekko zdezorientowani. Podchodzą do Ciebie, a Ty szybkim cięciem pokonujesz jednego z nich. Drugi bandyta odskakuje i rozpoczynasz z nim walkę. Po zwycięstwie nad bandytami, podpalasz resztę namiotów i uciekasz szybko z ich obozu. 
+</value>
+  </data>
+  <data name="TBox_Etap3_2.Text" xml:space="preserve">
+    <value> Wchodząc do karczmy, aby znaleźć dla siebie jakieś zadanie i zdobyć trochę pieniędzy na ekwipunek oraz jedzenie podsłuchujesz rozmowę, gdzie mówią, że za miesiąc zaczyna się rekrutacja do gildii. Podchodząc do karczmarza słyszysz o zadaniu, którego nikt się nie chce podjąć. Musisz wyruszyć w góry i pokonać bandytów, którzy okradają konwoje z wyposażeniem oraz jedzeniem. Podejmując się tego wyzwania, karczmarz dał Ci trochę jedzenia i lekki ekwipunek po swoim ochroniarzu ( miecz, lekki, miksturę leczniczą oraz lekka zbroje). 
+Wyruszyłeś w góry. Droga zajęła Ci 12 dni, które spędziłeś nie tylko idąc, ale i polując.(bonus do siły) Po długiej drodze napotkałeś ślady bandytów. Udało Ci się przedostać do ich obozu i po cichu zabiłeś ich przywódcę. Zdobyłeś jego dwuręczny miecz ze stali, której jeszcze nigdy nie widziałeś na oczy oraz z jego ubrania wyciągnąłeś naszyjnik, który pokażesz jako dowód wykonania zadania. Po wyjściu z namiotu przywódcy bandytów, dostrzegło Cię 2 innych bandytów, którzy są lekko zdezorientowani. Podchodzą do Ciebie, a Ty szybkim cięciem pokonujesz jednego z nich. Drugi bandyta odskakuje i rozpoczynasz z nim walkę. Po zwycięstwie nad bandytom, podpalasz resztę namiotów i uciekasz szybko z ich obozu. Udało Ci się dotrzeć do miasta w 11 dni. Ruszasz szybkim krokiem do karczmy, aby pochwalić się swoim łupem oraz otrzymać nagrodę od karczmarza za wykonanie zadania. Pokazujesz karczmarzowi naszyjnik, za który daje Ci 1000 monet oraz darmowa ucztę i zimne piwko. Słysząc to jeden z ludzi podchodzi do Ciebie i mówi, że szukają takich jak Ty do gildii. Na następny dzień idziesz na rekrutację do gildii i zostajesz przyjęty.</value>
+  </data>
+  <data name="TBox_Etap3_3.Text" xml:space="preserve">
+    <value> Po powrocie do chaty spotykasz właściciela, który domaga się zapłaty za nocleg. Nie mając pieniędzy i widząc, że właściciel ma jakiś problem, że zamiast pieniędzy możesz wykonać dla niego zadanie, które go dręczy. Musisz udać na zachód, gdzie jest nora wilków i je zabić.</value>
+  </data>
+  <data name="TBox_Etap3_4.Text" xml:space="preserve">
+    <value> Po przejściu 2 kilometrów widzisz norę wilków. Nie było ich zbyt wiele i atakujesz jednego. Po pokonaniu największego wilka reszta ucieka. Postanawiasz oskórować wilka, aby zrobić sobie jakieś ubranie.</value>
+  </data>
+  <data name="TBox_Etap3_5.Text" xml:space="preserve">
+    <value>Wracasz do właściciela i pokazujesz mu na dowód skórę wilka oraz jego kły. Ten na dowód wdzięczności pokazuje Ci jak się udać do miasta. Po chwili opuszczenia chatki znajdujesz drogę i udajesz się do miasta.</value>
+  </data>
   <data name="TBox_Etap2_3.Text" xml:space="preserve">
     <value> Po powrocie do chaty spotykasz właściciela, który domaga się zapłaty za nocleg. Nie mając pieniędzy i widząc, że właściciel ma jakiś problem, że zamiast pieniędzy możesz wykonać dla niego zadanie, które go dręczy. Musisz udać na zachód, gdzie jest nora wilków i je zabić.</value>
   </data>
@@ -190,7 +215,8 @@
     <value> Po przejściu 2 kilometrów widzisz norę wilków. Nie było ich zbyt wiele i atakujesz jednego. Po pokonaniu największego wilka reszta ucieka. Postanawiasz oskórować wilka, aby zrobić sobie jakieś ubranie.</value>
   </data>
   <data name="TBox_Etap2_5.Text" xml:space="preserve">
-    <value>Wracasz do właściciela i pokazujesz mu na dowód skórę wilka oraz jego kły. Ten na dowód wdzięczności pokazuje Ci jak się udać do miasta. Po chwili opuszczenia chatki znajdujesz drogę i udajesz się do miasta.</value>
+    <value>Wracasz do właściciela i pokazujesz mu na dowód skórę wilka oraz jego kły. Ten na dowód wdzięczności pokazuje Ci jak się udać do miasta. Po chwili opuszczenia chatki znajdujesz drogę i udajesz się do miasta.
+(Lepiej być dobrze wypoczętym)</value>
   </data>
   <data name="TBox_Etap1_1.Text" xml:space="preserve">
     <value>Pewnego dnia pewien rozbitek znalazł się na brzegu plaży. Gdy był jeszcze nieprzytomny to strażnicy z pobliskiego zamku znaleźli go. Na czas aż odzyska przytomność został zamknięty w celi. Okazało się, że jest On/a zbiegiem i poszukiwany listem gończym. 
