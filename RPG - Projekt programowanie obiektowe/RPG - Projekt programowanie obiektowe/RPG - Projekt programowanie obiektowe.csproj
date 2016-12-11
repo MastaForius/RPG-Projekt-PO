@@ -80,24 +80,6 @@
     <Compile Include="CreditsInfo.Designer.cs">
       <DependentUpon>CreditsInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPG_MainWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RPG_MainWindow.Designer.cs">
-      <DependentUpon>RPG_MainWindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucCreatorPostaci.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucCreatorPostaci.Designer.cs">
-      <DependentUpon>ucCreatorPostaci.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucMenu.Designer.cs">
-      <DependentUpon>ucMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RPGApp_Okno.cs">
@@ -106,23 +88,8 @@
     <Compile Include="RPGApp_Okno.Designer.cs">
       <DependentUpon>RPGApp_Okno.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPanelPostaci.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucPanelPostaci.Designer.cs">
-      <DependentUpon>ucPanelPostaci.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CreditsInfo.resx">
       <DependentUpon>CreditsInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPG_MainWindow.resx">
-      <DependentUpon>RPG_MainWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucCreatorPostaci.resx">
-      <DependentUpon>ucCreatorPostaci.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucMenu.resx">
-      <DependentUpon>ucMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,9 +103,6 @@
     </Compile>
     <EmbeddedResource Include="RPGApp_Okno.resx">
       <DependentUpon>RPGApp_Okno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucPanelPostaci.resx">
-      <DependentUpon>ucPanelPostaci.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

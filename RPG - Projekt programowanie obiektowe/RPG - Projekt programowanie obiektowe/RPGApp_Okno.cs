@@ -20,6 +20,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             InitializeComponent();
             this.ActiveControl = Btn_WelcomeScreen;
         }
+        // Stworzenie bohatera
+        Bohater hero = new Bohater("imie bohatera", true, Properties.Resources.Avatar_Unkown1);
 
         #region Funkcja wysuwania menu/ paneli
         // Algorytm wysuwanego menu
@@ -161,33 +163,17 @@ namespace RPG___Projekt_programowanie_obiektowe
         private void Btn_LeftMenuOn_Click(object sender, EventArgs e)
         {
             //Menu
-            Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_LeftMenuOn, Util.Effect.Slide, 125, 0);
-            Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 5, 0);
-            Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
+            SchowajMenu();
             // Reszta
-            Util.Animate(Cpb_Exp, Util.Effect.Slide, 125, 0);
-            Util.Animate(Pic_Avatar, Util.Effect.Slide, 125, 0);
+            WysunBohater();
         }
         // Wjazd+
         private void Btn_LeftMenuOff_Click(object sender, EventArgs e)
         {
             // Reszta
-            Util.Animate(Pic_Avatar, Util.Effect.Slide, 125, 180);
-            Util.Animate(Cpb_Exp, Util.Effect.Slide, 125, 180);
+            SchowajBohater();
             //Menu
-            Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
-            Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 5, 0);
-            Util.Animate(Btn_LeftMenuOn, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
-            Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
+            WysunMenu();
         }
 
         #endregion
@@ -199,41 +185,18 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         #region Nowa Gra
         //Nowa Gra
-        bool czyNowaGraPierwszyRaz = true;
         private void Btn_NowaGra_Click(object sender, EventArgs e)
         {
             // Mozliwosc rozszerzania o kolejne cechy postaci
-            if (Pnl_NowaGra.Visible == false)
-            {
-                // Resetowanie elementow tworzenia postaci
-                Pic_ChooseAvatar.Image = Resources.Avatar_Unkown1;
-                TBox_NazwaPostaci.Text = "";
-                Rdo_Male.Checked = false;
-                Rdo_Female.Checked = false;
-                // Zapobiega blednemu wysunieciu panelu za pierwszym razem zwiazanego prawdopodobnie z brakiem inicjalizacji na niewidocznym elemencie
-                if (czyNowaGraPierwszyRaz == true)
-                {
-                    Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
-                    Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
-                    czyNowaGraPierwszyRaz = false;
-                }
-                // Wysuniecie panelu tworzenia postaci
-                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
-                // Wysuniecie zawartosci panelu
-                Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Male, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_Plec, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_WygladPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_NextAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Pic_ChooseAvatar, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_PrevAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
-                // Schowanie reszty jeśli widoczna
-            }
+            TBox_NazwaPostaci.Text = "";
+            Rdo_Male.Checked = false;
+            Rdo_Female.Checked = false;
+            Pic_ChooseAvatar.Image = Resources.Avatar_Unkown1;
+            WysunTworzeniePostaci();
         }
+        #endregion
+
+        #region Stworz
         // Zmiana plci
         int ktoryMaleAvatar = 0;
         int ktoryFemaleAvatar = 0;
@@ -266,7 +229,7 @@ namespace RPG___Projekt_programowanie_obiektowe
                 else
                     Pic_ChooseAvatar.Image = Resources.Male3;
             }
-            else if(Rdo_Female.Checked == true)
+            else if (Rdo_Female.Checked == true)
             {
                 if (ktoryFemaleAvatar == 0)
                     Pic_ChooseAvatar.Image = Resources.Female1;
@@ -303,32 +266,12 @@ namespace RPG___Projekt_programowanie_obiektowe
             }
         }
 
-        #endregion
-
-            #region Cofnij
+        // Cofnij
         private void Btn_CofnijCreatorPostaci_Click(object sender, EventArgs e)
         {
-            if (Pnl_NowaGra.Visible == true)
-            {
-                // Schowanie zawartosci panelu
-                Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Male, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_Plec, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_WygladPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_NextAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Pic_ChooseAvatar, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_PrevAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
-                // Schowanie panelu tworzenia postaci
-                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
-            }
+            SchowajTworzeniePostaci();
         }
-        #endregion
 
-            #region Stworz
         // Sprawdzanie poprawnosci pol creatora postaci
         private void TBox_NazwaPostaci_Leave(object sender, EventArgs e)
         {
@@ -363,35 +306,15 @@ namespace RPG___Projekt_programowanie_obiektowe
             else
             {
                 // Zapisanie postaci
-
-
-
-
+                NowyBohater();
+                ZapiszBohatera();
                 // Schowanie zawartosci panelu tworzenia postaci
-                Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
-                Util.Animate(Rdo_Male, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_Plec, Util.Effect.Center, 80, 180);
-                Util.Animate(Lbl_WygladPostaci, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_NextAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Pic_ChooseAvatar, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_PrevAvatarView, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
-                Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
-                // Schowanie panelu tworzenia postaci
-                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+                SchowajTworzeniePostaci();
                 // Schowanie Menu gry
-                Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
-                Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
-                Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
-                Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
-                Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
-                Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 250, 0);
+                PokazPrzyciskMenu();
+                SchowajMenu();
                 // Wysunięcie Panelu
-                Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
-                Util.Animate(Cpb_Exp, Util.Effect.Slide, 125, 0);
-                Util.Animate(Pic_Avatar, Util.Effect.Slide, 125, 0);
+                WysunBohater();
 
             }
         }
@@ -422,6 +345,306 @@ namespace RPG___Projekt_programowanie_obiektowe
             this.Close();
         }
 
+        #endregion
+
+
+        #region Zarzadzanie bohaterem
+        // Nowy Bohater
+        private void NowyBohater()
+        {
+            hero.name = TBox_NazwaPostaci.Text;
+            Lbl_Nick.Text = hero.name;
+            hero.avatar = Pic_ChooseAvatar.Image;
+            Pic_Avatar.BackgroundImage = hero.avatar;
+            DodajExp(0);
+            Ulecz(9999);
+            Odpocznij(9999);
+            dodajZloto(0);
+        }
+        // Zapis
+        private void ZapiszBohatera()
+        {
+
+        }
+        // Odczyt
+        private void WczytajBohatera()
+        {
+
+        }
+        // zarzadzanie doswiadczeniem
+        private void DodajExp(int plusExp)
+        {
+            int exp=Cpb_Exp.Value;
+            hero.doswiadczenie = exp;
+            if (hero.poziom < 11)
+            {
+                Cpb_Exp.Maximum = hero.expNaPoziom[hero.poziom - 1];
+                Cpb_Exp.Value = hero.doswiadczenie;
+                Lbl_Poziom.Text = "Poziom " + Convert.ToString(hero.poziom);
+                Lbl_Doswiadczenie.Text = Convert.ToString(Cpb_Exp.Value);
+                Lbl_MaxDoswiadczenie.Text = "/ " + Convert.ToString(Cpb_Exp.Maximum);
+                exp += plusExp;
+                if (exp < hero.expNaPoziom[hero.poziom - 1])
+                {
+                    Cpb_Exp.Value = exp;
+                    Lbl_Doswiadczenie.Text = Convert.ToString(Cpb_Exp.Value);
+                }
+                else if (exp >= hero.expNaPoziom[hero.poziom - 1])
+                {
+                    while (exp >= hero.expNaPoziom[hero.poziom - 1])
+                    {
+                        exp = exp - hero.expNaPoziom[hero.poziom - 1];
+                        hero.poziom += 1;
+                        if (hero.poziom < 11)
+                            Cpb_Exp.Maximum = hero.expNaPoziom[hero.poziom - 1];
+                        else
+                        {
+                            Cpb_Exp.Maximum = 100000;
+                            break;
+                        }
+                    }
+                    if (hero.poziom < 11)
+                    {
+                        Cpb_Exp.Value = exp;
+                        Lbl_Poziom.Text = "Poziom " + Convert.ToString(hero.poziom);
+                        Lbl_Doswiadczenie.Text = Convert.ToString(Cpb_Exp.Value);
+                        Lbl_MaxDoswiadczenie.Text = "/ " + Convert.ToString(Cpb_Exp.Maximum);
+                    }
+                    else
+                    {
+                        Lbl_Poziom.Text = "Poziom " + Convert.ToString(hero.poziom - 1);
+                        Lbl_Doswiadczenie.Text = "max";
+                        Lbl_MaxDoswiadczenie.Text = "/ max";
+                        Cpb_Exp.Value = 100000;
+                    }
+                }
+            }
+
+            
+        }
+        // zarzadzanie zyciem
+        private void zadajObrazenia(int obrazenia)
+        {
+            if ((hero.poziomZdrowia - obrazenia) > 0)
+            {
+                hero.poziomZdrowia -= obrazenia;
+            }
+            else
+            {
+                hero.poziomZdrowia = 0;
+            }
+            Cpb_Health.Value = hero.poziomZdrowia;
+        }
+        private void Ulecz(int leczenie)
+        {
+            if ((hero.poziomZdrowia+leczenie) <= hero.maxPoziomZdrowia)
+            {
+                hero.poziomZdrowia += leczenie;
+            }
+            else
+            {
+                hero.poziomZdrowia = hero.maxPoziomZdrowia;
+            }
+            Cpb_Health.Value = hero.poziomZdrowia;
+        }
+        // zarzadzanie wytrzymalosca
+        private void Zmeczenie(int zmecz)
+        {
+            if ((hero.wytrzymalosc -zmecz) > 0)
+            {
+                hero.wytrzymalosc -= zmecz;
+            }
+            else
+            {
+                MessageBox.Show("Brak wytrzymalosci");
+            }
+            Cpb_Stamina.Value = hero.wytrzymalosc;
+        }
+        private void Odpocznij(int odpoczynek)
+        {
+            if((hero.wytrzymalosc)+odpoczynek < hero.maxPoziomWytrzymalosc)
+            {
+                hero.wytrzymalosc += odpoczynek;
+            }
+            else
+            {
+                hero.wytrzymalosc = hero.maxPoziomWytrzymalosc;
+                MessageBox.Show("Jestes w pełni wypoczety");
+            }
+            Cpb_Stamina.Value = hero.wytrzymalosc;
+        }
+        // zarzadzanie zlotem
+        private void dodajZloto(int dodajZloto)
+        {
+            hero.zloto += dodajZloto;
+            Lbl_IloscZlota.Text = Convert.ToString(hero.zloto);
+        }
+        private void kosztZlota(int koszt)
+        {
+            dodajZloto(-koszt);
+        }
+
+        #endregion
+
+        #region Zarządzanie panelami
+        //Paner menu
+        private void WysunMenu()
+        {
+            Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 5, 0);
+            Util.Animate(Btn_LeftMenuOn, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
+        }
+        private void SchowajMenu()
+        {
+            Util.Animate(Btn_NowaGra, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_ZapiszGre, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_WczytajGre, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_Credits, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_Wyjscie, Util.Effect.Slide, 125, 0);
+            Util.Animate(Btn_LeftMenuOn, Util.Effect.Slide, 125, 0);
+            Util.Animate(Pnl_LeftPanelMenu, Util.Effect.Slide, 5, 0);
+        }
+        private void PokazPrzyciskMenu()
+        {
+            if(Btn_LeftMenuOn.Visible == false && Btn_LeftMenuOff.Visible == false)
+            {
+                Util.Animate(Btn_LeftMenuOn, Util.Effect.Center, 80, 0);
+            }
+        }
+        // Panel tworzenia postaci
+        private void WysunTworzeniePostaci()
+        {
+            if (Pnl_NowaGra.Visible == false)
+            {
+                // Zapobiega blednemu wysunieciu panelu za pierwszym razem zwiazanego prawdopodobnie z brakiem inicjalizacji na niewidocznym elemencie
+                Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
+                Pnl_NowaGra.Visible = !Pnl_NowaGra.Visible;
+                // Wysuniecie panelu tworzenia postaci
+                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+                // Wysuniecie zawartosci panelu
+                Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
+                Util.Animate(Rdo_Male, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_Plec, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_WygladPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_NextAvatarView, Util.Effect.Center, 80, 180);
+                Util.Animate(Pic_ChooseAvatar, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_PrevAvatarView, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
+                // Schowanie reszty jeśli widoczna
+            }
+        }
+        private void SchowajTworzeniePostaci()
+        {
+            if (Pnl_NowaGra.Visible == true)
+            {
+                // Schowanie zawartosci panelu
+                Util.Animate(TBox_NazwaPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_NazwaPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Rdo_Female, Util.Effect.Center, 80, 180);
+                Util.Animate(Rdo_Male, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_Plec, Util.Effect.Center, 80, 180);
+                Util.Animate(Lbl_WygladPostaci, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_NextAvatarView, Util.Effect.Center, 80, 180);
+                Util.Animate(Pic_ChooseAvatar, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_PrevAvatarView, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_StworzPostac, Util.Effect.Center, 80, 180);
+                Util.Animate(Btn_CofnijCreatorPostaci, Util.Effect.Center, 80, 180);
+                // Schowanie panelu tworzenia postaci
+                Util.Animate(Pnl_NowaGra, Util.Effect.Slide, 250, 180);
+            }
+        }
+        // Elementy Postaci
+        private void WysunBohater()
+        {
+            if (Btn_LeftMenuOff.Visible == false)
+            {
+                Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
+                Util.Animate(Cpb_Exp, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Doswiadczenie, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_MaxDoswiadczenie, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Poziom, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Nick, Util.Effect.Center, 50, 0);
+                Util.Animate(Pic_Avatar, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Zdrowie, Util.Effect.Center, 50, 0);
+                Util.Animate(Cpb_Health, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Wytrzymalosc, Util.Effect.Center, 50, 0);
+                Util.Animate(Cpb_Stamina, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Zloto, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_IloscZlota, Util.Effect.Center, 50, 0);
+            }
+        }
+        private void SchowajBohater()
+        {
+            if (Btn_LeftMenuOff.Visible == true)
+            {
+                Util.Animate(Btn_LeftMenuOff, Util.Effect.Slide, 125, 0);
+                Util.Animate(Cpb_Exp, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Doswiadczenie, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_MaxDoswiadczenie, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Poziom, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Nick, Util.Effect.Center, 50, 0);
+                Util.Animate(Pic_Avatar, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Zdrowie, Util.Effect.Center, 50, 0);
+                Util.Animate(Cpb_Health, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Wytrzymalosc, Util.Effect.Center, 50, 0);
+                Util.Animate(Cpb_Stamina, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_Zloto, Util.Effect.Center, 50, 0);
+                Util.Animate(Lbl_IloscZlota, Util.Effect.Center, 50, 0);
+            }
+        }
+
+        // 1 Etap gry
+        private void WysunEtap1()
+        {
+
+        }
+        private void SchowajEtap1()
+        {
+
+        }
+        // 2 Etap gry
+        private void WysunEtap2()
+        {
+
+        }
+        private void SchowajEtap2()
+        {
+
+        }
+        // 3 Etap gry
+        private void WysunEtap3()
+        {
+
+        }
+        private void SchowajEtap3()
+        {
+
+        }
+        // 4 Etap gry
+        private void WysunEtap4()
+        {
+
+        }
+        private void SchowajEtap4()
+        {
+
+        }
+        // 5 Etap gry
+        private void WysunEtap5()
+        {
+
+        }
+        private void SchowajEtap5()
+        {
+
+        }
         #endregion
     }
 }

@@ -10,7 +10,7 @@ namespace RPG___Projekt_programowanie_obiektowe
     {
         public string name;
         public bool gender;
-        public string avatar;
+        public System.Drawing.Image avatar;
         //          Poziom                    1   2   3   4    5    6    7    8    9     10
         public readonly int[] expNaPoziom = { 10, 25, 60, 120, 200, 320, 540, 920, 1200, 2000 };
         public int doswiadczenie = 0;
@@ -21,7 +21,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         public int maxPoziomWytrzymalosc = 100;
         public int zloto=0;
 
-        public Bohater(string name, bool gender, string avatar)
+        public Bohater(string name, bool gender, System.Drawing.Image avatar)
         {
             this.name = name;
             this.gender = gender;
