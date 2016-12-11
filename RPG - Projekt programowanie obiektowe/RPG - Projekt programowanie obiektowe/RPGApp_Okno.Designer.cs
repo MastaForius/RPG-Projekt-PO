@@ -33,26 +33,42 @@
             this.Pnl_TopPanel = new System.Windows.Forms.Panel();
             this.Btn_Minimize = new System.Windows.Forms.Button();
             this.Lbl_Tytul = new System.Windows.Forms.Label();
+            this.Pic_Logo = new System.Windows.Forms.PictureBox();
             this.Btn_Exit = new System.Windows.Forms.Button();
             this.Pnl_Odstep1 = new System.Windows.Forms.Panel();
             this.Pnl_LeftPanelMenu = new System.Windows.Forms.Panel();
+            this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
+            this.Btn_Wyjscie = new System.Windows.Forms.Button();
+            this.Btn_Credits = new System.Windows.Forms.Button();
+            this.Btn_WczytajGre = new System.Windows.Forms.Button();
+            this.Btn_ZapiszGre = new System.Windows.Forms.Button();
+            this.Btn_NowaGra = new System.Windows.Forms.Button();
             this.Pnl_Odstep2 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep3 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep4 = new System.Windows.Forms.Panel();
             this.Pnl_BottomPanel = new System.Windows.Forms.Panel();
+            this.Pnl_ButtonsE2 = new System.Windows.Forms.Panel();
+            this.Btn_Etap2_1 = new System.Windows.Forms.Button();
+            this.Btn_Etap2_2 = new System.Windows.Forms.Button();
+            this.Btn_Etap2_4 = new System.Windows.Forms.Button();
+            this.Btn_Etap2_3 = new System.Windows.Forms.Button();
+            this.Pnl_OdstepE2 = new System.Windows.Forms.Panel();
             this.Pnl_ButtonsE1 = new System.Windows.Forms.Panel();
-            this.Btn_Etap1_4 = new System.Windows.Forms.Button();
-            this.Btn_Etap1_3 = new System.Windows.Forms.Button();
-            this.Btn_Etap1_2 = new System.Windows.Forms.Button();
             this.Btn_Etap1_1 = new System.Windows.Forms.Button();
+            this.Btn_Etap1_2 = new System.Windows.Forms.Button();
+            this.Btn_Etap1_3 = new System.Windows.Forms.Button();
+            this.Btn_Etap1_4 = new System.Windows.Forms.Button();
             this.Pnl_OdstepE1 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep5 = new System.Windows.Forms.Panel();
             this.Pnl_Odstep6 = new System.Windows.Forms.Panel();
             this.Pnl_CreatorPostaci = new System.Windows.Forms.Panel();
             this.Lbl_CheckPlec = new System.Windows.Forms.Label();
             this.Lbl_CheckNazwaPostaci = new System.Windows.Forms.Label();
+            this.Pic_ChooseAvatar = new System.Windows.Forms.PictureBox();
             this.Pnl_OdstepNowaGra = new System.Windows.Forms.Panel();
             this.Lbl_WygladPostaci = new System.Windows.Forms.Label();
+            this.Btn_StworzPostac = new System.Windows.Forms.Button();
+            this.Btn_CofnijCreatorPostaci = new System.Windows.Forms.Button();
             this.Btn_NextAvatarView = new System.Windows.Forms.Button();
             this.Btn_PrevAvatarView = new System.Windows.Forms.Button();
             this.TBox_NazwaPostaci = new System.Windows.Forms.TextBox();
@@ -61,6 +77,8 @@
             this.Rdo_Female = new System.Windows.Forms.RadioButton();
             this.Rdo_Male = new System.Windows.Forms.RadioButton();
             this.Pnl_LeftGame = new System.Windows.Forms.Panel();
+            this.Btn_Zaleczrany = new System.Windows.Forms.Button();
+            this.Btn_Odpocznij = new System.Windows.Forms.Button();
             this.Lbl_Nick = new System.Windows.Forms.Label();
             this.Cpb_Stamina = new CircularProgressBar.CircularProgressBar();
             this.Cpb_Health = new CircularProgressBar.CircularProgressBar();
@@ -71,6 +89,9 @@
             this.Lbl_MaxDoswiadczenie = new System.Windows.Forms.Label();
             this.Lbl_Doswiadczenie = new System.Windows.Forms.Label();
             this.Lbl_Poziom = new System.Windows.Forms.Label();
+            this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
+            this.Pic_Avatar = new System.Windows.Forms.PictureBox();
+            this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Pnl_WczytajGre = new System.Windows.Forms.Panel();
             this.Btn_OtworzZapis = new System.Windows.Forms.Button();
@@ -79,58 +100,39 @@
             this.Pnl_TytulWczytajGre = new System.Windows.Forms.Panel();
             this.Btn_ZamknijWczytywanieGry = new System.Windows.Forms.Button();
             this.Lbl_Wczytaj = new System.Windows.Forms.Label();
+            this.PBox_Wczytaj = new System.Windows.Forms.PictureBox();
             this.Pnl_Etapy = new System.Windows.Forms.Panel();
+            this.Pnl_Etap2 = new System.Windows.Forms.Panel();
+            this.TBox_Etap2_1 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap2_2 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap2_3 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap2_4 = new System.Windows.Forms.TextBox();
             this.Pnl_Etap1 = new System.Windows.Forms.Panel();
-            this.TBox_Etap1_3 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap1_2 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap1_4 = new System.Windows.Forms.TextBox();
             this.TBox_Etap1_1 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap1_2 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap1_3 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap1_4 = new System.Windows.Forms.TextBox();
             this.Pnl_WelcomeScreen = new System.Windows.Forms.Panel();
             this.Lbl_PressAnyKeyToContinue = new System.Windows.Forms.Label();
             this.Lbl_TyulWelcomeScreen = new System.Windows.Forms.Label();
             this.Btn_WelcomeScreen = new System.Windows.Forms.Button();
-            this.PBox_Wczytaj = new System.Windows.Forms.PictureBox();
-            this.Pic_ChooseAvatar = new System.Windows.Forms.PictureBox();
-            this.Btn_StworzPostac = new System.Windows.Forms.Button();
-            this.Btn_CofnijCreatorPostaci = new System.Windows.Forms.Button();
-            this.Btn_LeftMenuOn = new System.Windows.Forms.Button();
-            this.Btn_Wyjscie = new System.Windows.Forms.Button();
-            this.Btn_Credits = new System.Windows.Forms.Button();
-            this.Btn_WczytajGre = new System.Windows.Forms.Button();
-            this.Btn_ZapiszGre = new System.Windows.Forms.Button();
-            this.Btn_NowaGra = new System.Windows.Forms.Button();
-            this.Cpb_Exp = new CircularProgressBar.CircularProgressBar();
-            this.Pic_Avatar = new System.Windows.Forms.PictureBox();
-            this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
-            this.Pic_Logo = new System.Windows.Forms.PictureBox();
-            this.Pnl_ButtonsE2 = new System.Windows.Forms.Panel();
-            this.Btn_Etap2_4 = new System.Windows.Forms.Button();
-            this.Btn_Etap2_3 = new System.Windows.Forms.Button();
-            this.Btn_Etap2_2 = new System.Windows.Forms.Button();
-            this.Btn_Etap2_1 = new System.Windows.Forms.Button();
-            this.Pnl_OdstepE2 = new System.Windows.Forms.Panel();
-            this.Pnl_Etap2 = new System.Windows.Forms.Panel();
-            this.TBox_Etap2_3 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap2_2 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap2_4 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap2_1 = new System.Windows.Forms.TextBox();
             this.Pnl_TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.Pnl_LeftPanelMenu.SuspendLayout();
             this.Pnl_BottomPanel.SuspendLayout();
+            this.Pnl_ButtonsE2.SuspendLayout();
             this.Pnl_ButtonsE1.SuspendLayout();
             this.Pnl_CreatorPostaci.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
             this.Pnl_LeftGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
             this.Pnl_WczytajGre.SuspendLayout();
             this.Pnl_TytulWczytajGre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).BeginInit();
             this.Pnl_Etapy.SuspendLayout();
+            this.Pnl_Etap2.SuspendLayout();
             this.Pnl_Etap1.SuspendLayout();
             this.Pnl_WelcomeScreen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
-            this.Pnl_ButtonsE2.SuspendLayout();
-            this.Pnl_Etap2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pnl_TopPanel
@@ -176,6 +178,16 @@
             this.Lbl_Tytul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Lbl_Tytul.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lbl_Tytul_MouseDown);
             // 
+            // Pic_Logo
+            // 
+            this.Pic_Logo.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.Pic_Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_Logo.Location = new System.Drawing.Point(0, 0);
+            this.Pic_Logo.Name = "Pic_Logo";
+            this.Pic_Logo.Size = new System.Drawing.Size(75, 50);
+            this.Pic_Logo.TabIndex = 1;
+            this.Pic_Logo.TabStop = false;
+            // 
             // Btn_Exit
             // 
             this.Btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
@@ -214,6 +226,107 @@
             this.Pnl_LeftPanelMenu.Size = new System.Drawing.Size(265, 621);
             this.Pnl_LeftPanelMenu.TabIndex = 14;
             // 
+            // Btn_LeftMenuOn
+            // 
+            this.Btn_LeftMenuOn.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_LeftMenuOn.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button1;
+            this.Btn_LeftMenuOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_LeftMenuOn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_LeftMenuOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LeftMenuOn.Location = new System.Drawing.Point(16, 10);
+            this.Btn_LeftMenuOn.Name = "Btn_LeftMenuOn";
+            this.Btn_LeftMenuOn.Size = new System.Drawing.Size(100, 40);
+            this.Btn_LeftMenuOn.TabIndex = 20;
+            this.Btn_LeftMenuOn.UseVisualStyleBackColor = false;
+            this.Btn_LeftMenuOn.Visible = false;
+            this.Btn_LeftMenuOn.Click += new System.EventHandler(this.Btn_LeftMenuOn_Click);
+            // 
+            // Btn_Wyjscie
+            // 
+            this.Btn_Wyjscie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Wyjscie.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_Wyjscie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Wyjscie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Wyjscie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Wyjscie.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Wyjscie.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Wyjscie.Location = new System.Drawing.Point(16, 520);
+            this.Btn_Wyjscie.Name = "Btn_Wyjscie";
+            this.Btn_Wyjscie.Size = new System.Drawing.Size(234, 70);
+            this.Btn_Wyjscie.TabIndex = 19;
+            this.Btn_Wyjscie.Text = "Wyjście";
+            this.Btn_Wyjscie.UseVisualStyleBackColor = true;
+            this.Btn_Wyjscie.Click += new System.EventHandler(this.Btn_Wyjscie_Click);
+            // 
+            // Btn_Credits
+            // 
+            this.Btn_Credits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Credits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Credits.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Credits.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Credits.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Credits.Location = new System.Drawing.Point(16, 420);
+            this.Btn_Credits.Name = "Btn_Credits";
+            this.Btn_Credits.Size = new System.Drawing.Size(234, 70);
+            this.Btn_Credits.TabIndex = 18;
+            this.Btn_Credits.Text = "Credits";
+            this.Btn_Credits.UseVisualStyleBackColor = true;
+            this.Btn_Credits.Click += new System.EventHandler(this.Btn_Credits_Click);
+            // 
+            // Btn_WczytajGre
+            // 
+            this.Btn_WczytajGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_WczytajGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_WczytajGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_WczytajGre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_WczytajGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_WczytajGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_WczytajGre.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_WczytajGre.Location = new System.Drawing.Point(16, 320);
+            this.Btn_WczytajGre.Name = "Btn_WczytajGre";
+            this.Btn_WczytajGre.Size = new System.Drawing.Size(234, 70);
+            this.Btn_WczytajGre.TabIndex = 17;
+            this.Btn_WczytajGre.Text = "Wczytaj grę";
+            this.Btn_WczytajGre.UseVisualStyleBackColor = true;
+            this.Btn_WczytajGre.Click += new System.EventHandler(this.Btn_WczytajGre_Click);
+            // 
+            // Btn_ZapiszGre
+            // 
+            this.Btn_ZapiszGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_ZapiszGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_ZapiszGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_ZapiszGre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ZapiszGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ZapiszGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_ZapiszGre.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_ZapiszGre.Location = new System.Drawing.Point(15, 220);
+            this.Btn_ZapiszGre.Name = "Btn_ZapiszGre";
+            this.Btn_ZapiszGre.Size = new System.Drawing.Size(235, 70);
+            this.Btn_ZapiszGre.TabIndex = 16;
+            this.Btn_ZapiszGre.Text = "Zapisz grę";
+            this.Btn_ZapiszGre.UseVisualStyleBackColor = true;
+            this.Btn_ZapiszGre.Click += new System.EventHandler(this.Btn_ZapiszGre_Click);
+            // 
+            // Btn_NowaGra
+            // 
+            this.Btn_NowaGra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_NowaGra.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_NowaGra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_NowaGra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_NowaGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_NowaGra.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_NowaGra.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_NowaGra.Location = new System.Drawing.Point(15, 120);
+            this.Btn_NowaGra.Name = "Btn_NowaGra";
+            this.Btn_NowaGra.Size = new System.Drawing.Size(235, 70);
+            this.Btn_NowaGra.TabIndex = 15;
+            this.Btn_NowaGra.Text = "Nowa gra";
+            this.Btn_NowaGra.UseVisualStyleBackColor = true;
+            this.Btn_NowaGra.Click += new System.EventHandler(this.Btn_NowaGra_Click);
+            // 
             // Pnl_Odstep2
             // 
             this.Pnl_Odstep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
@@ -250,6 +363,81 @@
             this.Pnl_BottomPanel.Size = new System.Drawing.Size(728, 100);
             this.Pnl_BottomPanel.TabIndex = 24;
             // 
+            // Pnl_ButtonsE2
+            // 
+            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_1);
+            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_2);
+            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_4);
+            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_3);
+            this.Pnl_ButtonsE2.Controls.Add(this.Pnl_OdstepE2);
+            this.Pnl_ButtonsE2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_ButtonsE2.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_ButtonsE2.Name = "Pnl_ButtonsE2";
+            this.Pnl_ButtonsE2.Size = new System.Drawing.Size(728, 100);
+            this.Pnl_ButtonsE2.TabIndex = 9;
+            this.Pnl_ButtonsE2.Visible = false;
+            // 
+            // Btn_Etap2_1
+            // 
+            this.Btn_Etap2_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap2_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap2_1.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap2_1.Location = new System.Drawing.Point(25, 15);
+            this.Btn_Etap2_1.Name = "Btn_Etap2_1";
+            this.Btn_Etap2_1.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap2_1.TabIndex = 5;
+            this.Btn_Etap2_1.Text = "Czekaj na wyrok";
+            this.Btn_Etap2_1.UseVisualStyleBackColor = true;
+            this.Btn_Etap2_1.Visible = false;
+            // 
+            // Btn_Etap2_2
+            // 
+            this.Btn_Etap2_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap2_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap2_2.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap2_2.Location = new System.Drawing.Point(200, 15);
+            this.Btn_Etap2_2.Name = "Btn_Etap2_2";
+            this.Btn_Etap2_2.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap2_2.TabIndex = 6;
+            this.Btn_Etap2_2.Text = "Rozpocznij ucieczkę";
+            this.Btn_Etap2_2.UseVisualStyleBackColor = true;
+            this.Btn_Etap2_2.Visible = false;
+            // 
+            // Btn_Etap2_4
+            // 
+            this.Btn_Etap2_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap2_4.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap2_4.Location = new System.Drawing.Point(550, 15);
+            this.Btn_Etap2_4.Name = "Btn_Etap2_4";
+            this.Btn_Etap2_4.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap2_4.TabIndex = 8;
+            this.Btn_Etap2_4.Text = "Uciekaj do lasu";
+            this.Btn_Etap2_4.UseVisualStyleBackColor = true;
+            this.Btn_Etap2_4.Visible = false;
+            // 
+            // Btn_Etap2_3
+            // 
+            this.Btn_Etap2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap2_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap2_3.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap2_3.Location = new System.Drawing.Point(375, 15);
+            this.Btn_Etap2_3.Name = "Btn_Etap2_3";
+            this.Btn_Etap2_3.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap2_3.TabIndex = 7;
+            this.Btn_Etap2_3.Text = "Zabij strażnika";
+            this.Btn_Etap2_3.UseVisualStyleBackColor = true;
+            this.Btn_Etap2_3.Visible = false;
+            // 
+            // Pnl_OdstepE2
+            // 
+            this.Pnl_OdstepE2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Pnl_OdstepE2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
+            this.Pnl_OdstepE2.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_OdstepE2.Name = "Pnl_OdstepE2";
+            this.Pnl_OdstepE2.Size = new System.Drawing.Size(5, 100);
+            this.Pnl_OdstepE2.TabIndex = 4;
+            // 
             // Pnl_ButtonsE1
             // 
             this.Pnl_ButtonsE1.Controls.Add(this.Btn_Etap1_1);
@@ -264,33 +452,19 @@
             this.Pnl_ButtonsE1.TabIndex = 0;
             this.Pnl_ButtonsE1.Visible = false;
             // 
-            // Btn_Etap1_4
+            // Btn_Etap1_1
             // 
-            this.Btn_Etap1_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap1_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap1_4.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap1_4.Location = new System.Drawing.Point(550, 15);
-            this.Btn_Etap1_4.Name = "Btn_Etap1_4";
-            this.Btn_Etap1_4.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap1_4.TabIndex = 8;
-            this.Btn_Etap1_4.Text = "Uciekaj do lasu";
-            this.Btn_Etap1_4.UseVisualStyleBackColor = true;
-            this.Btn_Etap1_4.Visible = false;
-            this.Btn_Etap1_4.Click += new System.EventHandler(this.Btn_Etap1_4_Click);
-            // 
-            // Btn_Etap1_3
-            // 
-            this.Btn_Etap1_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap1_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap1_3.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap1_3.Location = new System.Drawing.Point(375, 15);
-            this.Btn_Etap1_3.Name = "Btn_Etap1_3";
-            this.Btn_Etap1_3.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap1_3.TabIndex = 7;
-            this.Btn_Etap1_3.Text = "Zabij strażnika";
-            this.Btn_Etap1_3.UseVisualStyleBackColor = true;
-            this.Btn_Etap1_3.Visible = false;
-            this.Btn_Etap1_3.Click += new System.EventHandler(this.Btn_Etap1_3_Click);
+            this.Btn_Etap1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap1_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap1_1.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap1_1.Location = new System.Drawing.Point(25, 15);
+            this.Btn_Etap1_1.Name = "Btn_Etap1_1";
+            this.Btn_Etap1_1.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap1_1.TabIndex = 5;
+            this.Btn_Etap1_1.Text = "Czekaj na wyrok";
+            this.Btn_Etap1_1.UseVisualStyleBackColor = true;
+            this.Btn_Etap1_1.Visible = false;
+            this.Btn_Etap1_1.Click += new System.EventHandler(this.Btn_Etap1_1_Click);
             // 
             // Btn_Etap1_2
             // 
@@ -306,19 +480,33 @@
             this.Btn_Etap1_2.Visible = false;
             this.Btn_Etap1_2.Click += new System.EventHandler(this.Btn_Etap1_2_Click);
             // 
-            // Btn_Etap1_1
+            // Btn_Etap1_3
             // 
-            this.Btn_Etap1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap1_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap1_1.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap1_1.Location = new System.Drawing.Point(25, 15);
-            this.Btn_Etap1_1.Name = "Btn_Etap1_1";
-            this.Btn_Etap1_1.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap1_1.TabIndex = 5;
-            this.Btn_Etap1_1.Text = "Czekaj na wyrok";
-            this.Btn_Etap1_1.UseVisualStyleBackColor = true;
-            this.Btn_Etap1_1.Visible = false;
-            this.Btn_Etap1_1.Click += new System.EventHandler(this.Btn_Etap1_1_Click);
+            this.Btn_Etap1_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap1_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap1_3.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap1_3.Location = new System.Drawing.Point(375, 15);
+            this.Btn_Etap1_3.Name = "Btn_Etap1_3";
+            this.Btn_Etap1_3.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap1_3.TabIndex = 7;
+            this.Btn_Etap1_3.Text = "Zabij strażnika";
+            this.Btn_Etap1_3.UseVisualStyleBackColor = true;
+            this.Btn_Etap1_3.Visible = false;
+            this.Btn_Etap1_3.Click += new System.EventHandler(this.Btn_Etap1_3_Click);
+            // 
+            // Btn_Etap1_4
+            // 
+            this.Btn_Etap1_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap1_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap1_4.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap1_4.Location = new System.Drawing.Point(550, 15);
+            this.Btn_Etap1_4.Name = "Btn_Etap1_4";
+            this.Btn_Etap1_4.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap1_4.TabIndex = 8;
+            this.Btn_Etap1_4.Text = "Uciekaj do lasu";
+            this.Btn_Etap1_4.UseVisualStyleBackColor = true;
+            this.Btn_Etap1_4.Visible = false;
+            this.Btn_Etap1_4.Click += new System.EventHandler(this.Btn_Etap1_4_Click);
             // 
             // Pnl_OdstepE1
             // 
@@ -389,6 +577,19 @@
             this.Lbl_CheckNazwaPostaci.Size = new System.Drawing.Size(0, 26);
             this.Lbl_CheckNazwaPostaci.TabIndex = 13;
             // 
+            // Pic_ChooseAvatar
+            // 
+            this.Pic_ChooseAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pic_ChooseAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_ChooseAvatar.Image = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Avatar_Unkown1;
+            this.Pic_ChooseAvatar.Location = new System.Drawing.Point(235, 200);
+            this.Pic_ChooseAvatar.Name = "Pic_ChooseAvatar";
+            this.Pic_ChooseAvatar.Size = new System.Drawing.Size(256, 256);
+            this.Pic_ChooseAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_ChooseAvatar.TabIndex = 12;
+            this.Pic_ChooseAvatar.TabStop = false;
+            this.Pic_ChooseAvatar.Visible = false;
+            // 
             // Pnl_OdstepNowaGra
             // 
             this.Pnl_OdstepNowaGra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
@@ -410,6 +611,42 @@
             this.Lbl_WygladPostaci.TabIndex = 10;
             this.Lbl_WygladPostaci.Text = "Wygląd postaci";
             this.Lbl_WygladPostaci.Visible = false;
+            // 
+            // Btn_StworzPostac
+            // 
+            this.Btn_StworzPostac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_StworzPostac.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_StworzPostac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_StworzPostac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_StworzPostac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_StworzPostac.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_StworzPostac.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_StworzPostac.Location = new System.Drawing.Point(534, 440);
+            this.Btn_StworzPostac.Name = "Btn_StworzPostac";
+            this.Btn_StworzPostac.Size = new System.Drawing.Size(192, 70);
+            this.Btn_StworzPostac.TabIndex = 9;
+            this.Btn_StworzPostac.Text = "Stwórz postac";
+            this.Btn_StworzPostac.UseVisualStyleBackColor = true;
+            this.Btn_StworzPostac.Visible = false;
+            this.Btn_StworzPostac.Click += new System.EventHandler(this.Btn_StworzPostac_Click);
+            // 
+            // Btn_CofnijCreatorPostaci
+            // 
+            this.Btn_CofnijCreatorPostaci.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_CofnijCreatorPostaci.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Btn_CofnijCreatorPostaci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_CofnijCreatorPostaci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CofnijCreatorPostaci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CofnijCreatorPostaci.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_CofnijCreatorPostaci.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_CofnijCreatorPostaci.Location = new System.Drawing.Point(11, 440);
+            this.Btn_CofnijCreatorPostaci.Name = "Btn_CofnijCreatorPostaci";
+            this.Btn_CofnijCreatorPostaci.Size = new System.Drawing.Size(192, 70);
+            this.Btn_CofnijCreatorPostaci.TabIndex = 8;
+            this.Btn_CofnijCreatorPostaci.Text = "Cofnij";
+            this.Btn_CofnijCreatorPostaci.UseVisualStyleBackColor = true;
+            this.Btn_CofnijCreatorPostaci.Visible = false;
+            this.Btn_CofnijCreatorPostaci.Click += new System.EventHandler(this.Btn_CofnijCreatorPostaci_Click);
             // 
             // Btn_NextAvatarView
             // 
@@ -526,6 +763,8 @@
             // 
             // Pnl_LeftGame
             // 
+            this.Pnl_LeftGame.Controls.Add(this.Btn_Zaleczrany);
+            this.Pnl_LeftGame.Controls.Add(this.Btn_Odpocznij);
             this.Pnl_LeftGame.Controls.Add(this.Lbl_Nick);
             this.Pnl_LeftGame.Controls.Add(this.Cpb_Stamina);
             this.Pnl_LeftGame.Controls.Add(this.Cpb_Health);
@@ -543,6 +782,32 @@
             this.Pnl_LeftGame.Name = "Pnl_LeftGame";
             this.Pnl_LeftGame.Size = new System.Drawing.Size(265, 621);
             this.Pnl_LeftGame.TabIndex = 29;
+            // 
+            // Btn_Zaleczrany
+            // 
+            this.Btn_Zaleczrany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Zaleczrany.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Zaleczrany.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Zaleczrany.Location = new System.Drawing.Point(133, 560);
+            this.Btn_Zaleczrany.Name = "Btn_Zaleczrany";
+            this.Btn_Zaleczrany.Size = new System.Drawing.Size(126, 46);
+            this.Btn_Zaleczrany.TabIndex = 58;
+            this.Btn_Zaleczrany.Text = "Zalecz rany";
+            this.Btn_Zaleczrany.UseVisualStyleBackColor = true;
+            this.Btn_Zaleczrany.Click += new System.EventHandler(this.Btn_Zaleczrany_Click);
+            // 
+            // Btn_Odpocznij
+            // 
+            this.Btn_Odpocznij.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Odpocznij.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Odpocznij.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Odpocznij.Location = new System.Drawing.Point(7, 562);
+            this.Btn_Odpocznij.Name = "Btn_Odpocznij";
+            this.Btn_Odpocznij.Size = new System.Drawing.Size(110, 44);
+            this.Btn_Odpocznij.TabIndex = 57;
+            this.Btn_Odpocznij.Text = "Odpocznij";
+            this.Btn_Odpocznij.UseVisualStyleBackColor = true;
+            this.Btn_Odpocznij.Click += new System.EventHandler(this.Btn_Odpocznij_Click);
             // 
             // Lbl_Nick
             // 
@@ -712,6 +977,70 @@
             this.Lbl_Poziom.Text = "Poziom X";
             this.Lbl_Poziom.Visible = false;
             // 
+            // Cpb_Exp
+            // 
+            this.Cpb_Exp.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("Cpb_Exp.AnimationFunction")));
+            this.Cpb_Exp.AnimationSpeed = 2000;
+            this.Cpb_Exp.BackColor = System.Drawing.Color.DimGray;
+            this.Cpb_Exp.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
+            this.Cpb_Exp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cpb_Exp.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Cpb_Exp.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.Cpb_Exp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Cpb_Exp.InnerColor = System.Drawing.Color.Teal;
+            this.Cpb_Exp.InnerMargin = 1;
+            this.Cpb_Exp.InnerWidth = -1;
+            this.Cpb_Exp.Location = new System.Drawing.Point(119, 6);
+            this.Cpb_Exp.Margin = new System.Windows.Forms.Padding(0);
+            this.Cpb_Exp.MarqueeAnimationSpeed = 2000;
+            this.Cpb_Exp.Maximum = 0;
+            this.Cpb_Exp.Name = "Cpb_Exp";
+            this.Cpb_Exp.OuterColor = System.Drawing.Color.Black;
+            this.Cpb_Exp.OuterMargin = 2;
+            this.Cpb_Exp.OuterWidth = 1;
+            this.Cpb_Exp.ProgressColor = System.Drawing.Color.Lime;
+            this.Cpb_Exp.ProgressWidth = 5;
+            this.Cpb_Exp.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.Cpb_Exp.Size = new System.Drawing.Size(140, 140);
+            this.Cpb_Exp.StartAngle = 270;
+            this.Cpb_Exp.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.Cpb_Exp.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.Cpb_Exp.SubscriptText = ".23";
+            this.Cpb_Exp.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.Cpb_Exp.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.Cpb_Exp.SuperscriptText = "";
+            this.Cpb_Exp.TabIndex = 45;
+            this.Cpb_Exp.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.Cpb_Exp.Visible = false;
+            // 
+            // Pic_Avatar
+            // 
+            this.Pic_Avatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pic_Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pic_Avatar.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Male2;
+            this.Pic_Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pic_Avatar.Location = new System.Drawing.Point(83, 201);
+            this.Pic_Avatar.Name = "Pic_Avatar";
+            this.Pic_Avatar.Size = new System.Drawing.Size(100, 100);
+            this.Pic_Avatar.TabIndex = 46;
+            this.Pic_Avatar.TabStop = false;
+            this.Pic_Avatar.Visible = false;
+            // 
+            // Btn_LeftMenuOff
+            // 
+            this.Btn_LeftMenuOff.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_LeftMenuOff.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button2;
+            this.Btn_LeftMenuOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_LeftMenuOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_LeftMenuOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(10, 10);
+            this.Btn_LeftMenuOff.Name = "Btn_LeftMenuOff";
+            this.Btn_LeftMenuOff.Size = new System.Drawing.Size(40, 40);
+            this.Btn_LeftMenuOff.TabIndex = 21;
+            this.Btn_LeftMenuOff.UseVisualStyleBackColor = false;
+            this.Btn_LeftMenuOff.Visible = false;
+            this.Btn_LeftMenuOff.Click += new System.EventHandler(this.Btn_LeftMenuOff_Click);
+            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -808,6 +1137,16 @@
             this.Lbl_Wczytaj.Click += new System.EventHandler(this.Btn_WczytajGre_Click);
             this.Lbl_Wczytaj.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lbl_Wczytaj_MouseDown);
             // 
+            // PBox_Wczytaj
+            // 
+            this.PBox_Wczytaj.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
+            this.PBox_Wczytaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBox_Wczytaj.Location = new System.Drawing.Point(0, 0);
+            this.PBox_Wczytaj.Name = "PBox_Wczytaj";
+            this.PBox_Wczytaj.Size = new System.Drawing.Size(75, 50);
+            this.PBox_Wczytaj.TabIndex = 1;
+            this.PBox_Wczytaj.TabStop = false;
+            // 
             // Pnl_Etapy
             // 
             this.Pnl_Etapy.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
@@ -818,6 +1157,79 @@
             this.Pnl_Etapy.Name = "Pnl_Etapy";
             this.Pnl_Etapy.Size = new System.Drawing.Size(728, 516);
             this.Pnl_Etapy.TabIndex = 4;
+            // 
+            // Pnl_Etap2
+            // 
+            this.Pnl_Etap2.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.duskwood;
+            this.Pnl_Etap2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_1);
+            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_2);
+            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_3);
+            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_4);
+            this.Pnl_Etap2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Etap2.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Etap2.Name = "Pnl_Etap2";
+            this.Pnl_Etap2.Size = new System.Drawing.Size(728, 516);
+            this.Pnl_Etap2.TabIndex = 5;
+            this.Pnl_Etap2.Visible = false;
+            // 
+            // TBox_Etap2_1
+            // 
+            this.TBox_Etap2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_1.Enabled = false;
+            this.TBox_Etap2_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_1.Location = new System.Drawing.Point(360, 10);
+            this.TBox_Etap2_1.Multiline = true;
+            this.TBox_Etap2_1.Name = "TBox_Etap2_1";
+            this.TBox_Etap2_1.Size = new System.Drawing.Size(354, 180);
+            this.TBox_Etap2_1.TabIndex = 1;
+            this.TBox_Etap2_1.TabStop = false;
+            this.TBox_Etap2_1.Text = resources.GetString("TBox_Etap2_1.Text");
+            this.TBox_Etap2_1.Visible = false;
+            // 
+            // TBox_Etap2_2
+            // 
+            this.TBox_Etap2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_2.HideSelection = false;
+            this.TBox_Etap2_2.Location = new System.Drawing.Point(6, 65);
+            this.TBox_Etap2_2.Multiline = true;
+            this.TBox_Etap2_2.Name = "TBox_Etap2_2";
+            this.TBox_Etap2_2.Size = new System.Drawing.Size(353, 177);
+            this.TBox_Etap2_2.TabIndex = 3;
+            this.TBox_Etap2_2.TabStop = false;
+            this.TBox_Etap2_2.Text = resources.GetString("TBox_Etap2_2.Text");
+            this.TBox_Etap2_2.Visible = false;
+            // 
+            // TBox_Etap2_3
+            // 
+            this.TBox_Etap2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_3.Location = new System.Drawing.Point(6, 257);
+            this.TBox_Etap2_3.Multiline = true;
+            this.TBox_Etap2_3.Name = "TBox_Etap2_3";
+            this.TBox_Etap2_3.Size = new System.Drawing.Size(353, 153);
+            this.TBox_Etap2_3.TabIndex = 4;
+            this.TBox_Etap2_3.TabStop = false;
+            this.TBox_Etap2_3.Text = resources.GetString("TBox_Etap2_3.Text");
+            this.TBox_Etap2_3.Visible = false;
+            // 
+            // TBox_Etap2_4
+            // 
+            this.TBox_Etap2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap2_4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap2_4.Location = new System.Drawing.Point(365, 293);
+            this.TBox_Etap2_4.Multiline = true;
+            this.TBox_Etap2_4.Name = "TBox_Etap2_4";
+            this.TBox_Etap2_4.Size = new System.Drawing.Size(357, 202);
+            this.TBox_Etap2_4.TabIndex = 2;
+            this.TBox_Etap2_4.TabStop = false;
+            this.TBox_Etap2_4.Text = resources.GetString("TBox_Etap2_4.Text");
+            this.TBox_Etap2_4.Visible = false;
             // 
             // Pnl_Etap1
             // 
@@ -834,19 +1246,20 @@
             this.Pnl_Etap1.TabIndex = 0;
             this.Pnl_Etap1.Visible = false;
             // 
-            // TBox_Etap1_3
+            // TBox_Etap1_1
             // 
-            this.TBox_Etap1_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap1_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap1_3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap1_3.Location = new System.Drawing.Point(6, 257);
-            this.TBox_Etap1_3.Multiline = true;
-            this.TBox_Etap1_3.Name = "TBox_Etap1_3";
-            this.TBox_Etap1_3.Size = new System.Drawing.Size(353, 153);
-            this.TBox_Etap1_3.TabIndex = 4;
-            this.TBox_Etap1_3.TabStop = false;
-            this.TBox_Etap1_3.Text = resources.GetString("TBox_Etap1_3.Text");
-            this.TBox_Etap1_3.Visible = false;
+            this.TBox_Etap1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap1_1.Enabled = false;
+            this.TBox_Etap1_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap1_1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap1_1.Location = new System.Drawing.Point(360, 10);
+            this.TBox_Etap1_1.Multiline = true;
+            this.TBox_Etap1_1.Name = "TBox_Etap1_1";
+            this.TBox_Etap1_1.Size = new System.Drawing.Size(354, 180);
+            this.TBox_Etap1_1.TabIndex = 1;
+            this.TBox_Etap1_1.TabStop = false;
+            this.TBox_Etap1_1.Text = resources.GetString("TBox_Etap1_1.Text");
+            this.TBox_Etap1_1.Visible = false;
             // 
             // TBox_Etap1_2
             // 
@@ -863,6 +1276,20 @@
             this.TBox_Etap1_2.Text = resources.GetString("TBox_Etap1_2.Text");
             this.TBox_Etap1_2.Visible = false;
             // 
+            // TBox_Etap1_3
+            // 
+            this.TBox_Etap1_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap1_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap1_3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap1_3.Location = new System.Drawing.Point(6, 257);
+            this.TBox_Etap1_3.Multiline = true;
+            this.TBox_Etap1_3.Name = "TBox_Etap1_3";
+            this.TBox_Etap1_3.Size = new System.Drawing.Size(353, 153);
+            this.TBox_Etap1_3.TabIndex = 4;
+            this.TBox_Etap1_3.TabStop = false;
+            this.TBox_Etap1_3.Text = resources.GetString("TBox_Etap1_3.Text");
+            this.TBox_Etap1_3.Visible = false;
+            // 
             // TBox_Etap1_4
             // 
             this.TBox_Etap1_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -876,21 +1303,6 @@
             this.TBox_Etap1_4.TabStop = false;
             this.TBox_Etap1_4.Text = resources.GetString("TBox_Etap1_4.Text");
             this.TBox_Etap1_4.Visible = false;
-            // 
-            // TBox_Etap1_1
-            // 
-            this.TBox_Etap1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap1_1.Enabled = false;
-            this.TBox_Etap1_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap1_1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap1_1.Location = new System.Drawing.Point(360, 10);
-            this.TBox_Etap1_1.Multiline = true;
-            this.TBox_Etap1_1.Name = "TBox_Etap1_1";
-            this.TBox_Etap1_1.Size = new System.Drawing.Size(354, 180);
-            this.TBox_Etap1_1.TabIndex = 1;
-            this.TBox_Etap1_1.TabStop = false;
-            this.TBox_Etap1_1.Text = resources.GetString("TBox_Etap1_1.Text");
-            this.TBox_Etap1_1.Visible = false;
             // 
             // Pnl_WelcomeScreen
             // 
@@ -943,388 +1355,6 @@
             this.Btn_WelcomeScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Btn_WelcomeScreen_KeyPress);
             this.Btn_WelcomeScreen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Btn_WelcomeScreen_MouseClick);
             // 
-            // PBox_Wczytaj
-            // 
-            this.PBox_Wczytaj.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
-            this.PBox_Wczytaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PBox_Wczytaj.Location = new System.Drawing.Point(0, 0);
-            this.PBox_Wczytaj.Name = "PBox_Wczytaj";
-            this.PBox_Wczytaj.Size = new System.Drawing.Size(75, 50);
-            this.PBox_Wczytaj.TabIndex = 1;
-            this.PBox_Wczytaj.TabStop = false;
-            // 
-            // Pic_ChooseAvatar
-            // 
-            this.Pic_ChooseAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.Pic_ChooseAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_ChooseAvatar.Image = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Avatar_Unkown1;
-            this.Pic_ChooseAvatar.Location = new System.Drawing.Point(235, 200);
-            this.Pic_ChooseAvatar.Name = "Pic_ChooseAvatar";
-            this.Pic_ChooseAvatar.Size = new System.Drawing.Size(256, 256);
-            this.Pic_ChooseAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pic_ChooseAvatar.TabIndex = 12;
-            this.Pic_ChooseAvatar.TabStop = false;
-            this.Pic_ChooseAvatar.Visible = false;
-            // 
-            // Btn_StworzPostac
-            // 
-            this.Btn_StworzPostac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_StworzPostac.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_StworzPostac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_StworzPostac.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_StworzPostac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_StworzPostac.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_StworzPostac.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_StworzPostac.Location = new System.Drawing.Point(534, 440);
-            this.Btn_StworzPostac.Name = "Btn_StworzPostac";
-            this.Btn_StworzPostac.Size = new System.Drawing.Size(192, 70);
-            this.Btn_StworzPostac.TabIndex = 9;
-            this.Btn_StworzPostac.Text = "Stwórz postac";
-            this.Btn_StworzPostac.UseVisualStyleBackColor = true;
-            this.Btn_StworzPostac.Visible = false;
-            this.Btn_StworzPostac.Click += new System.EventHandler(this.Btn_StworzPostac_Click);
-            // 
-            // Btn_CofnijCreatorPostaci
-            // 
-            this.Btn_CofnijCreatorPostaci.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_CofnijCreatorPostaci.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_CofnijCreatorPostaci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_CofnijCreatorPostaci.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_CofnijCreatorPostaci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_CofnijCreatorPostaci.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_CofnijCreatorPostaci.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_CofnijCreatorPostaci.Location = new System.Drawing.Point(11, 440);
-            this.Btn_CofnijCreatorPostaci.Name = "Btn_CofnijCreatorPostaci";
-            this.Btn_CofnijCreatorPostaci.Size = new System.Drawing.Size(192, 70);
-            this.Btn_CofnijCreatorPostaci.TabIndex = 8;
-            this.Btn_CofnijCreatorPostaci.Text = "Cofnij";
-            this.Btn_CofnijCreatorPostaci.UseVisualStyleBackColor = true;
-            this.Btn_CofnijCreatorPostaci.Visible = false;
-            this.Btn_CofnijCreatorPostaci.Click += new System.EventHandler(this.Btn_CofnijCreatorPostaci_Click);
-            // 
-            // Btn_LeftMenuOn
-            // 
-            this.Btn_LeftMenuOn.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_LeftMenuOn.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button1;
-            this.Btn_LeftMenuOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_LeftMenuOn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_LeftMenuOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LeftMenuOn.Location = new System.Drawing.Point(16, 10);
-            this.Btn_LeftMenuOn.Name = "Btn_LeftMenuOn";
-            this.Btn_LeftMenuOn.Size = new System.Drawing.Size(100, 40);
-            this.Btn_LeftMenuOn.TabIndex = 20;
-            this.Btn_LeftMenuOn.UseVisualStyleBackColor = false;
-            this.Btn_LeftMenuOn.Visible = false;
-            this.Btn_LeftMenuOn.Click += new System.EventHandler(this.Btn_LeftMenuOn_Click);
-            // 
-            // Btn_Wyjscie
-            // 
-            this.Btn_Wyjscie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Wyjscie.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_Wyjscie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Wyjscie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Wyjscie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Wyjscie.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Wyjscie.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Wyjscie.Location = new System.Drawing.Point(16, 520);
-            this.Btn_Wyjscie.Name = "Btn_Wyjscie";
-            this.Btn_Wyjscie.Size = new System.Drawing.Size(234, 70);
-            this.Btn_Wyjscie.TabIndex = 19;
-            this.Btn_Wyjscie.Text = "Wyjście";
-            this.Btn_Wyjscie.UseVisualStyleBackColor = true;
-            this.Btn_Wyjscie.Click += new System.EventHandler(this.Btn_Wyjscie_Click);
-            // 
-            // Btn_Credits
-            // 
-            this.Btn_Credits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Credits.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Credits.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Credits.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Credits.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Credits.Location = new System.Drawing.Point(16, 420);
-            this.Btn_Credits.Name = "Btn_Credits";
-            this.Btn_Credits.Size = new System.Drawing.Size(234, 70);
-            this.Btn_Credits.TabIndex = 18;
-            this.Btn_Credits.Text = "Credits";
-            this.Btn_Credits.UseVisualStyleBackColor = true;
-            this.Btn_Credits.Click += new System.EventHandler(this.Btn_Credits_Click);
-            // 
-            // Btn_WczytajGre
-            // 
-            this.Btn_WczytajGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_WczytajGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_WczytajGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_WczytajGre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_WczytajGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_WczytajGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_WczytajGre.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_WczytajGre.Location = new System.Drawing.Point(16, 320);
-            this.Btn_WczytajGre.Name = "Btn_WczytajGre";
-            this.Btn_WczytajGre.Size = new System.Drawing.Size(234, 70);
-            this.Btn_WczytajGre.TabIndex = 17;
-            this.Btn_WczytajGre.Text = "Wczytaj grę";
-            this.Btn_WczytajGre.UseVisualStyleBackColor = true;
-            this.Btn_WczytajGre.Click += new System.EventHandler(this.Btn_WczytajGre_Click);
-            // 
-            // Btn_ZapiszGre
-            // 
-            this.Btn_ZapiszGre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_ZapiszGre.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_ZapiszGre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_ZapiszGre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_ZapiszGre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_ZapiszGre.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_ZapiszGre.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_ZapiszGre.Location = new System.Drawing.Point(15, 220);
-            this.Btn_ZapiszGre.Name = "Btn_ZapiszGre";
-            this.Btn_ZapiszGre.Size = new System.Drawing.Size(235, 70);
-            this.Btn_ZapiszGre.TabIndex = 16;
-            this.Btn_ZapiszGre.Text = "Zapisz grę";
-            this.Btn_ZapiszGre.UseVisualStyleBackColor = true;
-            this.Btn_ZapiszGre.Click += new System.EventHandler(this.Btn_ZapiszGre_Click);
-            // 
-            // Btn_NowaGra
-            // 
-            this.Btn_NowaGra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_NowaGra.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Btn_NowaGra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_NowaGra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_NowaGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_NowaGra.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_NowaGra.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_NowaGra.Location = new System.Drawing.Point(15, 120);
-            this.Btn_NowaGra.Name = "Btn_NowaGra";
-            this.Btn_NowaGra.Size = new System.Drawing.Size(235, 70);
-            this.Btn_NowaGra.TabIndex = 15;
-            this.Btn_NowaGra.Text = "Nowa gra";
-            this.Btn_NowaGra.UseVisualStyleBackColor = true;
-            this.Btn_NowaGra.Click += new System.EventHandler(this.Btn_NowaGra_Click);
-            // 
-            // Cpb_Exp
-            // 
-            this.Cpb_Exp.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("Cpb_Exp.AnimationFunction")));
-            this.Cpb_Exp.AnimationSpeed = 2000;
-            this.Cpb_Exp.BackColor = System.Drawing.Color.DimGray;
-            this.Cpb_Exp.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.decorative_gold_frame_on_a_black_gradient_background_przycisk;
-            this.Cpb_Exp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cpb_Exp.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Cpb_Exp.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.Cpb_Exp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Cpb_Exp.InnerColor = System.Drawing.Color.Teal;
-            this.Cpb_Exp.InnerMargin = 1;
-            this.Cpb_Exp.InnerWidth = -1;
-            this.Cpb_Exp.Location = new System.Drawing.Point(119, 6);
-            this.Cpb_Exp.Margin = new System.Windows.Forms.Padding(0);
-            this.Cpb_Exp.MarqueeAnimationSpeed = 2000;
-            this.Cpb_Exp.Maximum = 0;
-            this.Cpb_Exp.Name = "Cpb_Exp";
-            this.Cpb_Exp.OuterColor = System.Drawing.Color.Black;
-            this.Cpb_Exp.OuterMargin = 2;
-            this.Cpb_Exp.OuterWidth = 1;
-            this.Cpb_Exp.ProgressColor = System.Drawing.Color.Lime;
-            this.Cpb_Exp.ProgressWidth = 5;
-            this.Cpb_Exp.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.Cpb_Exp.Size = new System.Drawing.Size(140, 140);
-            this.Cpb_Exp.StartAngle = 270;
-            this.Cpb_Exp.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.Cpb_Exp.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.Cpb_Exp.SubscriptText = ".23";
-            this.Cpb_Exp.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.Cpb_Exp.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.Cpb_Exp.SuperscriptText = "";
-            this.Cpb_Exp.TabIndex = 45;
-            this.Cpb_Exp.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.Cpb_Exp.Visible = false;
-            // 
-            // Pic_Avatar
-            // 
-            this.Pic_Avatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pic_Avatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.Pic_Avatar.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Male2;
-            this.Pic_Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_Avatar.Location = new System.Drawing.Point(83, 201);
-            this.Pic_Avatar.Name = "Pic_Avatar";
-            this.Pic_Avatar.Size = new System.Drawing.Size(100, 100);
-            this.Pic_Avatar.TabIndex = 46;
-            this.Pic_Avatar.TabStop = false;
-            this.Pic_Avatar.Visible = false;
-            // 
-            // Btn_LeftMenuOff
-            // 
-            this.Btn_LeftMenuOff.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_LeftMenuOff.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Menu_Button2;
-            this.Btn_LeftMenuOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_LeftMenuOff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_LeftMenuOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_LeftMenuOff.Location = new System.Drawing.Point(10, 10);
-            this.Btn_LeftMenuOff.Name = "Btn_LeftMenuOff";
-            this.Btn_LeftMenuOff.Size = new System.Drawing.Size(40, 40);
-            this.Btn_LeftMenuOff.TabIndex = 21;
-            this.Btn_LeftMenuOff.UseVisualStyleBackColor = false;
-            this.Btn_LeftMenuOff.Visible = false;
-            this.Btn_LeftMenuOff.Click += new System.EventHandler(this.Btn_LeftMenuOff_Click);
-            // 
-            // Pic_Logo
-            // 
-            this.Pic_Logo.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources._300_Spartan_Workout;
-            this.Pic_Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pic_Logo.Location = new System.Drawing.Point(0, 0);
-            this.Pic_Logo.Name = "Pic_Logo";
-            this.Pic_Logo.Size = new System.Drawing.Size(75, 50);
-            this.Pic_Logo.TabIndex = 1;
-            this.Pic_Logo.TabStop = false;
-            // 
-            // Pnl_ButtonsE2
-            // 
-            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_1);
-            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_2);
-            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_4);
-            this.Pnl_ButtonsE2.Controls.Add(this.Btn_Etap2_3);
-            this.Pnl_ButtonsE2.Controls.Add(this.Pnl_OdstepE2);
-            this.Pnl_ButtonsE2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_ButtonsE2.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_ButtonsE2.Name = "Pnl_ButtonsE2";
-            this.Pnl_ButtonsE2.Size = new System.Drawing.Size(728, 100);
-            this.Pnl_ButtonsE2.TabIndex = 9;
-            this.Pnl_ButtonsE2.Visible = false;
-            // 
-            // Btn_Etap2_4
-            // 
-            this.Btn_Etap2_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap2_4.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap2_4.Location = new System.Drawing.Point(550, 15);
-            this.Btn_Etap2_4.Name = "Btn_Etap2_4";
-            this.Btn_Etap2_4.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap2_4.TabIndex = 8;
-            this.Btn_Etap2_4.Text = "Uciekaj do lasu";
-            this.Btn_Etap2_4.UseVisualStyleBackColor = true;
-            this.Btn_Etap2_4.Visible = false;
-            // 
-            // Btn_Etap2_3
-            // 
-            this.Btn_Etap2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap2_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap2_3.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap2_3.Location = new System.Drawing.Point(375, 15);
-            this.Btn_Etap2_3.Name = "Btn_Etap2_3";
-            this.Btn_Etap2_3.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap2_3.TabIndex = 7;
-            this.Btn_Etap2_3.Text = "Zabij strażnika";
-            this.Btn_Etap2_3.UseVisualStyleBackColor = true;
-            this.Btn_Etap2_3.Visible = false;
-            // 
-            // Btn_Etap2_2
-            // 
-            this.Btn_Etap2_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap2_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap2_2.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap2_2.Location = new System.Drawing.Point(200, 15);
-            this.Btn_Etap2_2.Name = "Btn_Etap2_2";
-            this.Btn_Etap2_2.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap2_2.TabIndex = 6;
-            this.Btn_Etap2_2.Text = "Rozpocznij ucieczkę";
-            this.Btn_Etap2_2.UseVisualStyleBackColor = true;
-            this.Btn_Etap2_2.Visible = false;
-            // 
-            // Btn_Etap2_1
-            // 
-            this.Btn_Etap2_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Etap2_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Etap2_1.ForeColor = System.Drawing.Color.Teal;
-            this.Btn_Etap2_1.Location = new System.Drawing.Point(25, 15);
-            this.Btn_Etap2_1.Name = "Btn_Etap2_1";
-            this.Btn_Etap2_1.Size = new System.Drawing.Size(150, 70);
-            this.Btn_Etap2_1.TabIndex = 5;
-            this.Btn_Etap2_1.Text = "Czekaj na wyrok";
-            this.Btn_Etap2_1.UseVisualStyleBackColor = true;
-            this.Btn_Etap2_1.Visible = false;
-            // 
-            // Pnl_OdstepE2
-            // 
-            this.Pnl_OdstepE2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Pnl_OdstepE2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
-            this.Pnl_OdstepE2.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_OdstepE2.Name = "Pnl_OdstepE2";
-            this.Pnl_OdstepE2.Size = new System.Drawing.Size(5, 100);
-            this.Pnl_OdstepE2.TabIndex = 4;
-            // 
-            // Pnl_Etap2
-            // 
-            this.Pnl_Etap2.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.duskwood;
-            this.Pnl_Etap2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_1);
-            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_2);
-            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_3);
-            this.Pnl_Etap2.Controls.Add(this.TBox_Etap2_4);
-            this.Pnl_Etap2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Etap2.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_Etap2.Name = "Pnl_Etap2";
-            this.Pnl_Etap2.Size = new System.Drawing.Size(728, 516);
-            this.Pnl_Etap2.TabIndex = 5;
-            this.Pnl_Etap2.Visible = false;
-            // 
-            // TBox_Etap2_3
-            // 
-            this.TBox_Etap2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap2_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap2_3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_3.Location = new System.Drawing.Point(6, 257);
-            this.TBox_Etap2_3.Multiline = true;
-            this.TBox_Etap2_3.Name = "TBox_Etap2_3";
-            this.TBox_Etap2_3.Size = new System.Drawing.Size(353, 153);
-            this.TBox_Etap2_3.TabIndex = 4;
-            this.TBox_Etap2_3.TabStop = false;
-            this.TBox_Etap2_3.Text = resources.GetString("TBox_Etap2_3.Text");
-            this.TBox_Etap2_3.Visible = false;
-            // 
-            // TBox_Etap2_2
-            // 
-            this.TBox_Etap2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap2_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap2_2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_2.HideSelection = false;
-            this.TBox_Etap2_2.Location = new System.Drawing.Point(6, 65);
-            this.TBox_Etap2_2.Multiline = true;
-            this.TBox_Etap2_2.Name = "TBox_Etap2_2";
-            this.TBox_Etap2_2.Size = new System.Drawing.Size(353, 177);
-            this.TBox_Etap2_2.TabIndex = 3;
-            this.TBox_Etap2_2.TabStop = false;
-            this.TBox_Etap2_2.Text = resources.GetString("TBox_Etap2_2.Text");
-            this.TBox_Etap2_2.Visible = false;
-            // 
-            // TBox_Etap2_4
-            // 
-            this.TBox_Etap2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap2_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap2_4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_4.Location = new System.Drawing.Point(365, 293);
-            this.TBox_Etap2_4.Multiline = true;
-            this.TBox_Etap2_4.Name = "TBox_Etap2_4";
-            this.TBox_Etap2_4.Size = new System.Drawing.Size(357, 202);
-            this.TBox_Etap2_4.TabIndex = 2;
-            this.TBox_Etap2_4.TabStop = false;
-            this.TBox_Etap2_4.Text = resources.GetString("TBox_Etap2_4.Text");
-            this.TBox_Etap2_4.Visible = false;
-            // 
-            // TBox_Etap2_1
-            // 
-            this.TBox_Etap2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap2_1.Enabled = false;
-            this.TBox_Etap2_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap2_1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap2_1.Location = new System.Drawing.Point(360, 10);
-            this.TBox_Etap2_1.Multiline = true;
-            this.TBox_Etap2_1.Name = "TBox_Etap2_1";
-            this.TBox_Etap2_1.Size = new System.Drawing.Size(354, 180);
-            this.TBox_Etap2_1.TabIndex = 1;
-            this.TBox_Etap2_1.TabStop = false;
-            this.TBox_Etap2_1.Text = resources.GetString("TBox_Etap2_1.Text");
-            this.TBox_Etap2_1.Visible = false;
-            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1354,29 +1384,29 @@
             this.Load += new System.EventHandler(this.WelcomeScreen_Load);
             this.Pnl_TopPanel.ResumeLayout(false);
             this.Pnl_TopPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
             this.Pnl_LeftPanelMenu.ResumeLayout(false);
             this.Pnl_BottomPanel.ResumeLayout(false);
+            this.Pnl_ButtonsE2.ResumeLayout(false);
             this.Pnl_ButtonsE1.ResumeLayout(false);
             this.Pnl_CreatorPostaci.ResumeLayout(false);
             this.Pnl_CreatorPostaci.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
             this.Pnl_LeftGame.ResumeLayout(false);
             this.Pnl_LeftGame.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
             this.Pnl_WczytajGre.ResumeLayout(false);
             this.Pnl_WczytajGre.PerformLayout();
             this.Pnl_TytulWczytajGre.ResumeLayout(false);
             this.Pnl_TytulWczytajGre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).EndInit();
             this.Pnl_Etapy.ResumeLayout(false);
+            this.Pnl_Etap2.ResumeLayout(false);
+            this.Pnl_Etap2.PerformLayout();
             this.Pnl_Etap1.ResumeLayout(false);
             this.Pnl_Etap1.PerformLayout();
             this.Pnl_WelcomeScreen.ResumeLayout(false);
             this.Pnl_WelcomeScreen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PBox_Wczytaj)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
-            this.Pnl_ButtonsE2.ResumeLayout(false);
-            this.Pnl_Etap2.ResumeLayout(false);
-            this.Pnl_Etap2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1466,5 +1496,7 @@
         private System.Windows.Forms.TextBox TBox_Etap2_2;
         private System.Windows.Forms.TextBox TBox_Etap2_3;
         private System.Windows.Forms.TextBox TBox_Etap2_4;
+        private System.Windows.Forms.Button Btn_Zaleczrany;
+        private System.Windows.Forms.Button Btn_Odpocznij;
     }
 }

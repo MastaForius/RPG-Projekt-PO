@@ -179,11 +179,15 @@ namespace RPG___Projekt_programowanie_obiektowe
             //Menu
             WysunMenu();
         }
+        private void Btn_Odpocznij_Click(object sender, EventArgs e)
+        {
+            Odpocznij(hero.poziom * 5);
+        }
 
-        #endregion
-
-        #region Dolne menu
-
+        private void Btn_Zaleczrany_Click(object sender, EventArgs e)
+        {
+            Ulecz(hero.poziom * 2);
+        }
 
         #endregion
 
@@ -402,8 +406,8 @@ namespace RPG___Projekt_programowanie_obiektowe
             hero.numerAvatara = ktoryAvatar;
             Pic_Avatar.BackgroundImage =  jakiAvatar(hero.gender, hero.numerAvatara);
             DodajExp(0);
-            Ulecz(9999);
-            Odpocznij(9999);
+            Ulecz(0);
+            Odpocznij(0);
             dodajZloto(0);
         }
         // Zapis
@@ -634,6 +638,11 @@ namespace RPG___Projekt_programowanie_obiektowe
         #endregion
 
         #region Zarządzanie panelami
+        //
+        // Sekcja do zarzadzania przejciami pomiedzy panelami
+        //
+
+
         //Paner menu
         private void WysunMenu()
         {
@@ -782,6 +791,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             {
                 Util.Animate(TBox_Etap1_2, Util.Effect.Center, 80, 180);
                 Util.Animate(Btn_Etap1_2, Util.Effect.Center, 80, 180);
+                Zmeczenie(5);
             }
         }
 
@@ -789,6 +799,11 @@ namespace RPG___Projekt_programowanie_obiektowe
         {
             if (!Btn_Etap1_3.Visible)
             {
+                DodajExp(40);
+                dodajZloto(25);
+                zadajObrazenia(5);
+                Zmeczenie(10);
+                MessageBox.Show("Znalazłeś Miecz!");
                 Util.Animate(TBox_Etap1_3, Util.Effect.Center, 80, 180);
                 Util.Animate(Btn_Etap1_3, Util.Effect.Center, 80, 180);
             }
@@ -805,7 +820,9 @@ namespace RPG___Projekt_programowanie_obiektowe
 
         private void Btn_Etap1_4_Click(object sender, EventArgs e)
         {
-
+            Zmeczenie(10);
+            SchowajEtap1();
+            WysunEtap2();
         }
         private void SchowajEtap1()
         {
