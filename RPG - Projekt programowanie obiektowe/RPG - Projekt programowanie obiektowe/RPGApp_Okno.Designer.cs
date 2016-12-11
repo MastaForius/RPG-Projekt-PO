@@ -99,8 +99,19 @@
             this.Btn_Etap4_3 = new System.Windows.Forms.Button();
             this.Btn_Etap4_4 = new System.Windows.Forms.Button();
             this.Pnl_OdstepE4 = new System.Windows.Forms.Panel();
+            this.Pnl_ButtonsE5 = new System.Windows.Forms.Panel();
+            this.Btn_Etap5_1 = new System.Windows.Forms.Button();
+            this.Btn_Etap5_2 = new System.Windows.Forms.Button();
+            this.Btn_Etap5_3 = new System.Windows.Forms.Button();
+            this.Btn_Etap5_4 = new System.Windows.Forms.Button();
+            this.Pnl_OdstepE5 = new System.Windows.Forms.Panel();
             this.Pnl_Etapy = new System.Windows.Forms.Panel();
+            this.Pnl_Etap5 = new System.Windows.Forms.Panel();
+            this.TBox_Etap5_1 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap5_2 = new System.Windows.Forms.TextBox();
+            this.TBox_Etap5_3 = new System.Windows.Forms.TextBox();
             this.Pnl_Etap4 = new System.Windows.Forms.Panel();
+            this.TBox_Etap4_4 = new System.Windows.Forms.TextBox();
             this.TBox_Etap4_1 = new System.Windows.Forms.TextBox();
             this.TBox_Etap4_2 = new System.Windows.Forms.TextBox();
             this.TBox_Etap4_3 = new System.Windows.Forms.TextBox();
@@ -139,11 +150,6 @@
             this.Pic_Avatar = new System.Windows.Forms.PictureBox();
             this.Btn_LeftMenuOff = new System.Windows.Forms.Button();
             this.Pic_Logo = new System.Windows.Forms.PictureBox();
-            this.Pnl_Etap5 = new System.Windows.Forms.Panel();
-            this.TBox_Etap5_1 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap5_2 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap5_3 = new System.Windows.Forms.TextBox();
-            this.TBox_Etap4_4 = new System.Windows.Forms.TextBox();
             this.Pnl_TopPanel.SuspendLayout();
             this.Pnl_LeftPanelMenu.SuspendLayout();
             this.Pnl_BottomPanel.SuspendLayout();
@@ -155,7 +161,9 @@
             this.Pnl_TytulWczytajGre.SuspendLayout();
             this.Pnl_ButtonsE3.SuspendLayout();
             this.Pnl_ButtonsE4.SuspendLayout();
+            this.Pnl_ButtonsE5.SuspendLayout();
             this.Pnl_Etapy.SuspendLayout();
+            this.Pnl_Etap5.SuspendLayout();
             this.Pnl_Etap4.SuspendLayout();
             this.Pnl_Etap3.SuspendLayout();
             this.Pnl_Etap2.SuspendLayout();
@@ -165,7 +173,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
-            this.Pnl_Etap5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pnl_TopPanel
@@ -278,6 +285,7 @@
             // Pnl_BottomPanel
             // 
             this.Pnl_BottomPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.Pnl_BottomPanel.Controls.Add(this.Pnl_ButtonsE5);
             this.Pnl_BottomPanel.Controls.Add(this.Pnl_ButtonsE4);
             this.Pnl_BottomPanel.Controls.Add(this.Pnl_ButtonsE3);
             this.Pnl_BottomPanel.Controls.Add(this.Pnl_ButtonsE2);
@@ -988,7 +996,6 @@
             this.Btn_Etap3_2.Name = "Btn_Etap3_2";
             this.Btn_Etap3_2.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap3_2.TabIndex = 6;
-            this.Btn_Etap3_2.Text = "Poszukaj jedzenia";
             this.Btn_Etap3_2.UseVisualStyleBackColor = true;
             this.Btn_Etap3_2.Visible = false;
             // 
@@ -1001,7 +1008,6 @@
             this.Btn_Etap3_3.Name = "Btn_Etap3_3";
             this.Btn_Etap3_3.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap3_3.TabIndex = 8;
-            this.Btn_Etap3_3.Text = "Idź do miasta";
             this.Btn_Etap3_3.UseVisualStyleBackColor = true;
             this.Btn_Etap3_3.Visible = false;
             // 
@@ -1014,7 +1020,6 @@
             this.Btn_Etap3_4.Name = "Btn_Etap3_4";
             this.Btn_Etap3_4.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap3_4.TabIndex = 7;
-            this.Btn_Etap3_4.Text = "Zabij wilki";
             this.Btn_Etap3_4.UseVisualStyleBackColor = true;
             this.Btn_Etap3_4.Visible = false;
             // 
@@ -1050,7 +1055,7 @@
             this.Btn_Etap4_1.Name = "Btn_Etap4_1";
             this.Btn_Etap4_1.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap4_1.TabIndex = 5;
-            this.Btn_Etap4_1.Text = "Udaj się do karczmy";
+            this.Btn_Etap4_1.Text = "Podejdź do karczmarza";
             this.Btn_Etap4_1.UseVisualStyleBackColor = true;
             this.Btn_Etap4_1.Visible = false;
             // 
@@ -1063,7 +1068,7 @@
             this.Btn_Etap4_2.Name = "Btn_Etap4_2";
             this.Btn_Etap4_2.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap4_2.TabIndex = 6;
-            this.Btn_Etap4_2.Text = "Poszukaj jedzenia";
+            this.Btn_Etap4_2.Text = "Podejmij się wyzwania";
             this.Btn_Etap4_2.UseVisualStyleBackColor = true;
             this.Btn_Etap4_2.Visible = false;
             // 
@@ -1076,7 +1081,7 @@
             this.Btn_Etap4_3.Name = "Btn_Etap4_3";
             this.Btn_Etap4_3.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap4_3.TabIndex = 8;
-            this.Btn_Etap4_3.Text = "Idź do miasta";
+            this.Btn_Etap4_3.Text = "Wygrana (część dalsza nastąpi)";
             this.Btn_Etap4_3.UseVisualStyleBackColor = true;
             this.Btn_Etap4_3.Visible = false;
             // 
@@ -1089,7 +1094,7 @@
             this.Btn_Etap4_4.Name = "Btn_Etap4_4";
             this.Btn_Etap4_4.Size = new System.Drawing.Size(150, 70);
             this.Btn_Etap4_4.TabIndex = 7;
-            this.Btn_Etap4_4.Text = "Zabij wilki";
+            this.Btn_Etap4_4.Text = "Wytrop bandytów";
             this.Btn_Etap4_4.UseVisualStyleBackColor = true;
             this.Btn_Etap4_4.Visible = false;
             // 
@@ -1102,12 +1107,86 @@
             this.Pnl_OdstepE4.Size = new System.Drawing.Size(5, 100);
             this.Pnl_OdstepE4.TabIndex = 4;
             // 
+            // Pnl_ButtonsE5
+            // 
+            this.Pnl_ButtonsE5.Controls.Add(this.Btn_Etap5_1);
+            this.Pnl_ButtonsE5.Controls.Add(this.Btn_Etap5_2);
+            this.Pnl_ButtonsE5.Controls.Add(this.Btn_Etap5_3);
+            this.Pnl_ButtonsE5.Controls.Add(this.Btn_Etap5_4);
+            this.Pnl_ButtonsE5.Controls.Add(this.Pnl_OdstepE5);
+            this.Pnl_ButtonsE5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_ButtonsE5.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_ButtonsE5.Name = "Pnl_ButtonsE5";
+            this.Pnl_ButtonsE5.Size = new System.Drawing.Size(728, 100);
+            this.Pnl_ButtonsE5.TabIndex = 12;
+            this.Pnl_ButtonsE5.Visible = false;
+            // 
+            // Btn_Etap5_1
+            // 
+            this.Btn_Etap5_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap5_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap5_1.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap5_1.Location = new System.Drawing.Point(25, 15);
+            this.Btn_Etap5_1.Name = "Btn_Etap5_1";
+            this.Btn_Etap5_1.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap5_1.TabIndex = 5;
+            this.Btn_Etap5_1.Text = "Przedostań się do obozu";
+            this.Btn_Etap5_1.UseVisualStyleBackColor = true;
+            this.Btn_Etap5_1.Visible = false;
+            // 
+            // Btn_Etap5_2
+            // 
+            this.Btn_Etap5_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap5_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap5_2.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap5_2.Location = new System.Drawing.Point(200, 15);
+            this.Btn_Etap5_2.Name = "Btn_Etap5_2";
+            this.Btn_Etap5_2.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap5_2.TabIndex = 6;
+            this.Btn_Etap5_2.Text = "Zabij przywódcę";
+            this.Btn_Etap5_2.UseVisualStyleBackColor = true;
+            this.Btn_Etap5_2.Visible = false;
+            // 
+            // Btn_Etap5_3
+            // 
+            this.Btn_Etap5_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap5_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap5_3.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap5_3.Location = new System.Drawing.Point(550, 15);
+            this.Btn_Etap5_3.Name = "Btn_Etap5_3";
+            this.Btn_Etap5_3.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap5_3.TabIndex = 8;
+            this.Btn_Etap5_3.UseVisualStyleBackColor = true;
+            this.Btn_Etap5_3.Visible = false;
+            // 
+            // Btn_Etap5_4
+            // 
+            this.Btn_Etap5_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Etap5_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Etap5_4.ForeColor = System.Drawing.Color.Teal;
+            this.Btn_Etap5_4.Location = new System.Drawing.Point(375, 15);
+            this.Btn_Etap5_4.Name = "Btn_Etap5_4";
+            this.Btn_Etap5_4.Size = new System.Drawing.Size(150, 70);
+            this.Btn_Etap5_4.TabIndex = 7;
+            this.Btn_Etap5_4.Text = "Wróć do karczmy";
+            this.Btn_Etap5_4.UseVisualStyleBackColor = true;
+            this.Btn_Etap5_4.Visible = false;
+            // 
+            // Pnl_OdstepE5
+            // 
+            this.Pnl_OdstepE5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Pnl_OdstepE5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(32)))));
+            this.Pnl_OdstepE5.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_OdstepE5.Name = "Pnl_OdstepE5";
+            this.Pnl_OdstepE5.Size = new System.Drawing.Size(5, 100);
+            this.Pnl_OdstepE5.TabIndex = 4;
+            // 
             // Pnl_Etapy
             // 
             this.Pnl_Etapy.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.Kraty;
             this.Pnl_Etapy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pnl_Etapy.Controls.Add(this.Pnl_Etap4);
             this.Pnl_Etapy.Controls.Add(this.Pnl_Etap5);
+            this.Pnl_Etapy.Controls.Add(this.Pnl_Etap4);
             this.Pnl_Etapy.Controls.Add(this.Pnl_Etap3);
             this.Pnl_Etapy.Controls.Add(this.Pnl_Etap2);
             this.Pnl_Etapy.Controls.Add(this.Pnl_Etap1);
@@ -1115,6 +1194,63 @@
             this.Pnl_Etapy.Name = "Pnl_Etapy";
             this.Pnl_Etapy.Size = new System.Drawing.Size(728, 516);
             this.Pnl_Etapy.TabIndex = 4;
+            // 
+            // Pnl_Etap5
+            // 
+            this.Pnl_Etap5.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.gfaydark_orccamp;
+            this.Pnl_Etap5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_1);
+            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_2);
+            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_3);
+            this.Pnl_Etap5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Etap5.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Etap5.Name = "Pnl_Etap5";
+            this.Pnl_Etap5.Size = new System.Drawing.Size(728, 516);
+            this.Pnl_Etap5.TabIndex = 8;
+            this.Pnl_Etap5.Visible = false;
+            // 
+            // TBox_Etap5_1
+            // 
+            this.TBox_Etap5_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap5_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap5_1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap5_1.Location = new System.Drawing.Point(331, 13);
+            this.TBox_Etap5_1.Multiline = true;
+            this.TBox_Etap5_1.Name = "TBox_Etap5_1";
+            this.TBox_Etap5_1.Size = new System.Drawing.Size(383, 88);
+            this.TBox_Etap5_1.TabIndex = 5;
+            this.TBox_Etap5_1.TabStop = false;
+            this.TBox_Etap5_1.Text = "Wyruszyłeś w góry. Droga zajęła Ci 12 dni, które spędziłeś nie tylko idąc, ale i " +
+    "polując.Po długiej drodze napotkałeś ślady bandytów.";
+            this.TBox_Etap5_1.Visible = false;
+            // 
+            // TBox_Etap5_2
+            // 
+            this.TBox_Etap5_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap5_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap5_2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap5_2.Location = new System.Drawing.Point(10, 107);
+            this.TBox_Etap5_2.Multiline = true;
+            this.TBox_Etap5_2.Name = "TBox_Etap5_2";
+            this.TBox_Etap5_2.Size = new System.Drawing.Size(297, 177);
+            this.TBox_Etap5_2.TabIndex = 2;
+            this.TBox_Etap5_2.TabStop = false;
+            this.TBox_Etap5_2.Text = resources.GetString("TBox_Etap5_2.Text");
+            this.TBox_Etap5_2.Visible = false;
+            // 
+            // TBox_Etap5_3
+            // 
+            this.TBox_Etap5_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap5_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap5_3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap5_3.Location = new System.Drawing.Point(96, 353);
+            this.TBox_Etap5_3.Multiline = true;
+            this.TBox_Etap5_3.Name = "TBox_Etap5_3";
+            this.TBox_Etap5_3.Size = new System.Drawing.Size(517, 137);
+            this.TBox_Etap5_3.TabIndex = 6;
+            this.TBox_Etap5_3.TabStop = false;
+            this.TBox_Etap5_3.Text = resources.GetString("TBox_Etap5_3.Text");
+            this.TBox_Etap5_3.Visible = false;
             // 
             // Pnl_Etap4
             // 
@@ -1130,6 +1266,20 @@
             this.Pnl_Etap4.Size = new System.Drawing.Size(728, 516);
             this.Pnl_Etap4.TabIndex = 7;
             this.Pnl_Etap4.Visible = false;
+            // 
+            // TBox_Etap4_4
+            // 
+            this.TBox_Etap4_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.TBox_Etap4_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
+            this.TBox_Etap4_4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TBox_Etap4_4.Location = new System.Drawing.Point(425, 196);
+            this.TBox_Etap4_4.Multiline = true;
+            this.TBox_Etap4_4.Name = "TBox_Etap4_4";
+            this.TBox_Etap4_4.Size = new System.Drawing.Size(303, 281);
+            this.TBox_Etap4_4.TabIndex = 7;
+            this.TBox_Etap4_4.TabStop = false;
+            this.TBox_Etap4_4.Text = resources.GetString("TBox_Etap4_4.Text");
+            this.TBox_Etap4_4.Visible = false;
             // 
             // TBox_Etap4_1
             // 
@@ -1720,77 +1870,6 @@
             this.Pic_Logo.TabIndex = 1;
             this.Pic_Logo.TabStop = false;
             // 
-            // Pnl_Etap5
-            // 
-            this.Pnl_Etap5.BackgroundImage = global::RPG___Projekt_programowanie_obiektowe.Properties.Resources.karczma;
-            this.Pnl_Etap5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_1);
-            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_2);
-            this.Pnl_Etap5.Controls.Add(this.TBox_Etap5_3);
-            this.Pnl_Etap5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Etap5.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_Etap5.Name = "Pnl_Etap5";
-            this.Pnl_Etap5.Size = new System.Drawing.Size(728, 516);
-            this.Pnl_Etap5.TabIndex = 8;
-            this.Pnl_Etap5.Visible = false;
-            // 
-            // TBox_Etap5_1
-            // 
-            this.TBox_Etap5_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap5_1.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap5_1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap5_1.Location = new System.Drawing.Point(331, 13);
-            this.TBox_Etap5_1.Multiline = true;
-            this.TBox_Etap5_1.Name = "TBox_Etap5_1";
-            this.TBox_Etap5_1.Size = new System.Drawing.Size(383, 88);
-            this.TBox_Etap5_1.TabIndex = 5;
-            this.TBox_Etap5_1.TabStop = false;
-            this.TBox_Etap5_1.Text = "Wyruszyłeś w góry. Droga zajęła Ci 12 dni, które spędziłeś nie tylko idąc, ale i " +
-    "polując.Po długiej drodze napotkałeś ślady bandytów.";
-            this.TBox_Etap5_1.Visible = false;
-            // 
-            // TBox_Etap5_2
-            // 
-            this.TBox_Etap5_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap5_2.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap5_2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap5_2.Location = new System.Drawing.Point(10, 107);
-            this.TBox_Etap5_2.Multiline = true;
-            this.TBox_Etap5_2.Name = "TBox_Etap5_2";
-            this.TBox_Etap5_2.Size = new System.Drawing.Size(297, 177);
-            this.TBox_Etap5_2.TabIndex = 2;
-            this.TBox_Etap5_2.TabStop = false;
-            this.TBox_Etap5_2.Text = resources.GetString("TBox_Etap5_2.Text");
-            this.TBox_Etap5_2.Visible = false;
-            // 
-            // TBox_Etap5_3
-            // 
-            this.TBox_Etap5_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap5_3.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap5_3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap5_3.Location = new System.Drawing.Point(96, 353);
-            this.TBox_Etap5_3.Multiline = true;
-            this.TBox_Etap5_3.Name = "TBox_Etap5_3";
-            this.TBox_Etap5_3.Size = new System.Drawing.Size(517, 137);
-            this.TBox_Etap5_3.TabIndex = 6;
-            this.TBox_Etap5_3.TabStop = false;
-            this.TBox_Etap5_3.Text = resources.GetString("TBox_Etap5_3.Text");
-            this.TBox_Etap5_3.Visible = false;
-            // 
-            // TBox_Etap4_4
-            // 
-            this.TBox_Etap4_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.TBox_Etap4_4.Font = new System.Drawing.Font("Segoe Print", 10.25F, System.Drawing.FontStyle.Bold);
-            this.TBox_Etap4_4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.TBox_Etap4_4.Location = new System.Drawing.Point(425, 196);
-            this.TBox_Etap4_4.Multiline = true;
-            this.TBox_Etap4_4.Name = "TBox_Etap4_4";
-            this.TBox_Etap4_4.Size = new System.Drawing.Size(303, 281);
-            this.TBox_Etap4_4.TabIndex = 7;
-            this.TBox_Etap4_4.TabStop = false;
-            this.TBox_Etap4_4.Text = resources.GetString("TBox_Etap4_4.Text");
-            this.TBox_Etap4_4.Visible = false;
-            // 
             // RPGApp_Okno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1834,7 +1913,10 @@
             this.Pnl_TytulWczytajGre.PerformLayout();
             this.Pnl_ButtonsE3.ResumeLayout(false);
             this.Pnl_ButtonsE4.ResumeLayout(false);
+            this.Pnl_ButtonsE5.ResumeLayout(false);
             this.Pnl_Etapy.ResumeLayout(false);
+            this.Pnl_Etap5.ResumeLayout(false);
+            this.Pnl_Etap5.PerformLayout();
             this.Pnl_Etap4.ResumeLayout(false);
             this.Pnl_Etap4.PerformLayout();
             this.Pnl_Etap3.ResumeLayout(false);
@@ -1849,8 +1931,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pic_ChooseAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
-            this.Pnl_Etap5.ResumeLayout(false);
-            this.Pnl_Etap5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1970,5 +2050,11 @@
         private System.Windows.Forms.TextBox TBox_Etap5_1;
         private System.Windows.Forms.TextBox TBox_Etap5_2;
         private System.Windows.Forms.TextBox TBox_Etap5_3;
+        private System.Windows.Forms.Panel Pnl_ButtonsE5;
+        private System.Windows.Forms.Button Btn_Etap5_1;
+        private System.Windows.Forms.Button Btn_Etap5_2;
+        private System.Windows.Forms.Button Btn_Etap5_3;
+        private System.Windows.Forms.Button Btn_Etap5_4;
+        private System.Windows.Forms.Panel Pnl_OdstepE5;
     }
 }

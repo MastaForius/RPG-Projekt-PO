@@ -183,16 +183,16 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="TBox_Etap4_4.Text" xml:space="preserve">
-    <value>Udało Ci się dotrzeć do miasta w 11 dni. Ruszasz szybkim krokiem do karczmy, aby pochwalić się swoim łupem oraz otrzymać nagrodę od karczmarza za wykonanie zadania. Pokazujesz karczmarzowi naszyjnik, za który daje Ci 1000 monet oraz darmowa ucztę i zimne piwko. Słysząc to jeden z ludzi podchodzi do Ciebie i mówi, że szukają takich jak Ty do gildii. Na następny dzień idziesz na rekrutację do gildii i zostajesz przyjęty.
-
-</value>
-  </data>
   <data name="TBox_Etap5_2.Text" xml:space="preserve">
     <value>Udało Ci się przedostać do ich obozu i po cichu zabiłeś ich przywódcę. Zdobyłeś jego dwuręczny miecz ze stali, której jeszcze nigdy nie widziałeś na oczy oraz z jego ubrania wyciągnąłeś naszyjnik, który pokażesz jako dowód wykonania zadania. </value>
   </data>
   <data name="TBox_Etap5_3.Text" xml:space="preserve">
     <value>Po wyjściu z namiotu przywódcy bandytów, dostrzegło Cię 2 innych bandytów, którzy są lekko zdezorientowani. Podchodzą do Ciebie, a Ty szybkim cięciem pokonujesz jednego z nich. Drugi bandyta odskakuje i rozpoczynasz z nim walkę. Po zwycięstwie nad bandytami, podpalasz resztę namiotów i uciekasz szybko z ich obozu. 
+</value>
+  </data>
+  <data name="TBox_Etap4_4.Text" xml:space="preserve">
+    <value>Udało Ci się dotrzeć do miasta w 11 dni. Ruszasz szybkim krokiem do karczmy, aby pochwalić się swoim łupem oraz otrzymać nagrodę od karczmarza za wykonanie zadania. Pokazujesz karczmarzowi naszyjnik, za który daje Ci 1000 monet oraz darmowa ucztę i zimne piwko. Słysząc to jeden z ludzi podchodzi do Ciebie i mówi, że szukają takich jak Ty do gildii. Na następny dzień idziesz na rekrutację do gildii i zostajesz przyjęty.
+
 </value>
   </data>
   <data name="TBox_Etap3_2.Text" xml:space="preserve">

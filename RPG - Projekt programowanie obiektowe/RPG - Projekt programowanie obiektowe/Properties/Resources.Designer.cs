@@ -143,6 +143,16 @@ namespace RPG___Projekt_programowanie_obiektowe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gfaydark_orccamp {
+            get {
+                object obj = ResourceManager.GetObject("gfaydark-orccamp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap karczma {
             get {
                 object obj = ResourceManager.GetObject("karczma", resourceCulture);
