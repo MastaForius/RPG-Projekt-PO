@@ -13,3 +13,8 @@ c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\WinFormAnimation.xml
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\AutoMapper.dll
 c:\users\admin\documents\visual studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\RPG - Projekt programowanie obiektowe.exe.manifest
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\bin\Debug\RPG - Projekt programowanie obiektowe.application
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.exe.manifest
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\RPG - Projekt programowanie obiektowe\RPG - Projekt programowanie obiektowe\obj\Debug\RPG - Projekt programowanie obiektowe.application

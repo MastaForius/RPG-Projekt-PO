@@ -22,7 +22,7 @@ namespace RPG___Projekt_programowanie_obiektowe
             InitializeComponent();
             this.ActiveControl = Btn_WelcomeScreen;
         }
-        string path = @"C:/Users/Admin/AppData/Local/Temp/";
+        string path = System.IO.Path.GetTempPath() + "/";
         string nazwaFolderu = "RPG Projekt programowanie obiektowe";
         // Stworzenie bohatera
         Bohater hero = new Bohater("Domyslny bohater gry", true, -1);
@@ -849,7 +849,7 @@ namespace RPG___Projekt_programowanie_obiektowe
         }
         private void SchowajEtap2()
         {
-            if (Pnl_Etap1.Visible)
+            if (Pnl_Etap2.Visible)
             {
                 Util.Animate(Pnl_Etap2, Util.Effect.Slide, 125, 180);
                 Util.Animate(Pnl_ButtonsE2, Util.Effect.Slide, 125, 180);
